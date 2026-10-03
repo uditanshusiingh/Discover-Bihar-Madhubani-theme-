@@ -9,10 +9,10 @@
     gap: 9px;
     min-width: 150px;
     padding: 10px 18px;
-    border: 1px solid #ffffff !important;
+    border: 1px solid var(--theme-white) !important;
     border-radius: 50px;
     background: transparent !important;
-    color: #ffffff !important;
+    color: var(--theme-white) !important;
     font-size: 0.72rem;
     font-weight: 600;
     line-height: 1.2;
@@ -22,9 +22,9 @@
 }
 
 .personalities-navbar .nav-cta:hover {
-    border-color: #d4a017 !important;
-    background: #d4a017 !important;
-    color: #1b120c !important;
+    border-color: var(--theme-accent-2) !important;
+    background: var(--theme-accent-2) !important;
+    color: var(--theme-text-primary) !important;
 }
 
 .personalities-navbar .nav-cta i {
@@ -41,42 +41,42 @@
    ========================================================= */
 
 .personality-navbar {
-    background: rgba(27, 18, 12, 0.96);
+    background: var(--theme-bg-secondary);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px var(--theme-shadow);
 }
 
 .personality-navbar .navbar-brand {
-    color: #ffffff;
+    color: var(--theme-white);
 }
 
 .personality-navbar .navbar-brand:hover {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-navbar .nav-link {
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--theme-text-primary);
 }
 
 .personality-navbar .nav-link:hover,
 .personality-navbar .nav-link.active {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-navbar .dropdown-menu {
-    background: #21160f;
-    border: 1px solid rgba(212, 160, 23, 0.18);
+    background: var(--theme-bg-secondary);
+    border: 1px solid var(--theme-border);
 }
 
 .personality-navbar .dropdown-item {
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--theme-text-primary);
 }
 
 .personality-navbar .dropdown-item:hover,
 .personality-navbar .dropdown-item:focus {
-    background: rgba(212, 160, 23, 0.1);
-    color: #D4A017;
+    background: var(--theme-bg-secondary);
+    color: var(--theme-accent-2);
 }
 
 
@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: #1B120C;
+    background: var(--theme-bg-secondary);
 }
 
 
@@ -136,16 +136,16 @@
     background:
         linear-gradient(
             90deg,
-            rgba(20, 12, 7, 0.18) 0%,
-            rgba(20, 12, 7, 0.28) 38%,
-            rgba(20, 12, 7, 0.62) 72%,
-            rgba(20, 12, 7, 0.88) 100%
+            var(--theme-bg-secondary) 0%,
+            var(--theme-bg-secondary) 38%,
+            var(--theme-bg-secondary) 72%,
+            var(--theme-bg-secondary) 100%
         ),
         linear-gradient(
             0deg,
-            rgba(20, 12, 7, 0.72) 0%,
-            rgba(20, 12, 7, 0.08) 60%,
-            rgba(20, 12, 7, 0.20) 100%
+            var(--theme-bg-secondary) 0%,
+            var(--theme-bg-secondary) 60%,
+            var(--theme-bg-secondary) 100%
         );
 }
 
@@ -169,7 +169,7 @@
     position: relative;
     z-index: 3;
     margin-bottom: 24px;
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-family: var(--font-body);
     font-size: 0.68rem;
     font-weight: 700;
@@ -178,7 +178,7 @@
 }
 
 .personality-breadcrumb span {
-    color: rgba(255, 255, 255, 0.45);
+    color: var(--theme-text-primary);
     margin: 0 8px;
 }
 
@@ -188,17 +188,17 @@
     z-index: 3;
     max-width: 900px;
     margin: 0;
-    color: #ffffff !important;
+    color: var(--theme-white) !important;
     font-family: var(--font-heading);
     font-size: clamp(3.8rem, 8vw, 7.8rem);
     font-weight: 500;
     line-height: 0.92;
     letter-spacing: -2px;
-    text-shadow: 0 5px 25px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 5px 25px var(--theme-shadow);
 }
 
 .personality-hero-content h1 em {
-    color: #D4A017 !important;
+    color: var(--theme-accent-2) !important;
     font-style: italic;
     font-weight: 400;
 }
@@ -209,11 +209,11 @@
     z-index: 3;
     max-width: 650px;
     margin: 30px 0 0;
-    color: rgba(255, 255, 255, 0.90) !important;
+    color: var(--theme-text-primary) !important;
     font-family: var(--font-body);
     font-size: 0.92rem;
     line-height: 1.9;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 2px 10px var(--theme-shadow);
 }
 
 
@@ -224,7 +224,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 40px;
-    color: rgba(255, 255, 255, 0.78);
+    color: var(--theme-text-primary);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -232,7 +232,7 @@
 }
 
 .personality-hero-scroll i {
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-size: 15px;
 }
 
@@ -244,7 +244,7 @@
 .personality-eyebrow {
     display: inline-block;
     margin-bottom: 18px;
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-family: var(--font-body);
     font-size: 0.65rem;
     font-weight: 700;
@@ -254,7 +254,7 @@
 
 .personality-section-heading h2 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(2.7rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -262,14 +262,14 @@
 }
 
 .personality-section-heading h2 span {
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-style: italic;
 }
 
 .personality-section-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-family: var(--font-body);
     font-size: 0.84rem;
     line-height: 1.9;
@@ -282,7 +282,7 @@
 
 .personality-intro-section {
     padding: 120px 0 115px;
-    background: #F8F5EF;
+    background: var(--theme-bg-primary);
 }
 
 .personality-intro-text {
@@ -293,7 +293,7 @@
 
 .personality-intro-text h2 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 5rem);
     font-weight: 500;
@@ -301,14 +301,14 @@
 }
 
 .personality-intro-text h2 em {
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-style: italic;
 }
 
 .personality-intro-text p {
     max-width: 700px;
     margin: 28px auto 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.88rem;
     line-height: 1.95;
 }
@@ -317,7 +317,7 @@
     width: 70px;
     height: 1px;
     margin: 38px auto 0;
-    background: #D4A017;
+    background: var(--theme-accent-2);
 }
 
 
@@ -327,7 +327,7 @@
 
 .personality-highlights-section {
     padding: 115px 0 125px;
-    background: #ffffff;
+    background: var(--theme-white);
 }
 
 .personality-highlights-heading {
@@ -336,7 +336,7 @@
 
 .personality-highlights-heading h2 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -344,14 +344,14 @@
 }
 
 .personality-highlights-heading h2 span {
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-style: italic;
 }
 
 .personality-highlights-heading p {
     max-width: 620px;
     margin-top: 20px;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.84rem;
     line-height: 1.85;
 }
@@ -380,8 +380,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #F8F5EF;
-    border: 1px solid rgba(139, 69, 19, 0.09);
+    background: var(--theme-bg-primary);
+    border: 1px solid var(--theme-border);
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
@@ -389,7 +389,7 @@
 
 .personality-feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 55px rgba(53, 31, 16, 0.12);
+    box-shadow: 0 25px 55px var(--theme-shadow);
 }
 
 .personality-feature-image {
@@ -399,7 +399,7 @@
     min-height: 390px;
     flex-shrink: 0;
     overflow: hidden;
-    background: #D8D0C7;
+    background: var(--theme-bg-secondary);
 }
 
 .personality-feature-image img {
@@ -425,8 +425,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #D4A017;
-    color: #1B120C;
+    background: var(--theme-accent-2);
+    color: var(--theme-text-primary);
     font-family: var(--font-body);
     font-size: 0.67rem;
     font-weight: 700;
@@ -444,7 +444,7 @@
 
 .personality-feature-location {
     margin-bottom: 13px;
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -453,7 +453,7 @@
 
 .personality-feature-content h3 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(1.7rem, 2.4vw, 2.25rem);
     font-weight: 500;
@@ -462,7 +462,7 @@
 
 .personality-feature-content p {
     margin: 18px 0 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.79rem;
     line-height: 1.8;
 }
@@ -482,7 +482,7 @@
     gap: 10px;
     width: fit-content;
     margin-top: 25px;
-    color: #8B4513;
+    color: var(--theme-accent);
     font-size: 0.64rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -496,7 +496,7 @@
 }
 
 .personality-story-link:hover {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-story-link:hover i {
@@ -510,7 +510,7 @@
 
 .personality-stories-section {
     padding: 125px 0;
-    background: #21160F;
+    background: var(--theme-bg-secondary);
 }
 
 .personality-stories-heading {
@@ -519,12 +519,12 @@
 }
 
 .personality-stories-heading .personality-eyebrow {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-stories-heading h2 {
     margin: 0;
-    color: #ffffff;
+    color: var(--theme-white);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -532,14 +532,14 @@
 }
 
 .personality-stories-heading h2 span {
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-style: italic;
 }
 
 .personality-stories-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: rgba(255, 255, 255, 0.58);
+    color: var(--theme-text-primary);
     font-size: 0.83rem;
     line-height: 1.9;
 }
@@ -553,7 +553,7 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     min-width: 0;
     margin-bottom: 100px;
-    background: #2A1C13;
+    background: var(--theme-bg-secondary);
     overflow: hidden;
 }
 
@@ -598,7 +598,7 @@
 
 .personality-story-number {
     margin-bottom: 18px;
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-family: var(--font-body);
     font-size: 0.65rem;
     font-weight: 700;
@@ -607,7 +607,7 @@
 
 .personality-story-content h3 {
     margin: 0;
-    color: #ffffff;
+    color: var(--theme-white);
     font-family: var(--font-heading);
     font-size: clamp(2.4rem, 4vw, 4rem);
     font-weight: 500;
@@ -616,7 +616,7 @@
 
 .personality-story-lead {
     margin: 25px 0 0;
-    color: rgba(255, 255, 255, 0.86);
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: 1.15rem;
     line-height: 1.55;
@@ -624,7 +624,7 @@
 
 .personality-story-content > p:not(.personality-story-lead) {
     margin: 20px 0 0;
-    color: rgba(255, 255, 255, 0.58);
+    color: var(--theme-text-primary);
     font-size: 0.78rem;
     line-height: 1.9;
 }
@@ -641,8 +641,8 @@
     align-items: center;
     min-height: 34px;
     padding: 7px 13px;
-    border: 1px solid rgba(212, 160, 23, 0.25);
-    color: rgba(255, 255, 255, 0.72);
+    border: 1px solid var(--theme-border);
+    color: var(--theme-text-primary);
     font-size: 0.58rem;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -651,11 +651,11 @@
 
 .personality-story-content .personality-story-link {
     margin-top: 32px;
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-story-content .personality-story-link:hover {
-    color: #ffffff;
+    color: var(--theme-white);
 }
 
 
@@ -665,7 +665,7 @@
 
 .personality-legacy-section {
     padding: 120px 0;
-    background: #F8F5EF;
+    background: var(--theme-bg-primary);
 }
 
 .personality-legacy-heading {
@@ -674,7 +674,7 @@
 
 .personality-legacy-heading h2 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(2.7rem, 5vw, 4.7rem);
     font-weight: 500;
@@ -682,14 +682,14 @@
 }
 
 .personality-legacy-heading h2 span {
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-style: italic;
 }
 
 .personality-legacy-heading p {
     max-width: 620px;
     margin-top: 20px;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.83rem;
     line-height: 1.85;
 }
@@ -704,8 +704,8 @@
     min-width: 0;
     min-height: 250px;
     padding: 35px 28px;
-    background: #ffffff;
-    border: 1px solid rgba(139, 69, 19, 0.08);
+    background: var(--theme-white);
+    border: 1px solid var(--theme-border);
     transition:
         transform 0.35s ease,
         box-shadow 0.35s ease;
@@ -713,7 +713,7 @@
 
 .personality-legacy-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 45px rgba(53, 31, 16, 0.09);
+    box-shadow: 0 18px 45px var(--theme-shadow);
 }
 
 .personality-legacy-icon {
@@ -723,14 +723,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 35px;
-    background: #F3E8D1;
-    color: #8B4513;
+    background: var(--theme-bg-secondary);
+    color: var(--theme-accent);
     font-size: 20px;
 }
 
 .personality-legacy-card h3 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: 1.65rem;
     font-weight: 500;
@@ -738,7 +738,7 @@
 
 .personality-legacy-card p {
     margin: 13px 0 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.72rem;
     line-height: 1.75;
 }
@@ -750,7 +750,7 @@
 
 .personality-timeline-section {
     padding: 125px 0;
-    background: #ffffff;
+    background: var(--theme-white);
 }
 
 .personality-timeline-heading {
@@ -760,7 +760,7 @@
 
 .personality-timeline-heading h2 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -768,14 +768,14 @@
 }
 
 .personality-timeline-heading h2 span {
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-style: italic;
 }
 
 .personality-timeline-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.83rem;
     line-height: 1.9;
 }
@@ -793,7 +793,7 @@
     bottom: 0;
     left: 50%;
     width: 1px;
-    background: #D8CBBE;
+    background: var(--theme-bg-secondary);
     transform: translateX(-50%);
 }
 
@@ -820,10 +820,10 @@
     top: 4px;
     width: 13px;
     height: 13px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--theme-white);
     border-radius: 50%;
-    background: #D4A017;
-    box-shadow: 0 0 0 1px #D4A017;
+    background: var(--theme-accent-2);
+    box-shadow: 0 0 0 1px var(--theme-accent-2);
 }
 
 .personality-timeline-item:nth-child(odd) .personality-timeline-dot {
@@ -836,7 +836,7 @@
 
 .personality-timeline-year {
     margin-bottom: 10px;
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-size: 0.64rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -845,7 +845,7 @@
 
 .personality-timeline-item h3 {
     margin: 0;
-    color: #1B120C;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 500;
@@ -853,7 +853,7 @@
 
 .personality-timeline-item p {
     margin: 12px 0 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-size: 0.74rem;
     line-height: 1.8;
 }
@@ -863,13 +863,13 @@
     margin: 25px auto 0;
     padding: 35px 25px;
     text-align: center;
-    border-top: 1px solid #D8CBBE;
+    border-top: 1px solid var(--theme-border);
 }
 
 .personality-timeline-end span {
     display: block;
     margin-bottom: 10px;
-    color: #A46B2C;
+    color: var(--theme-text-primary);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -877,7 +877,7 @@
 
 .personality-timeline-end p {
     margin: 0;
-    color: #746A63;
+    color: var(--theme-text-primary);
     font-family: var(--font-heading);
     font-size: 1.15rem;
     font-style: italic;
@@ -890,7 +890,7 @@
 
 .personality-why-section {
     padding: 120px 0;
-    background: #21160F;
+    background: var(--theme-bg-secondary);
 }
 
 .personality-why-heading {
@@ -899,12 +899,12 @@
 }
 
 .personality-why-heading .personality-eyebrow {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 .personality-why-heading h2 {
     margin: 0;
-    color: #ffffff;
+    color: var(--theme-white);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -912,7 +912,7 @@
 }
 
 .personality-why-heading h2 span {
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-style: italic;
 }
 
@@ -925,13 +925,13 @@
 .personality-why-card {
     min-width: 0;
     padding: 45px 35px;
-    background: #2A1C13;
-    border: 1px solid rgba(212, 160, 23, 0.12);
+    background: var(--theme-bg-secondary);
+    border: 1px solid var(--theme-border);
 }
 
 .personality-why-number {
     margin-bottom: 50px;
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-family: var(--font-heading);
     font-size: 2.4rem;
     font-style: italic;
@@ -939,7 +939,7 @@
 
 .personality-why-card h3 {
     margin: 0;
-    color: #ffffff;
+    color: var(--theme-white);
     font-family: var(--font-heading);
     font-size: 1.85rem;
     font-weight: 500;
@@ -947,7 +947,7 @@
 
 .personality-why-card p {
     margin: 15px 0 0;
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--theme-text-primary);
     font-size: 0.73rem;
     line-height: 1.8;
 }
@@ -964,9 +964,9 @@
     background:
         linear-gradient(
             135deg,
-            #8B4513 0%,
-            #6E3517 48%,
-            #422316 100%
+            var(--theme-accent) 0%,
+            var(--theme-bg-secondary) 48%,
+            var(--theme-bg-secondary) 100%
         );
 }
 
@@ -977,7 +977,7 @@
     height: 500px;
     top: -250px;
     right: -180px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--theme-border);
     border-radius: 50%;
 }
 
@@ -988,7 +988,7 @@
     height: 350px;
     bottom: -200px;
     left: -120px;
-    border: 1px solid rgba(212, 160, 23, 0.2);
+    border: 1px solid var(--theme-border);
     border-radius: 50%;
 }
 
@@ -1003,7 +1003,7 @@
 .personality-final-content > span {
     display: block;
     margin-bottom: 22px;
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-size: 0.64rem;
     font-weight: 700;
     letter-spacing: 3px;
@@ -1012,7 +1012,7 @@
 
 .personality-final-content h2 {
     margin: 0;
-    color: #ffffff !important;
+    color: var(--theme-white) !important;
     font-family: var(--font-heading);
     font-size: clamp(3.2rem, 6vw, 6rem);
     font-weight: 500;
@@ -1020,7 +1020,7 @@
 }
 
 .personality-final-content h2 em {
-    color: #F0C75E;
+    color: var(--theme-text-primary);
     font-style: italic;
     font-weight: 400;
 }
@@ -1028,7 +1028,7 @@
 .personality-final-content p {
     max-width: 620px;
     margin: 25px auto 35px;
-    color: rgba(255, 255, 255, 0.72);
+    color: var(--theme-text-primary);
     font-size: 0.8rem;
     line-height: 1.85;
 }
@@ -1047,10 +1047,10 @@ section.personality-final-cta a.personality-final-btn,
     height: auto !important;
     padding: 15px 27px !important;
     margin: 0 !important;
-    background: #D4A017 !important;
-    background-color: #D4A017 !important;
-    color: #1B120C !important;
-    border: 1px solid #D4A017 !important;
+    background: var(--theme-accent-2) !important;
+    background-color: var(--theme-accent-2) !important;
+    color: var(--theme-text-primary) !important;
+    border: 1px solid var(--theme-accent-2) !important;
     border-radius: 0 !important;
     font-family: 'Poppins', sans-serif !important;
     font-size: 0.65rem !important;
@@ -1071,16 +1071,16 @@ section.personality-final-cta a.personality-final-btn,
 
 section.personality-final-cta a.personality-final-btn:hover,
 .personality-final-cta .personality-final-content a.personality-final-btn:hover {
-    background: #E5B32C !important;
-    background-color: #E5B32C !important;
-    color: #1B120C !important;
+    background: var(--theme-bg-secondary) !important;
+    background-color: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-primary) !important;
     transform: translateY(-3px) !important;
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 14px 32px var(--theme-shadow) !important;
 }
 
 section.personality-final-cta a.personality-final-btn i,
 .personality-final-cta .personality-final-content a.personality-final-btn i {
-    color: #1B120C !important;
+    color: var(--theme-text-primary) !important;
     font-size: 15px !important;
     line-height: 1 !important;
     margin: 0 !important;
@@ -1089,15 +1089,15 @@ section.personality-final-cta a.personality-final-btn i,
 
 section.personality-final-cta a.personality-final-btn:hover i,
 .personality-final-cta .personality-final-content a.personality-final-btn:hover i {
-    color: #1B120C !important;
+    color: var(--theme-text-primary) !important;
     transform: translate(4px, -4px) !important;
 }
 
 section.personality-final-cta a.personality-final-btn:link,
 section.personality-final-cta a.personality-final-btn:visited,
 section.personality-final-cta a.personality-final-btn:active {
-    color: #1B120C !important;
-    background-color: #D4A017 !important;
+    color: var(--theme-text-primary) !important;
+    background-color: var(--theme-accent-2) !important;
     text-decoration: none !important;
 }
 
@@ -1107,16 +1107,16 @@ section.personality-final-cta a.personality-final-btn:active {
    ========================================================= */
 
 .personality-page .site-footer {
-    background: #120C08;
-    color: rgba(255, 255, 255, 0.7);
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-primary);
 }
 
 .personality-page .site-footer a {
-    color: rgba(255, 255, 255, 0.68);
+    color: var(--theme-text-primary);
 }
 
 .personality-page .site-footer a:hover {
-    color: #D4A017;
+    color: var(--theme-accent-2);
 }
 
 
@@ -1209,14 +1209,14 @@ section.personality-final-cta a.personality-final-btn:active {
         background:
             linear-gradient(
                 90deg,
-                rgba(20, 12, 7, 0.40) 0%,
-                rgba(20, 12, 7, 0.62) 65%,
-                rgba(20, 12, 7, 0.86) 100%
+                var(--theme-bg-secondary) 0%,
+                var(--theme-bg-secondary) 65%,
+                var(--theme-bg-secondary) 100%
             ),
             linear-gradient(
                 0deg,
-                rgba(20, 12, 7, 0.78) 0%,
-                rgba(20, 12, 7, 0.12) 70%
+                var(--theme-bg-secondary) 0%,
+                var(--theme-bg-secondary) 70%
             );
     }
 
@@ -1539,22 +1539,22 @@ html:not(.dark-mode) .personality-legacy-section,
 html:not(.dark-mode) .personality-timeline-section,
 html:not(.dark-mode) .personality-feature-card,
 html:not(.dark-mode) .personality-legacy-card {
-    background: #ffffff !important;
+    background: var(--theme-white) !important;
 }
 
 html.dark-mode .personality-intro-section,
 html.dark-mode .personality-highlights-section,
 html.dark-mode .personality-legacy-section,
 html.dark-mode .personality-timeline-section {
-    background: #12100e !important;
-    color: #f4eee5;
+    background: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-primary);
 }
 
 html.dark-mode .personality-feature-card,
 html.dark-mode .personality-legacy-card {
-    background: #1b1713 !important;
-    color: #f4eee5;
-    border-color: rgba(255, 255, 255, 0.10);
+    background: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-primary);
+    border-color: var(--theme-border);
 }
 
 html.dark-mode .personality-intro-text h2,
@@ -1564,7 +1564,7 @@ html.dark-mode .personality-timeline-heading h2,
 html.dark-mode .personality-feature-content h3,
 html.dark-mode .personality-legacy-card h3,
 html.dark-mode .personality-timeline-item h3 {
-    color: #f4eee5 !important;
+    color: var(--theme-text-primary) !important;
 }
 
 html.dark-mode .personality-intro-text p,
@@ -1575,11 +1575,11 @@ html.dark-mode .personality-feature-content p,
 html.dark-mode .personality-legacy-card p,
 html.dark-mode .personality-timeline-item p,
 html.dark-mode .personality-timeline-end p {
-    color: #b9aea1 !important;
+    color: var(--theme-text-primary) !important;
 }
 
 html.dark-mode .personality-timeline::before,
 html.dark-mode .personality-timeline-end {
-    border-color: rgba(255, 255, 255, 0.14);
+    border-color: var(--theme-border);
     background-color: transparent;
 }

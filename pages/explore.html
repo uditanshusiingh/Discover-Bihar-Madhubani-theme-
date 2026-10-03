@@ -75,8 +75,8 @@
 }
 
 .bihar-district {
-    fill: rgba(139,69,19,.10);
-    stroke: rgba(139,69,19,.48);
+    fill: var(--theme-text-primary);
+    stroke: var(--theme-text-primary);
     stroke-width: .8;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
@@ -85,23 +85,23 @@
 
 .bihar-district:hover,
 .bihar-district:focus {
-    fill: rgba(212,160,23,.70);
-    stroke: #8B4513;
+    fill: var(--theme-text-primary);
+    stroke: var(--theme-accent);
     stroke-width: 1.6;
     outline: none;
-    filter: drop-shadow(0 4px 8px rgba(139,69,19,.22));
+    filter: drop-shadow(0 4px 8px var(--theme-shadow));
 }
 
 .bihar-district.selected {
-    fill: #D4A017;
-    stroke: #6f360f;
+    fill: var(--theme-accent-2);
+    stroke: var(--theme-text-primary);
     stroke-width: 1.8;
-    filter: drop-shadow(0 5px 10px rgba(139,69,19,.28));
+    filter: drop-shadow(0 5px 10px var(--theme-shadow));
 }
 
 .bihar-district-label {
     pointer-events: none;
-    fill: #5a351e;
+    fill: var(--theme-text-primary);
     font-family: Poppins, sans-serif;
     font-size: 7px;
     font-weight: 600;
@@ -118,8 +118,8 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    color: #8B4513;
-    background: radial-gradient(circle at center,rgba(212,160,23,.12),transparent 62%),#f1eadf;
+    color: var(--theme-accent);
+    background: radial-gradient(circle at center,var(--theme-bg-secondary),transparent 62%),var(--theme-bg-secondary);
     transition: opacity .3s ease, visibility .3s ease;
 }
 
@@ -150,10 +150,10 @@
     z-index: 10;
     min-width: 150px;
     padding: 12px 15px;
-    background: #21160F;
-    color: #fff;
-    border-left: 2px solid #D4A017;
-    box-shadow: 0 12px 30px rgba(0,0,0,.18);
+    background: var(--theme-bg-secondary);
+    color: var(--theme-white);
+    border-left: 2px solid var(--theme-accent-2);
+    box-shadow: 0 12px 30px var(--theme-shadow);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -168,7 +168,7 @@
 .map-district-tooltip span,
 .map-district-tooltip small {
     display: block;
-    color: #D4A017;
+    color: var(--theme-accent-2);
     font-size: .47rem;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -178,14 +178,14 @@
 .map-district-tooltip strong {
     display: block;
     margin: 4px 0;
-    color: #fff;
+    color: var(--theme-white);
     font-family: Playfair Display,serif;
     font-size: 1.15rem;
     font-weight: 500;
 }
 
 .map-district-tooltip small {
-    color: rgba(255,255,255,.52);
+    color: var(--theme-text-primary);
     letter-spacing: .7px;
 }
 
@@ -198,9 +198,9 @@
     align-items: center;
     gap: 8px;
     padding: 8px 13px;
-    background: rgba(255,255,255,.84);
-    color: #777;
-    border: 1px solid rgba(139,69,19,.12);
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-primary);
+    border: 1px solid var(--theme-border);
     border-radius: 30px;
     transform: translateX(-50%);
     font-size: .53rem;
@@ -211,38 +211,38 @@
 }
 
 .interactive-map-status i {
-    color: #8B4513;
+    color: var(--theme-accent);
 }
 
 html.dark-mode .interactive-map-loading {
-    color: #D4A017;
-    background: radial-gradient(circle at center,rgba(212,160,23,.10),transparent 62%),#211b16;
+    color: var(--theme-accent-2);
+    background: radial-gradient(circle at center,var(--theme-bg-secondary),transparent 62%),var(--theme-bg-secondary);
 }
 
 html.dark-mode .bihar-district {
-    fill: rgba(212,160,23,.10);
-    stroke: rgba(212,160,23,.48);
+    fill: var(--theme-text-primary);
+    stroke: var(--theme-text-primary);
 }
 
 html.dark-mode .bihar-district:hover,
 html.dark-mode .bihar-district:focus {
-    fill: rgba(212,160,23,.55);
-    stroke: #D4A017;
+    fill: var(--theme-text-primary);
+    stroke: var(--theme-accent-2);
 }
 
 html.dark-mode .bihar-district.selected {
-    fill: #D4A017;
-    stroke: #f5d36b;
+    fill: var(--theme-accent-2);
+    stroke: var(--theme-text-primary);
 }
 
 html.dark-mode .bihar-district-label {
-    fill: #eadbc8;
+    fill: var(--theme-text-primary);
 }
 
 html.dark-mode .interactive-map-status {
-    background: rgba(27,23,19,.90);
-    color: #b9aea1;
-    border-color: rgba(255,255,255,.10);
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text-primary);
+    border-color: var(--theme-border);
 }
 
 @media (max-width:767.98px) {
