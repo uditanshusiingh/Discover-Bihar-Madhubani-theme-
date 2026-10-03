@@ -9,10 +9,10 @@
     gap: 9px;
     min-width: 150px;
     padding: 10px 18px;
-    border: 1px solid var(--theme-white) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
     border-radius: 50px;
     background: transparent !important;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.72rem;
     font-weight: 600;
     line-height: 1.2;
@@ -41,14 +41,14 @@
    ========================================================= */
 
 .personality-navbar {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    box-shadow: 0 8px 30px var(--theme-shadow);
+    box-shadow: 0 8px 30px var(--theme-bg-dark);
 }
 
 .personality-navbar .navbar-brand {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 .personality-navbar .navbar-brand:hover {
@@ -56,7 +56,7 @@
 }
 
 .personality-navbar .nav-link {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .personality-navbar .nav-link:hover,
@@ -65,17 +65,17 @@
 }
 
 .personality-navbar .dropdown-menu {
-    background: var(--theme-bg-secondary);
-    border: 1px solid var(--theme-border);
+    background: var(--theme-text-primary);
+    border: 1px solid var(--theme-accent-2);
 }
 
 .personality-navbar .dropdown-item {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .personality-navbar .dropdown-item:hover,
 .personality-navbar .dropdown-item:focus {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
     color: var(--theme-accent-2);
 }
 
@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 
@@ -136,16 +136,16 @@
     background:
         linear-gradient(
             90deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 38%,
-            var(--theme-bg-secondary) 72%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 38%,
+            var(--theme-bg-dark) 72%,
+            var(--theme-bg-dark) 100%
         ),
         linear-gradient(
             0deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 60%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 60%,
+            var(--theme-bg-dark) 100%
         );
 }
 
@@ -178,7 +178,7 @@
 }
 
 .personality-breadcrumb span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     margin: 0 8px;
 }
 
@@ -188,13 +188,13 @@
     z-index: 3;
     max-width: 900px;
     margin: 0;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(3.8rem, 8vw, 7.8rem);
     font-weight: 500;
     line-height: 0.92;
     letter-spacing: -2px;
-    text-shadow: 0 5px 25px var(--theme-shadow);
+    text-shadow: 0 5px 25px var(--theme-bg-dark);
 }
 
 .personality-hero-content h1 em {
@@ -209,11 +209,11 @@
     z-index: 3;
     max-width: 650px;
     margin: 30px 0 0;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-body);
     font-size: 0.92rem;
     line-height: 1.9;
-    text-shadow: 0 2px 10px var(--theme-shadow);
+    text-shadow: 0 2px 10px var(--theme-bg-dark);
 }
 
 
@@ -224,7 +224,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 40px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -244,7 +244,7 @@
 .personality-eyebrow {
     display: inline-block;
     margin-bottom: 18px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-family: var(--font-body);
     font-size: 0.65rem;
     font-weight: 700;
@@ -262,14 +262,14 @@
 }
 
 .personality-section-heading h2 span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-style: italic;
 }
 
 .personality-section-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-family: var(--font-body);
     font-size: 0.84rem;
     line-height: 1.9;
@@ -282,7 +282,7 @@
 
 .personality-intro-section {
     padding: 120px 0 115px;
-    background: var(--theme-bg-primary);
+    background: var(--theme-bg-secondary);
 }
 
 .personality-intro-text {
@@ -301,14 +301,14 @@
 }
 
 .personality-intro-text h2 em {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-style: italic;
 }
 
 .personality-intro-text p {
     max-width: 700px;
     margin: 28px auto 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.88rem;
     line-height: 1.95;
 }
@@ -327,7 +327,7 @@
 
 .personality-highlights-section {
     padding: 115px 0 125px;
-    background: var(--theme-white);
+    background: var(--theme-bg-secondary);
 }
 
 .personality-highlights-heading {
@@ -344,14 +344,14 @@
 }
 
 .personality-highlights-heading h2 span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-style: italic;
 }
 
 .personality-highlights-heading p {
     max-width: 620px;
     margin-top: 20px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.84rem;
     line-height: 1.85;
 }
@@ -380,8 +380,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: var(--theme-bg-primary);
-    border: 1px solid var(--theme-border);
+    background: var(--theme-bg-secondary);
+    border: 1px solid var(--theme-accent);
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
@@ -389,7 +389,7 @@
 
 .personality-feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 55px var(--theme-shadow);
+    box-shadow: 0 25px 55px var(--theme-text-primary);
 }
 
 .personality-feature-image {
@@ -444,7 +444,7 @@
 
 .personality-feature-location {
     margin-bottom: 13px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -462,7 +462,7 @@
 
 .personality-feature-content p {
     margin: 18px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.79rem;
     line-height: 1.8;
 }
@@ -510,7 +510,7 @@
 
 .personality-stories-section {
     padding: 125px 0;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .personality-stories-heading {
@@ -524,7 +524,7 @@
 
 .personality-stories-heading h2 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -539,7 +539,7 @@
 .personality-stories-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.83rem;
     line-height: 1.9;
 }
@@ -553,7 +553,7 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     min-width: 0;
     margin-bottom: 100px;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
     overflow: hidden;
 }
 
@@ -607,7 +607,7 @@
 
 .personality-story-content h3 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(2.4rem, 4vw, 4rem);
     font-weight: 500;
@@ -616,7 +616,7 @@
 
 .personality-story-lead {
     margin: 25px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: 1.15rem;
     line-height: 1.55;
@@ -624,7 +624,7 @@
 
 .personality-story-content > p:not(.personality-story-lead) {
     margin: 20px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.78rem;
     line-height: 1.9;
 }
@@ -641,8 +641,8 @@
     align-items: center;
     min-height: 34px;
     padding: 7px 13px;
-    border: 1px solid var(--theme-border);
-    color: var(--theme-text-primary);
+    border: 1px solid var(--theme-accent-2);
+    color: var(--theme-text-on-dark);
     font-size: 0.58rem;
     font-weight: 600;
     letter-spacing: 0.8px;
@@ -655,7 +655,7 @@
 }
 
 .personality-story-content .personality-story-link:hover {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 
@@ -665,7 +665,7 @@
 
 .personality-legacy-section {
     padding: 120px 0;
-    background: var(--theme-bg-primary);
+    background: var(--theme-bg-secondary);
 }
 
 .personality-legacy-heading {
@@ -682,14 +682,14 @@
 }
 
 .personality-legacy-heading h2 span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-style: italic;
 }
 
 .personality-legacy-heading p {
     max-width: 620px;
     margin-top: 20px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.83rem;
     line-height: 1.85;
 }
@@ -704,8 +704,8 @@
     min-width: 0;
     min-height: 250px;
     padding: 35px 28px;
-    background: var(--theme-white);
-    border: 1px solid var(--theme-border);
+    background: var(--theme-bg-secondary);
+    border: 1px solid var(--theme-accent);
     transition:
         transform 0.35s ease,
         box-shadow 0.35s ease;
@@ -713,7 +713,7 @@
 
 .personality-legacy-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 18px 45px var(--theme-shadow);
+    box-shadow: 0 18px 45px var(--theme-text-primary);
 }
 
 .personality-legacy-icon {
@@ -738,7 +738,7 @@
 
 .personality-legacy-card p {
     margin: 13px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.72rem;
     line-height: 1.75;
 }
@@ -750,7 +750,7 @@
 
 .personality-timeline-section {
     padding: 125px 0;
-    background: var(--theme-white);
+    background: var(--theme-bg-secondary);
 }
 
 .personality-timeline-heading {
@@ -768,14 +768,14 @@
 }
 
 .personality-timeline-heading h2 span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-style: italic;
 }
 
 .personality-timeline-heading p {
     max-width: 650px;
     margin: 22px auto 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.83rem;
     line-height: 1.9;
 }
@@ -820,7 +820,7 @@
     top: 4px;
     width: 13px;
     height: 13px;
-    border: 3px solid var(--theme-white);
+    border: 3px solid var(--theme-bg-secondary);
     border-radius: 50%;
     background: var(--theme-accent-2);
     box-shadow: 0 0 0 1px var(--theme-accent-2);
@@ -836,7 +836,7 @@
 
 .personality-timeline-year {
     margin-bottom: 10px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.64rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -853,7 +853,7 @@
 
 .personality-timeline-item p {
     margin: 12px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.74rem;
     line-height: 1.8;
 }
@@ -863,13 +863,13 @@
     margin: 25px auto 0;
     padding: 35px 25px;
     text-align: center;
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-text-on-dark);
 }
 
 .personality-timeline-end span {
     display: block;
     margin-bottom: 10px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -877,7 +877,7 @@
 
 .personality-timeline-end p {
     margin: 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-family: var(--font-heading);
     font-size: 1.15rem;
     font-style: italic;
@@ -890,7 +890,7 @@
 
 .personality-why-section {
     padding: 120px 0;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .personality-why-heading {
@@ -904,7 +904,7 @@
 
 .personality-why-heading h2 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(2.8rem, 5vw, 4.8rem);
     font-weight: 500;
@@ -925,8 +925,8 @@
 .personality-why-card {
     min-width: 0;
     padding: 45px 35px;
-    background: var(--theme-bg-secondary);
-    border: 1px solid var(--theme-border);
+    background: var(--theme-text-primary);
+    border: 1px solid var(--theme-accent-2);
 }
 
 .personality-why-number {
@@ -939,7 +939,7 @@
 
 .personality-why-card h3 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: 1.85rem;
     font-weight: 500;
@@ -947,7 +947,7 @@
 
 .personality-why-card p {
     margin: 15px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.73rem;
     line-height: 1.8;
 }
@@ -965,8 +965,8 @@
         linear-gradient(
             135deg,
             var(--theme-accent) 0%,
-            var(--theme-bg-secondary) 48%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-text-primary) 48%,
+            var(--theme-text-primary) 100%
         );
 }
 
@@ -977,7 +977,7 @@
     height: 500px;
     top: -250px;
     right: -180px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     border-radius: 50%;
 }
 
@@ -988,7 +988,7 @@
     height: 350px;
     bottom: -200px;
     left: -120px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 50%;
 }
 
@@ -1012,7 +1012,7 @@
 
 .personality-final-content h2 {
     margin: 0;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(3.2rem, 6vw, 6rem);
     font-weight: 500;
@@ -1020,7 +1020,7 @@
 }
 
 .personality-final-content h2 em {
-    color: var(--theme-text-primary);
+    color: var(--theme-accent-2);
     font-style: italic;
     font-weight: 400;
 }
@@ -1028,7 +1028,7 @@
 .personality-final-content p {
     max-width: 620px;
     margin: 25px auto 35px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.8rem;
     line-height: 1.85;
 }
@@ -1071,11 +1071,11 @@ section.personality-final-cta a.personality-final-btn,
 
 section.personality-final-cta a.personality-final-btn:hover,
 .personality-final-cta .personality-final-content a.personality-final-btn:hover {
-    background: var(--theme-bg-secondary) !important;
-    background-color: var(--theme-bg-secondary) !important;
+    background: var(--theme-accent-2) !important;
+    background-color: var(--theme-accent-2) !important;
     color: var(--theme-text-primary) !important;
     transform: translateY(-3px) !important;
-    box-shadow: 0 14px 32px var(--theme-shadow) !important;
+    box-shadow: 0 14px 32px var(--theme-bg-dark) !important;
 }
 
 section.personality-final-cta a.personality-final-btn i,
@@ -1107,12 +1107,12 @@ section.personality-final-cta a.personality-final-btn:active {
    ========================================================= */
 
 .personality-page .site-footer {
-    background: var(--theme-bg-secondary);
-    color: var(--theme-text-primary);
+    background: var(--theme-bg-dark);
+    color: var(--theme-text-on-dark);
 }
 
 .personality-page .site-footer a {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .personality-page .site-footer a:hover {
@@ -1209,14 +1209,14 @@ section.personality-final-cta a.personality-final-btn:active {
         background:
             linear-gradient(
                 90deg,
-                var(--theme-bg-secondary) 0%,
-                var(--theme-bg-secondary) 65%,
-                var(--theme-bg-secondary) 100%
+                var(--theme-bg-dark) 0%,
+                var(--theme-bg-dark) 65%,
+                var(--theme-bg-dark) 100%
             ),
             linear-gradient(
                 0deg,
-                var(--theme-bg-secondary) 0%,
-                var(--theme-bg-secondary) 70%
+                var(--theme-bg-dark) 0%,
+                var(--theme-bg-dark) 70%
             );
     }
 
@@ -1539,22 +1539,22 @@ html:not(.dark-mode) .personality-legacy-section,
 html:not(.dark-mode) .personality-timeline-section,
 html:not(.dark-mode) .personality-feature-card,
 html:not(.dark-mode) .personality-legacy-card {
-    background: var(--theme-white) !important;
+    background: var(--theme-bg-secondary) !important;
 }
 
 html.dark-mode .personality-intro-section,
 html.dark-mode .personality-highlights-section,
 html.dark-mode .personality-legacy-section,
 html.dark-mode .personality-timeline-section {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary);
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark);
 }
 
 html.dark-mode .personality-feature-card,
 html.dark-mode .personality-legacy-card {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary);
-    border-color: var(--theme-border);
+    background: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark);
+    border-color: var(--theme-bg-secondary);
 }
 
 html.dark-mode .personality-intro-text h2,
@@ -1564,7 +1564,7 @@ html.dark-mode .personality-timeline-heading h2,
 html.dark-mode .personality-feature-content h3,
 html.dark-mode .personality-legacy-card h3,
 html.dark-mode .personality-timeline-item h3 {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .personality-intro-text p,
@@ -1580,6 +1580,6 @@ html.dark-mode .personality-timeline-end p {
 
 html.dark-mode .personality-timeline::before,
 html.dark-mode .personality-timeline-end {
-    border-color: var(--theme-border);
+    border-color: var(--theme-bg-secondary);
     background-color: transparent;
 }

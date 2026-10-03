@@ -9,17 +9,17 @@
    ========================================================= */
 
 .art-navbar {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-bg-dark);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-accent-2);
 
     z-index: 1000;
 }
 
 .art-navbar .navbar-brand {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .art-navbar .navbar-brand i {
@@ -27,7 +27,7 @@
 }
 
 .art-navbar .nav-link {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .art-navbar .nav-link:hover,
@@ -36,22 +36,22 @@
 }
 
 .art-navbar .dropdown-menu {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 0;
 
-    box-shadow: 0 15px 40px var(--theme-shadow);
+    box-shadow: 0 15px 40px var(--theme-bg-dark);
 }
 
 .art-navbar .dropdown-item {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .art-navbar .dropdown-item:hover,
 .art-navbar .dropdown-item.active {
     color: var(--theme-accent-2) !important;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
 }
 
 .art-navbar .nav-cta {
@@ -66,9 +66,9 @@
     padding: 10px 18px;
 
     background: transparent !important;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
-    border: 1px solid var(--theme-white) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
     border-radius: 50px;
 
     font-size: 0.72rem;
@@ -110,7 +110,7 @@
 
     overflow: hidden;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .art-hero > img {
@@ -137,9 +137,9 @@
     background:
         linear-gradient(
             90deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 43%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 43%,
+            var(--theme-bg-dark) 100%
         );
 
     z-index: 1;
@@ -155,7 +155,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 38%
         );
 
@@ -194,7 +194,7 @@
 .art-hero-content h1 {
     margin: 0;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -206,7 +206,7 @@
 
     letter-spacing: -0.04em;
 
-    text-shadow: 0 5px 25px var(--theme-shadow);
+    text-shadow: 0 5px 25px var(--theme-bg-dark);
 }
 
 .art-hero-content h1 em {
@@ -223,7 +223,7 @@
 
     margin: 30px 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.9rem;
     font-weight: 300;
@@ -238,7 +238,7 @@
 
     gap: 11px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 
@@ -254,7 +254,7 @@
 }
 
 .art-breadcrumb i {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 }
@@ -273,7 +273,7 @@
 
     gap: 14px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.58rem;
     font-weight: 600;
@@ -348,7 +348,7 @@
 
     margin: 0 0 8px auto;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.86rem;
 
@@ -433,7 +433,7 @@
 
     margin: 0 0 4px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.78rem;
 
@@ -473,9 +473,9 @@
 
     overflow: hidden;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-text-primary);
 
-    box-shadow: 0 15px 45px var(--theme-shadow);
+    box-shadow: 0 15px 45px var(--theme-text-primary);
 
     transition:
         transform 0.45s ease,
@@ -485,11 +485,11 @@
 .art-feature-card:hover {
     transform: translateY(-7px);
 
-    box-shadow: 0 25px 60px var(--theme-shadow);
+    box-shadow: 0 25px 60px var(--theme-text-primary);
 }
 
 .art-feature-main {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 
@@ -510,7 +510,7 @@
 
     overflow: hidden;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .art-feature-image::after {
@@ -523,7 +523,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 50%
         );
 
@@ -560,7 +560,7 @@
 
     z-index: 2;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -589,7 +589,7 @@
 }
 
 .art-feature-main .art-feature-content {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 .art-feature-location {
@@ -637,7 +637,7 @@
 }
 
 .art-feature-main .art-feature-content h3 {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .art-feature-content h3 em {
@@ -655,7 +655,7 @@
 
     margin: 0 0 28px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.75rem;
 
@@ -665,7 +665,7 @@
 }
 
 .art-feature-main .art-feature-content > p {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .art-story-link {
@@ -679,7 +679,7 @@
 
     margin-top: auto;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.63rem;
 
@@ -707,7 +707,7 @@
 }
 
 .art-feature-main .art-story-link:hover {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-accent-2) !important;
 }
 
 .art-story-link i {
@@ -722,7 +722,7 @@
 .art-stories-section {
     padding: 125px 0;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .art-stories-heading {
@@ -738,7 +738,7 @@
 .art-stories-heading h2 {
     margin: 15px 0 18px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -760,7 +760,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.8rem;
 
@@ -785,11 +785,11 @@
 
     margin-bottom: 80px;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
     overflow: hidden;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
 }
 
 .art-story:last-child {
@@ -824,7 +824,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 50%
         );
 
@@ -866,7 +866,7 @@
     top: 38px;
     right: 45px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -882,7 +882,7 @@
 .art-story-content h3 {
     margin: 14px 0 20px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -916,7 +916,7 @@
 
     margin-bottom: 15px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.76rem;
 
@@ -937,9 +937,9 @@
 
     margin-top: 25px;
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-bg-secondary);
 }
 
 .art-story-facts div {
@@ -957,11 +957,11 @@
 .art-story-facts div + div {
     padding-left: 14px;
 
-    border-left: 1px solid var(--theme-border);
+    border-left: 1px solid var(--theme-bg-secondary);
 }
 
 .art-story-facts strong {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.54rem;
 
@@ -973,7 +973,7 @@
 }
 
 .art-story-facts span {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 
@@ -1026,7 +1026,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.8rem;
 
@@ -1059,7 +1059,7 @@
 
     background: var(--theme-bg-secondary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-text-primary);
 
     transition:
         transform 0.35s ease,
@@ -1069,7 +1069,7 @@
 .art-expression-card:hover {
     transform: translateY(-6px);
 
-    box-shadow: 0 18px 45px var(--theme-shadow);
+    box-shadow: 0 18px 45px var(--theme-text-primary);
 }
 
 .art-expression-card > span {
@@ -1078,7 +1078,7 @@
     top: 27px;
     right: 30px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-accent);
 
     font-family: var(--font-heading);
 
@@ -1120,7 +1120,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.72rem;
 
@@ -1187,7 +1187,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.78rem;
 
@@ -1204,7 +1204,7 @@
 .art-experience-list {
     min-width: 0;
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-text-primary);
 }
 
 .art-experience-item {
@@ -1220,7 +1220,7 @@
 
     padding: 18px 10px;
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-text-primary);
 
     transition:
         padding 0.3s ease,
@@ -1262,7 +1262,7 @@
 }
 
 .art-experience-item small {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
 
     font-size: 0.62rem;
 
@@ -1291,7 +1291,7 @@
 .art-why-section {
     padding: 120px 0;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .art-why-heading {
@@ -1307,7 +1307,7 @@
 
     margin: 15px 0 0;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1348,9 +1348,9 @@
 
     padding: 40px;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
 
     transition:
         transform 0.35s ease,
@@ -1360,7 +1360,7 @@
 .art-why-card:hover {
     transform: translateY(-6px);
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .art-why-card > span {
@@ -1369,7 +1369,7 @@
     top: 27px;
     right: 30px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -1389,7 +1389,7 @@
 
     color: var(--theme-accent-2);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
 
     font-size: 1.2rem;
 }
@@ -1397,7 +1397,7 @@
 .art-why-card h3 {
     margin: 0 0 14px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1411,7 +1411,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.72rem;
 
@@ -1435,10 +1435,10 @@
     background:
         radial-gradient(
             circle at 80% 20%,
-            var(--theme-bg-secondary),
+            var(--theme-accent-2),
             transparent 32%
         ),
-        var(--theme-bg-secondary);
+        var(--theme-text-primary);
 }
 
 .art-final-cta::before {
@@ -1449,7 +1449,7 @@
     right: -30px;
     bottom: -70px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -1485,7 +1485,7 @@
 .art-final-content h2 {
     margin: 0 0 25px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1511,7 +1511,7 @@
 
     margin-bottom: 35px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.8rem;
 
@@ -1585,15 +1585,15 @@ section.art-final-cta a.art-final-btn,
 
 section.art-final-cta a.art-final-btn:hover,
 .art-final-cta .art-final-content a.art-final-btn:hover {
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-accent-2) !important;
 
-    background-color: var(--theme-bg-secondary) !important;
+    background-color: var(--theme-accent-2) !important;
 
     color: var(--theme-text-primary) !important;
 
     transform: translateY(-3px) !important;
 
-    box-shadow: 0 12px 30px var(--theme-shadow) !important;
+    box-shadow: 0 12px 30px var(--theme-bg-dark) !important;
 }
 
 section.art-final-cta a.art-final-btn i,
@@ -1634,11 +1634,11 @@ section.art-final-cta a.art-final-btn:active {
 .site-footer {
     padding: 75px 0 25px;
 
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-bg-dark) !important;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-accent-2);
 }
 
 .site-footer a {
@@ -1654,7 +1654,7 @@ section.art-final-cta a.art-final-btn:active {
 
     padding-bottom: 55px;
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-bg-secondary);
 }
 
 .footer-logo {
@@ -1664,7 +1664,7 @@ section.art-final-cta a.art-final-btn:active {
 
     gap: 10px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1682,7 +1682,7 @@ section.art-final-cta a.art-final-btn:active {
 
     margin: 18px 0 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.7rem;
 
@@ -1719,7 +1719,7 @@ section.art-final-cta a.art-final-btn:active {
 
 .footer-column li a,
 .footer-column p {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.68rem;
 
@@ -1763,7 +1763,7 @@ section.art-final-cta a.art-final-btn:active {
 }
 
 .footer-explore-link:hover {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-accent-2) !important;
 }
 
 .footer-explore-link i {
@@ -1785,7 +1785,7 @@ section.art-final-cta a.art-final-btn:active {
 }
 
 .footer-copyright {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.58rem;
 
@@ -1795,7 +1795,7 @@ section.art-final-cta a.art-final-btn:active {
 }
 
 .footer-copyright span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .footer-bottom-links {
@@ -1807,7 +1807,7 @@ section.art-final-cta a.art-final-btn:active {
 }
 
 .footer-bottom-links a {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.58rem;
 
@@ -1830,7 +1830,7 @@ section.art-final-cta a.art-final-btn:active {
 
     color: var(--theme-accent-2) !important;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
 
     font-size: 0.75rem;
 
@@ -1966,8 +1966,8 @@ section.art-final-cta a.art-final-btn:active {
         background:
             linear-gradient(
                 90deg,
-                var(--theme-bg-secondary),
-                var(--theme-bg-secondary)
+                var(--theme-bg-dark),
+                var(--theme-bg-dark)
             );
     }
 
@@ -2109,7 +2109,7 @@ section.art-final-cta a.art-final-btn:active {
     }
 
     .art-story-facts div + div {
-        border-top: 1px solid var(--theme-border);
+        border-top: 1px solid var(--theme-bg-secondary);
     }
 
 

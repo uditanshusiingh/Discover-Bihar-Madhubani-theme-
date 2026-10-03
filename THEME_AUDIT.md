@@ -1,670 +1,670 @@
 # Light/Dark Theme Audit
 
-Scanned 24 CSS/SCSS/HTML files.
+Scanned 23 CSS/SCSS/HTML files.
 
 ## Modified files
 - `css/explore.css` — 75 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
   - `#1B1B1B` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#241d17` → `var(--theme-bg-secondary)`
-  - `#422316` → `var(--theme-bg-secondary)`
-  - `#444444` → `var(--theme-text-primary)`
-  - `#666666` → `var(--theme-text-primary)`
-  - `#6E3517` → `var(--theme-bg-secondary)`
-  - `#746A63` → `var(--theme-text-primary)`
+  - `#1b1713` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#241d17` → `var(--theme-text-primary)`
+  - `#422316` → `var(--theme-text-primary)`
+  - `#444444` → `var(--theme-text-secondary)`
+  - `#666666` → `var(--theme-text-secondary)`
+  - `#6E3517` → `var(--theme-text-primary)`
+  - `#746A63` → `var(--theme-text-secondary)`
   - `#777777` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#999999` → `var(--theme-text-primary)`
   - `#9c9083` → `var(--theme-text-primary)`
-  - `#A46B2C` → `var(--theme-text-primary)`
+  - `#A46B2C` → `var(--theme-text-secondary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F0C75E` → `var(--theme-text-primary)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F0C75E` → `var(--theme-accent-2)`
   - `#F3E8D1` → `var(--theme-bg-secondary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
+  - `#F8F5EF` → `var(--theme-bg-secondary)`
   - `#b9aea1` → `var(--theme-text-primary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.05)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.13)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.45)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-border)`
-  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.32)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.48)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.55)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.70)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.80)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.82)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.03)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.10)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.14)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.20)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.55)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.13)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.15)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(27, 18, 12, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(27, 27, 27, 0.10)` → `var(--theme-border)`
-  - `rgba(27, 27, 27, 0.12)` → `var(--theme-border)`
-  - `rgba(27, 27, 27, 0.13)` → `var(--theme-border)`
-  - `rgba(53, 31, 16, 0.10)` → `var(--theme-shadow)`
-  - `rgba(53, 31, 16, 0.11)` → `var(--theme-shadow)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
+  - `rgba(0, 0, 0, 0.05)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.13)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.45)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.32)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.48)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.55)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.70)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.80)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.82)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.03)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.10)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.14)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.20)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.55)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.13)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.15)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, 0.72)` → `var(--theme-text-primary)`
+  - `rgba(27, 18, 12, 0.96)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.10)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.12)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.13)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.10)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.11)` → `var(--theme-text-primary)`
 - `css/art-culture.css` — 67 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
+  - `#120C08` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
-  - `#21150F` → `var(--theme-bg-secondary)`
+  - `#21150F` → `var(--theme-text-primary)`
   - `#24170F` → `var(--theme-text-primary)`
-  - `#2A1A11` → `var(--theme-bg-secondary)`
-  - `#301E13` → `var(--theme-bg-secondary)`
-  - `#65574D` → `var(--theme-text-primary)`
-  - `#74675D` → `var(--theme-text-primary)`
-  - `#75685D` → `var(--theme-text-primary)`
-  - `#76685E` → `var(--theme-text-primary)`
-  - `#8B5418` → `var(--theme-text-primary)`
-  - `#8B7C70` → `var(--theme-text-primary)`
+  - `#2A1A11` → `var(--theme-text-primary)`
+  - `#301E13` → `var(--theme-text-primary)`
+  - `#65574D` → `var(--theme-text-secondary)`
+  - `#74675D` → `var(--theme-text-secondary)`
+  - `#75685D` → `var(--theme-text-secondary)`
+  - `#76685E` → `var(--theme-text-secondary)`
+  - `#8B5418` → `var(--theme-text-secondary)`
+  - `#8B7C70` → `var(--theme-text-secondary)`
   - `#A56A18` → `var(--theme-text-primary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-text-primary)`
+  - `#E5B32C` → `var(--theme-accent-2)`
   - `#F6EFE5` → `var(--theme-bg-secondary)`
   - `#F8F3EA` → `var(--theme-bg-secondary)`
   - `#FFFDF9` → `var(--theme-bg-secondary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.28)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.3)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.18)` → `var(--theme-text-primary)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
+  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.3)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.18)` → `var(--theme-accent)`
   - `rgba(165, 106, 24, 0.25)` → `var(--theme-border)`
   - `rgba(165, 106, 24, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.42)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.58)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.84)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.91)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.93)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.28)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.05)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.06)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.09)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.1)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.38)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.66)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-primary)`
-  - `rgba(62, 38, 18, 0.06)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.09)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.13)` → `var(--theme-shadow)`
-  - `rgba(82, 50, 25, 0.08)` → `var(--theme-border)`
-  - `rgba(82, 50, 25, 0.12)` → `var(--theme-border)`
-- `css/festivals.css` — 76 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
-  - `#1B120C` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
-  - `#20140D` → `var(--theme-text-primary)`
-  - `#21150F` → `var(--theme-bg-secondary)`
-  - `#21150f` → `var(--theme-bg-secondary)`
-  - `#24170F` → `var(--theme-text-primary)`
-  - `#2A1A11` → `var(--theme-bg-secondary)`
-  - `#301E13` → `var(--theme-bg-secondary)`
-  - `#65574D` → `var(--theme-text-primary)`
-  - `#74675D` → `var(--theme-text-primary)`
-  - `#75685D` → `var(--theme-text-primary)`
-  - `#76685E` → `var(--theme-text-primary)`
-  - `#8B5418` → `var(--theme-text-primary)`
-  - `#8B7869` → `var(--theme-text-primary)`
-  - `#8B7C70` → `var(--theme-text-primary)`
-  - `#A56A18` → `var(--theme-text-primary)`
-  - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-text-primary)`
-  - `#F6EFE5` → `var(--theme-bg-secondary)`
-  - `#F8F3EA` → `var(--theme-bg-secondary)`
-  - `#FFFDF9` → `var(--theme-bg-secondary)`
-  - `#b9aea1` → `var(--theme-text-primary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.28)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.3)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.18)` → `var(--theme-text-primary)`
-  - `rgba(165, 106, 24, 0.25)` → `var(--theme-border)`
-  - `rgba(165, 106, 24, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.30)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.4)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.55)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.70)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.82)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.9)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.92)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.28)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.05)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.06)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.09)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.1)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.38)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.84)` → `var(--theme-text-primary)`
-  - `rgba(62, 38, 18, 0.06)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.09)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.13)` → `var(--theme-shadow)`
-  - `rgba(82, 50, 25, 0.08)` → `var(--theme-border)`
-  - `rgba(82, 50, 25, 0.12)` → `var(--theme-border)`
-- `css/gallery.css` — 70 distinct hardcoded color literals replaced
-  - `#0D0805` → `var(--theme-bg-secondary)`
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
-  - `#160D08` → `var(--theme-bg-secondary)`
-  - `#1B120C` → `var(--theme-text-primary)`
-  - `#1b120c` → `var(--theme-text-primary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#2A1C13` → `var(--theme-bg-secondary)`
-  - `#422316` → `var(--theme-bg-secondary)`
-  - `#6E3517` → `var(--theme-bg-secondary)`
-  - `#746A63` → `var(--theme-text-primary)`
-  - `#8B4513` → `var(--theme-accent)`
-  - `#A46B2C` → `var(--theme-text-primary)`
-  - `#D4A017` → `var(--theme-accent-2)`
-  - `#D8CFC6` → `var(--theme-border)`
-  - `#D8D0C7` → `var(--theme-bg-secondary)`
-  - `#E2DAD2` → `var(--theme-border)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F0C75E` → `var(--theme-text-primary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
-  - `#b9aea1` → `var(--theme-text-primary)`
-  - `#d4a017` → `var(--theme-accent-2)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.02)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.45)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.82)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 7, 5, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(16, 9, 5, 0.20)` → `var(--theme-bg-secondary)`
-  - `rgba(16, 9, 5, 0.86)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.05)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.18)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.42)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.52)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.76)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.86)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.90)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.1)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.20)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.55)` → `var(--theme-border)`
+  - `rgba(20, 10, 5, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.42)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.58)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.84)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.91)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.93)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.28)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.05)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.06)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.18)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.20)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.60)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(33, 22, 15, 0.30)` → `var(--theme-bg-secondary)`
-- `css/food.css` — 68 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.09)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.1)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.38)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.66)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-on-dark)`
+  - `rgba(62, 38, 18, 0.06)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.09)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.13)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.08)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.12)` → `var(--theme-text-primary)`
+- `css/festivals.css` — 76 distinct hardcoded color literals replaced
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
+  - `#1b1713` → `var(--theme-text-primary)`
   - `#20140D` → `var(--theme-text-primary)`
-  - `#21150F` → `var(--theme-bg-secondary)`
-  - `#21150f` → `var(--theme-bg-secondary)`
+  - `#21150F` → `var(--theme-text-primary)`
+  - `#21150f` → `var(--theme-text-primary)`
   - `#24170F` → `var(--theme-text-primary)`
-  - `#2A1A11` → `var(--theme-bg-secondary)`
-  - `#65574D` → `var(--theme-text-primary)`
-  - `#74675D` → `var(--theme-text-primary)`
-  - `#75685D` → `var(--theme-text-primary)`
-  - `#76685E` → `var(--theme-text-primary)`
-  - `#8B5418` → `var(--theme-text-primary)`
-  - `#8B7869` → `var(--theme-text-primary)`
-  - `#8B7C70` → `var(--theme-text-primary)`
+  - `#2A1A11` → `var(--theme-text-primary)`
+  - `#301E13` → `var(--theme-text-primary)`
+  - `#65574D` → `var(--theme-text-secondary)`
+  - `#74675D` → `var(--theme-text-secondary)`
+  - `#75685D` → `var(--theme-text-secondary)`
+  - `#76685E` → `var(--theme-text-secondary)`
+  - `#8B5418` → `var(--theme-text-secondary)`
+  - `#8B7869` → `var(--theme-text-secondary)`
+  - `#8B7C70` → `var(--theme-text-secondary)`
   - `#A56A18` → `var(--theme-text-primary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-text-primary)`
+  - `#E5B32C` → `var(--theme-accent-2)`
   - `#F6EFE5` → `var(--theme-bg-secondary)`
   - `#F8F3EA` → `var(--theme-bg-secondary)`
   - `#FFFDF9` → `var(--theme-bg-secondary)`
   - `#b9aea1` → `var(--theme-text-primary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.28)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.3)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.18)` → `var(--theme-text-primary)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
+  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.3)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.18)` → `var(--theme-accent)`
   - `rgba(165, 106, 24, 0.25)` → `var(--theme-border)`
   - `rgba(165, 106, 24, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.32)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.38)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.55)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.65)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.8)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 10, 5, 0.92)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.05)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.09)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.4)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(62, 38, 18, 0.06)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.09)` → `var(--theme-shadow)`
-  - `rgba(62, 38, 18, 0.13)` → `var(--theme-shadow)`
-  - `rgba(82, 50, 25, 0.08)` → `var(--theme-border)`
-  - `rgba(82, 50, 25, 0.12)` → `var(--theme-border)`
-- `css/personalities.css` — 61 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `rgba(20, 10, 5, 0.30)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.4)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.55)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.70)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.82)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.9)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.92)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.28)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.05)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.06)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.09)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.1)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.38)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.84)` → `var(--theme-text-on-dark)`
+  - `rgba(62, 38, 18, 0.06)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.09)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.13)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.08)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.12)` → `var(--theme-text-primary)`
+- `css/gallery.css` — 70 distinct hardcoded color literals replaced
+  - `#0D0805` → `var(--theme-bg-dark)`
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
+  - `#160D08` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
   - `#1b120c` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#21160f` → `var(--theme-bg-secondary)`
-  - `#2A1C13` → `var(--theme-bg-secondary)`
-  - `#422316` → `var(--theme-bg-secondary)`
-  - `#6E3517` → `var(--theme-bg-secondary)`
-  - `#746A63` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#2A1C13` → `var(--theme-text-primary)`
+  - `#422316` → `var(--theme-text-primary)`
+  - `#6E3517` → `var(--theme-text-primary)`
+  - `#746A63` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
-  - `#A46B2C` → `var(--theme-text-primary)`
+  - `#A46B2C` → `var(--theme-text-secondary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#D8CBBE` → `var(--theme-border)`
+  - `#D8CFC6` → `var(--theme-text-on-dark)`
   - `#D8D0C7` → `var(--theme-bg-secondary)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F0C75E` → `var(--theme-text-primary)`
-  - `#F3E8D1` → `var(--theme-bg-secondary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
+  - `#E2DAD2` → `var(--theme-text-on-dark)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F0C75E` → `var(--theme-accent-2)`
+  - `#F8F5EF` → `var(--theme-bg-secondary)`
   - `#b9aea1` → `var(--theme-text-primary)`
   - `#d4a017` → `var(--theme-accent-2)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.45)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.09)` → `var(--theme-border)`
-  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.18)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.20)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.40)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.86)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.1)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.2)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.1)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.86)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.90)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(53, 31, 16, 0.09)` → `var(--theme-shadow)`
-  - `rgba(53, 31, 16, 0.12)` → `var(--theme-shadow)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
+  - `rgba(0, 0, 0, 0.02)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.45)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.82)` → `var(--theme-bg-dark)`
+  - `rgba(10, 7, 5, 0.96)` → `var(--theme-bg-dark)`
+  - `rgba(16, 9, 5, 0.20)` → `var(--theme-bg-dark)`
+  - `rgba(16, 9, 5, 0.86)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.05)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.18)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.42)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.52)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.76)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.86)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.90)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.1)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.20)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.55)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.18)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.20)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.60)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, 0.96)` → `var(--theme-text-primary)`
+  - `rgba(33, 22, 15, 0.30)` → `var(--theme-text-primary)`
+- `css/food.css` — 68 distinct hardcoded color literals replaced
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
+  - `#1B120C` → `var(--theme-text-primary)`
+  - `#1b1713` → `var(--theme-text-primary)`
+  - `#20140D` → `var(--theme-text-primary)`
+  - `#21150F` → `var(--theme-text-primary)`
+  - `#21150f` → `var(--theme-text-primary)`
+  - `#24170F` → `var(--theme-text-primary)`
+  - `#2A1A11` → `var(--theme-text-primary)`
+  - `#65574D` → `var(--theme-text-secondary)`
+  - `#74675D` → `var(--theme-text-secondary)`
+  - `#75685D` → `var(--theme-text-secondary)`
+  - `#76685E` → `var(--theme-text-secondary)`
+  - `#8B5418` → `var(--theme-text-secondary)`
+  - `#8B7869` → `var(--theme-text-secondary)`
+  - `#8B7C70` → `var(--theme-text-secondary)`
+  - `#A56A18` → `var(--theme-text-primary)`
+  - `#D4A017` → `var(--theme-accent-2)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F6EFE5` → `var(--theme-bg-secondary)`
+  - `#F8F3EA` → `var(--theme-bg-secondary)`
+  - `#FFFDF9` → `var(--theme-bg-secondary)`
+  - `#b9aea1` → `var(--theme-text-primary)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
+  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.3)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.18)` → `var(--theme-accent)`
+  - `rgba(165, 106, 24, 0.25)` → `var(--theme-border)`
+  - `rgba(165, 106, 24, 0.28)` → `var(--theme-bg-secondary)`
+  - `rgba(20, 10, 5, 0.32)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.38)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.55)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.65)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.8)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(20, 10, 5, 0.92)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 8, 0.94)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.05)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.09)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.32)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.4)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.42)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(62, 38, 18, 0.06)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.09)` → `var(--theme-text-primary)`
+  - `rgba(62, 38, 18, 0.13)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.08)` → `var(--theme-text-primary)`
+  - `rgba(82, 50, 25, 0.12)` → `var(--theme-text-primary)`
+- `css/personalities.css` — 61 distinct hardcoded color literals replaced
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
+  - `#1B120C` → `var(--theme-text-primary)`
+  - `#1b120c` → `var(--theme-text-primary)`
+  - `#1b1713` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#21160f` → `var(--theme-text-primary)`
+  - `#2A1C13` → `var(--theme-text-primary)`
+  - `#422316` → `var(--theme-text-primary)`
+  - `#6E3517` → `var(--theme-text-primary)`
+  - `#746A63` → `var(--theme-text-secondary)`
+  - `#8B4513` → `var(--theme-accent)`
+  - `#A46B2C` → `var(--theme-text-secondary)`
+  - `#D4A017` → `var(--theme-accent-2)`
+  - `#D8CBBE` → `var(--theme-text-on-dark)`
+  - `#D8D0C7` → `var(--theme-bg-secondary)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F0C75E` → `var(--theme-accent-2)`
+  - `#F3E8D1` → `var(--theme-bg-secondary)`
+  - `#F8F5EF` → `var(--theme-bg-secondary)`
+  - `#b9aea1` → `var(--theme-text-primary)`
+  - `#d4a017` → `var(--theme-accent-2)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.45)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.09)` → `var(--theme-accent)`
+  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.18)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.20)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.40)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.86)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.1)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.2)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.25)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.1)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.78)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.86)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.90)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, 0.96)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.09)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.12)` → `var(--theme-text-primary)`
 - `css/hidden-places.css` — 67 distinct hardcoded color literals replaced
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `#12100e` → `var(--theme-bg-dark)`
   - `#151311` → `var(--theme-text-primary)`
-  - `#16120f` → `var(--theme-bg-secondary)`
-  - `#171411` → `var(--theme-border)`
+  - `#16120f` → `var(--theme-bg-dark)`
+  - `#171411` → `var(--theme-text-primary)`
   - `#1b120c` → `var(--theme-text-primary)`
   - `#1b1510` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
+  - `#1b1713` → `var(--theme-text-primary)`
   - `#21170f` → `var(--theme-text-primary)`
-  - `#211C18` → `var(--theme-bg-secondary)`
-  - `#2F2924` → `var(--theme-border)`
+  - `#211C18` → `var(--theme-text-primary)`
+  - `#2F2924` → `var(--theme-text-primary)`
   - `#3B230F` → `var(--theme-text-primary)`
-  - `#625A53` → `var(--theme-text-primary)`
-  - `#633010` → `var(--theme-bg-secondary)`
-  - `#756D65` → `var(--theme-border)`
+  - `#625A53` → `var(--theme-text-secondary)`
+  - `#633010` → `var(--theme-text-primary)`
+  - `#756D65` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
-  - `#FFFFFF` → `var(--theme-white)`
+  - `#F8F5EF` → `var(--theme-text-on-dark)`
+  - `#FFFFFF` → `var(--theme-bg-secondary)`
   - `#c9bdb0` → `var(--theme-text-primary)`
   - `#d4a017` → `var(--theme-accent-2)`
   - `#ddd` → `var(--theme-bg-secondary)`
-  - `#e5b32c` → `var(--theme-bg-secondary)`
-  - `#e7b52f` → `var(--theme-bg-secondary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.3)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.4)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.14)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.22)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.3)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.35)` → `var(--theme-text-primary)`
-  - `rgba(17, 13, 10, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(17, 13, 10, 0.5)` → `var(--theme-bg-secondary)`
-  - `rgba(17, 13, 10, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(17, 13, 10, 0.75)` → `var(--theme-bg-secondary)`
-  - `rgba(17, 13, 10, 0.86)` → `var(--theme-bg-secondary)`
-  - `rgba(17, 13, 10, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 16, 13, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 17, 14, 0.92)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.2)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(212, 160, 23, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(23, 20, 17, 0.25)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, .10)` → `var(--theme-border)`
+  - `#e5b32c` → `var(--theme-accent-2)`
+  - `#e7b52f` → `var(--theme-accent-2)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.3)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.4)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.14)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.22)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.3)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.35)` → `var(--theme-accent)`
+  - `rgba(17, 13, 10, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(17, 13, 10, 0.5)` → `var(--theme-bg-dark)`
+  - `rgba(17, 13, 10, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(17, 13, 10, 0.75)` → `var(--theme-bg-dark)`
+  - `rgba(17, 13, 10, 0.86)` → `var(--theme-bg-dark)`
+  - `rgba(17, 13, 10, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(20, 16, 13, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 17, 14, 0.92)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.2)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.45)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.55)` → `var(--theme-accent-2)`
+  - `rgba(23, 20, 17, 0.25)` → `var(--theme-text-primary)`
+  - `rgba(255, 255, 255, .10)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.035)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.07)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.1)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.2)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.56)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.75)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.8)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.84)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.86)` → `var(--theme-text-primary)`
-  - `rgba(30, 22, 16, 0.16)` → `var(--theme-shadow)`
+  - `rgba(255, 255, 255, 0.07)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.1)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.2)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.56)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.75)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.8)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.84)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.86)` → `var(--theme-text-on-dark)`
+  - `rgba(30, 22, 16, 0.16)` → `var(--theme-text-primary)`
 - `css/ask-bihar.css` — 71 distinct hardcoded color literals replaced
-  - `#191410` → `var(--theme-bg-secondary)`
-  - `#1d1713` → `var(--theme-bg-secondary)`
-  - `#241c17` → `var(--theme-bg-secondary)`
-  - `#29211c` → `var(--theme-bg-secondary)`
+  - `#191410` → `var(--theme-text-primary)`
+  - `#1d1713` → `var(--theme-text-primary)`
+  - `#241c17` → `var(--theme-text-primary)`
+  - `#29211c` → `var(--theme-text-primary)`
   - `#2d231c` → `var(--theme-text-primary)`
-  - `#3b2114` → `var(--theme-bg-secondary)`
+  - `#3b2114` → `var(--theme-text-primary)`
   - `#3e2d21` → `var(--theme-text-primary)`
   - `#49372b` → `var(--theme-text-primary)`
-  - `#5f2f0d` → `var(--theme-bg-secondary)`
+  - `#5f2f0d` → `var(--theme-text-primary)`
   - `#62c174` → `var(--theme-bg-secondary)`
-  - `#6c3413` → `var(--theme-bg-secondary)`
-  - `#6d3410` → `var(--theme-bg-secondary)`
-  - `#6f3717` → `var(--theme-bg-secondary)`
-  - `#70401f` → `var(--theme-text-primary)`
-  - `#81756b` → `var(--theme-text-primary)`
+  - `#6c3413` → `var(--theme-text-primary)`
+  - `#6d3410` → `var(--theme-text-primary)`
+  - `#6f3717` → `var(--theme-text-secondary)`
+  - `#70401f` → `var(--theme-text-secondary)`
+  - `#81756b` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#9b8e83` → `var(--theme-text-primary)`
   - `#D4A017` → `var(--theme-accent-2)`
   - `#a28d7c` → `var(--theme-text-primary)`
   - `#aa9c90` → `var(--theme-text-primary)`
   - `#d9c5b2` → `var(--theme-text-primary)`
-  - `#e9dfd5` → `var(--theme-text-primary)`
-  - `#eee5dc` → `var(--theme-text-primary)`
+  - `#e9dfd5` → `var(--theme-text-on-dark)`
+  - `#eee5dc` → `var(--theme-text-on-dark)`
   - `#f5eadb` → `var(--theme-bg-secondary)`
   - `#faf6ef` → `var(--theme-bg-secondary)`
-  - `#fff` → `var(--theme-white)`
+  - `#fff` → `var(--theme-bg-secondary)`
   - `#fffaf2` → `var(--theme-bg-secondary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, .28)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, .32)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.55)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, .18)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.045)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.10)` → `var(--theme-border)`
-  - `rgba(139,69,19,.10)` → `var(--theme-border)`
-  - `rgba(139,69,19,.13)` → `var(--theme-border)`
-  - `rgba(139,69,19,.15)` → `var(--theme-border)`
-  - `rgba(139,69,19,.28)` → `var(--theme-border)`
-  - `rgba(139,69,19,.35)` → `var(--theme-border)`
-  - `rgba(190, 70, 50, 0.22)` → `var(--theme-bg-secondary)`
-  - `rgba(190, 70, 50, 0.35)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, .08)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, .10)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, .18)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, .35)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, .55)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.15)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.16)` → `var(--theme-border)`
-  - `rgba(212,160,23,.07)` → `var(--theme-bg-secondary)`
-  - `rgba(212,160,23,.08)` → `var(--theme-shadow)`
-  - `rgba(212,160,23,.18)` → `var(--theme-border)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
+  - `rgba(0, 0, 0, .28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, .32)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.55)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, .18)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.045)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.10)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.10)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.13)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.15)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.28)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.35)` → `var(--theme-accent)`
+  - `rgba(190, 70, 50, 0.22)` → `var(--theme-accent)`
+  - `rgba(190, 70, 50, 0.35)` → `var(--theme-accent)`
+  - `rgba(212, 160, 23, .08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, .10)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, .18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, .35)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, .55)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.15)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.16)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.07)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.08)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.18)` → `var(--theme-accent-2)`
   - `rgba(255, 255, 255, 0.05)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
   - `rgba(255,255,255,.06)` → `var(--theme-bg-secondary)`
-  - `rgba(255,255,255,.07)` → `var(--theme-border)`
-  - `rgba(255,255,255,.09)` → `var(--theme-border)`
+  - `rgba(255,255,255,.07)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.09)` → `var(--theme-bg-secondary)`
   - `rgba(255,255,255,.14)` → `var(--theme-bg-secondary)`
-  - `rgba(255,255,255,.15)` → `var(--theme-border)`
-  - `rgba(255,255,255,.62)` → `var(--theme-text-primary)`
-  - `rgba(255,255,255,.8)` → `var(--theme-text-primary)`
-  - `rgba(36, 22, 12, .28)` → `var(--theme-shadow)`
-  - `rgba(45, 35, 28, 0.04)` → `var(--theme-bg-secondary)`
-  - `rgba(45, 35, 28, 0.10)` → `var(--theme-border)`
+  - `rgba(255,255,255,.15)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255,255,255,.8)` → `var(--theme-text-on-dark)`
+  - `rgba(36, 22, 12, .28)` → `var(--theme-text-primary)`
+  - `rgba(45, 35, 28, 0.04)` → `var(--theme-text-primary)`
+  - `rgba(45, 35, 28, 0.10)` → `var(--theme-text-primary)`
   - `rgba(45, 35, 28, 0.48)` → `var(--theme-text-primary)`
   - `rgba(45, 35, 28, 0.50)` → `var(--theme-text-primary)`
-  - `rgba(56,34,19,.06)` → `var(--theme-shadow)`
-  - `rgba(90,43,15,.16)` → `var(--theme-shadow)`
+  - `rgba(56,34,19,.06)` → `var(--theme-text-primary)`
+  - `rgba(90,43,15,.16)` → `var(--theme-text-primary)`
 - `css/travel.css` — 64 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `#120C08` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#2A1C13` → `var(--theme-bg-secondary)`
-  - `#2a211a` → `var(--theme-bg-secondary)`
-  - `#422316` → `var(--theme-bg-secondary)`
-  - `#6E3517` → `var(--theme-bg-secondary)`
-  - `#746A63` → `var(--theme-text-primary)`
+  - `#1b1713` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#2A1C13` → `var(--theme-text-primary)`
+  - `#2a211a` → `var(--theme-text-primary)`
+  - `#422316` → `var(--theme-text-primary)`
+  - `#6E3517` → `var(--theme-text-primary)`
+  - `#746A63` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#978B82` → `var(--theme-text-primary)`
-  - `#A46B2C` → `var(--theme-text-primary)`
+  - `#A46B2C` → `var(--theme-text-secondary)`
   - `#D4A017` → `var(--theme-accent-2)`
   - `#D8CBBE` → `var(--theme-bg-secondary)`
-  - `#E1D7CE` → `var(--theme-border)`
-  - `#E3D9CF` → `var(--theme-border)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F0C75E` → `var(--theme-text-primary)`
+  - `#E1D7CE` → `var(--theme-text-on-dark)`
+  - `#E3D9CF` → `var(--theme-text-on-dark)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F0C75E` → `var(--theme-accent-2)`
   - `#F3E8D1` → `var(--theme-bg-secondary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
+  - `#F8F5EF` → `var(--theme-bg-secondary)`
   - `#b9aea1` → `var(--theme-text-primary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
-  - `#ffffff` → `var(--theme-white)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-bg-secondary)`
   - `BLUE` → `var(--theme-border)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.20)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.28)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.50)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-border)`
-  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.30)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.38)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.64)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.10)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.20)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.85)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.28)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(53, 31, 16, 0.08)` → `var(--theme-shadow)`
-  - `rgba(53, 31, 16, 0.10)` → `var(--theme-shadow)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.20)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.50)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.10)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.30)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.38)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.64)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.72)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.78)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.10)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.20)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.85)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.28)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, 0.96)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.08)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.10)` → `var(--theme-text-primary)`
 - `css/style.css` — 167 distinct hardcoded color literals replaced
-  - `#0b0907` → `var(--theme-bg-secondary)`
-  - `#0e0c0a` → `var(--theme-bg-secondary)`
+  - `#0b0907` → `var(--theme-bg-dark)`
+  - `#0e0c0a` → `var(--theme-bg-dark)`
   - `#111` → `var(--theme-text-primary)`
-  - `#11100f` → `var(--theme-bg-secondary)`
-  - `#12100e` → `var(--theme-bg-secondary)`
-  - `#15110e` → `var(--theme-bg-secondary)`
+  - `#11100f` → `var(--theme-bg-dark)`
+  - `#12100e` → `var(--theme-bg-dark)`
+  - `#15110e` → `var(--theme-bg-dark)`
   - `#151310` → `var(--theme-text-primary)`
   - `#17120d` → `var(--theme-text-primary)`
-  - `#171717` → `var(--theme-bg-secondary)`
+  - `#171717` → `var(--theme-text-primary)`
   - `#1B120C` → `var(--theme-text-primary)`
   - `#1B1B1B` → `var(--theme-text-primary)`
   - `#1b120c` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#211b16` → `var(--theme-bg-secondary)`
-  - `#211b17` → `var(--theme-bg-secondary)`
-  - `#222` → `var(--theme-bg-secondary)`
-  - `#241716` → `var(--theme-bg-secondary)`
-  - `#2a211a` → `var(--theme-bg-secondary)`
-  - `#2b2119` → `var(--theme-bg-secondary)`
-  - `#33261c` → `var(--theme-bg-secondary)`
+  - `#1b1713` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#211b16` → `var(--theme-text-primary)`
+  - `#211b17` → `var(--theme-text-primary)`
+  - `#222` → `var(--theme-text-primary)`
+  - `#241716` → `var(--theme-text-primary)`
+  - `#2a211a` → `var(--theme-text-primary)`
+  - `#2b2119` → `var(--theme-text-primary)`
+  - `#33261c` → `var(--theme-text-primary)`
   - `#333333` → `var(--theme-text-primary)`
-  - `#444444` → `var(--theme-text-primary)`
-  - `#666666` → `var(--theme-text-primary)`
-  - `#777` → `var(--theme-text-primary)`
+  - `#444444` → `var(--theme-text-secondary)`
+  - `#666666` → `var(--theme-text-secondary)`
+  - `#777` → `var(--theme-text-secondary)`
   - `#777777` → `var(--theme-text-secondary)`
-  - `#81776c` → `var(--theme-text-primary)`
+  - `#81776c` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#999999` → `var(--theme-text-primary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
-  - `#FFFFFF` → `var(--theme-white)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F8F5EF` → `var(--theme-text-on-dark)`
+  - `#FFFFFF` → `var(--theme-bg-secondary)`
   - `#b9aea1` → `var(--theme-text-primary)`
   - `#b9b0a4` → `var(--theme-text-primary)`
   - `#c9bdb0` → `var(--theme-text-primary)`
@@ -672,355 +672,311 @@ Scanned 24 CSS/SCSS/HTML files.
   - `#eee8de` → `var(--theme-bg-secondary)`
   - `#f1eadf` → `var(--theme-bg-secondary)`
   - `#f3ede3` → `var(--theme-bg-secondary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
   - `#f4efe7` → `var(--theme-bg-secondary)`
   - `#faf7f1` → `var(--theme-bg-secondary)`
   - `#fcfaf7` → `var(--theme-bg-secondary)`
-  - `#fff` → `var(--theme-white)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, .16)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.02)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.05)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.06)` → `var(--theme-border)`
-  - `rgba(0, 0, 0, 0.07)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.08)` → `var(--theme-border)`
-  - `rgba(0, 0, 0, 0.1)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.13)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.15)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.16)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.18)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.2)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.20)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.4)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.45)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.48)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.52)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.55)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.60)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.65)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.78)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.82)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.85)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.9)` → `var(--theme-bg-secondary)`
-  - `rgba(0,0,0,.12)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.15)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.22)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.25)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.28)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.30)` → `var(--theme-shadow)`
-  - `rgba(0,0,0,.35)` → `var(--theme-shadow)`
-  - `rgba(10, 7, 5, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.035)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.045)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.06)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.1)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.12)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.15)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.2)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.25)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.5)` → `var(--theme-border)`
-  - `rgba(17, 11, 7, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(18, 16, 14, .82)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 20, 20, 0.95)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, .12)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, .28)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.06)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.07)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.13)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.14)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.24)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.25)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.28)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.45)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.6)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.65)` → `var(--theme-border)`
-  - `rgba(212,160,23,.07)` → `var(--theme-bg-secondary)`
-  - `rgba(212,160,23,.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212,160,23,.45)` → `var(--theme-border)`
-  - `rgba(212,160,23,.55)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .12)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .28)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .32)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-primary)`
+  - `#fff` → `var(--theme-text-on-dark)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
+  - `rgba(0, 0, 0, .16)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.02)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.05)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.06)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.07)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.1)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.13)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.15)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.16)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.18)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.2)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.20)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.4)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.45)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.48)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.52)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.55)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.60)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.65)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.78)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.82)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.85)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.9)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.12)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.15)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.22)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.25)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.28)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.30)` → `var(--theme-bg-dark)`
+  - `rgba(0,0,0,.35)` → `var(--theme-bg-dark)`
+  - `rgba(10, 7, 5, 0.96)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.035)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.045)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.06)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.1)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.12)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.15)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.2)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.25)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.5)` → `var(--theme-accent)`
+  - `rgba(17, 11, 7, 0.96)` → `var(--theme-bg-dark)`
+  - `rgba(18, 16, 14, .82)` → `var(--theme-bg-dark)`
+  - `rgba(20, 20, 20, 0.95)` → `var(--theme-text-primary)`
+  - `rgba(212, 160, 23, .12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, .28)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.06)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.07)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.13)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.14)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.24)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.25)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.28)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.45)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.6)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.65)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.07)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.12)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.45)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.55)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, .10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, .12)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, .14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, .28)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, .32)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.025)` → `var(--theme-text-on-dark)`
   - `rgba(255, 255, 255, 0.045)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.07)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.09)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.1)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
+  - `rgba(255, 255, 255, 0.1)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.15)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.20)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.28)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.3)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.4)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.6)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.85)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.9)` → `var(--theme-text-primary)`
+  - `rgba(255, 255, 255, 0.15)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.20)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.28)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.3)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.35)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.4)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.48)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.52)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.6)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.65)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.85)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.9)` → `var(--theme-text-on-dark)`
   - `rgba(255, 255, 255, 0.98)` → `var(--theme-bg-secondary)`
   - `rgba(255,255,255,.04)` → `var(--theme-bg-secondary)`
-  - `rgba(255,255,255,.08)` → `var(--theme-shadow)`
+  - `rgba(255,255,255,.08)` → `var(--theme-bg-secondary)`
   - `rgba(255,255,255,.10)` → `var(--theme-bg-secondary)`
-  - `rgba(255,255,255,.12)` → `var(--theme-border)`
+  - `rgba(255,255,255,.12)` → `var(--theme-bg-secondary)`
   - `rgba(255,255,255,.16)` → `var(--theme-bg-secondary)`
   - `rgba(255,255,255,.18)` → `var(--theme-bg-secondary)`
-  - `rgba(255,255,255,.25)` → `var(--theme-border)`
-  - `rgba(255,255,255,.30)` → `var(--theme-border)`
-  - `rgba(255,255,255,.72)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, .72)` → `var(--theme-bg-secondary)`
-  - `rgba(27, 18, 12, 0.97)` → `var(--theme-bg-secondary)`
-  - `rgba(27, 27, 27, 0.10)` → `var(--theme-border)`
-  - `rgba(27, 27, 27, 0.14)` → `var(--theme-border)`
-  - `rgba(27, 27, 27, 0.15)` → `var(--theme-border)`
-  - `rgba(4,3,2,.98)` → `var(--theme-bg-secondary)`
-  - `rgba(7,5,4,.98)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.30)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.72)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, .72)` → `var(--theme-text-primary)`
+  - `rgba(27, 18, 12, 0.97)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.10)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.14)` → `var(--theme-text-primary)`
+  - `rgba(27, 27, 27, 0.15)` → `var(--theme-text-primary)`
+  - `rgba(4,3,2,.98)` → `var(--theme-bg-dark)`
+  - `rgba(7,5,4,.98)` → `var(--theme-bg-dark)`
 - `css/historical-places.css` — 86 distinct hardcoded color literals replaced
-  - `#12100e` → `var(--theme-bg-secondary)`
+  - `#12100e` → `var(--theme-bg-dark)`
   - `#151311` → `var(--theme-text-primary)`
-  - `#16120e` → `var(--theme-bg-secondary)`
+  - `#16120e` → `var(--theme-bg-dark)`
   - `#1B1B1B` → `var(--theme-text-primary)`
   - `#1b120c` → `var(--theme-text-primary)`
   - `#1b1510` → `var(--theme-text-primary)`
-  - `#1b1713` → `var(--theme-bg-secondary)`
+  - `#1b1713` → `var(--theme-text-primary)`
   - `#1b1b1b` → `var(--theme-text-primary)`
-  - `#1c1814` → `var(--theme-bg-secondary)`
+  - `#1c1814` → `var(--theme-text-primary)`
   - `#21160d` → `var(--theme-text-primary)`
-  - `#222` → `var(--theme-bg-secondary)`
-  - `#241d12` → `var(--theme-bg-secondary)`
-  - `#321b0e` → `var(--theme-bg-secondary)`
+  - `#222` → `var(--theme-text-primary)`
+  - `#241d12` → `var(--theme-text-primary)`
+  - `#321b0e` → `var(--theme-text-primary)`
   - `#333333` → `var(--theme-text-primary)`
   - `#3d3d3d` → `var(--theme-text-primary)`
   - `#5f2d0b` → `var(--theme-text-primary)`
-  - `#6d3519` → `var(--theme-bg-secondary)`
-  - `#707070` → `var(--theme-text-primary)`
-  - `#777` → `var(--theme-text-primary)`
+  - `#6d3519` → `var(--theme-text-primary)`
+  - `#707070` → `var(--theme-text-secondary)`
+  - `#777` → `var(--theme-text-secondary)`
   - `#8b4513` → `var(--theme-accent)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
+  - `#E5B32C` → `var(--theme-accent-2)`
   - `#b9b0a4` → `var(--theme-text-primary)`
   - `#c9bdb0` → `var(--theme-text-primary)`
   - `#d4a017` → `var(--theme-accent-2)`
-  - `#e5b32c` → `var(--theme-border)`
+  - `#e5b32c` → `var(--theme-accent-2)`
   - `#e8e1d6` → `var(--theme-bg-secondary)`
-  - `#f4eee5` → `var(--theme-text-primary)`
+  - `#f4eee5` → `var(--theme-text-on-dark)`
   - `#f4efe7` → `var(--theme-bg-secondary)`
-  - `#f8f5ef` → `var(--theme-bg-primary)`
+  - `#f8f5ef` → `var(--theme-bg-secondary)`
   - `#fcfaf7` → `var(--theme-bg-secondary)`
-  - `#ffffff` → `var(--theme-white)`
-  - `rgba(0, 0, 0, 0.05)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.07)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.2)` → `var(--theme-bg-secondary)`
-  - `rgba(0, 0, 0, 0.22)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.35)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.5)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.18)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.35)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.55)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.65)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.88)` → `var(--theme-bg-secondary)`
-  - `rgba(10, 8, 6, 0.9)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(139, 69, 19, 0.1)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.12)` → `var(--theme-border)`
-  - `rgba(139, 69, 19, 0.18)` → `var(--theme-text-primary)`
-  - `rgba(139, 69, 19, 0.25)` → `var(--theme-bg-secondary)`
-  - `rgba(15, 12, 9, 0.92)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.06)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.08)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.1)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.15)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.22)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.32)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.45)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.5)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.55)` → `var(--theme-shadow)`
-  - `rgba(212, 160, 23, 0.6)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.75)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, .12)` → `var(--theme-border)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
+  - `rgba(0, 0, 0, 0.05)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.07)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.2)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.22)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.5)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.18)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.35)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.55)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.65)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.88)` → `var(--theme-bg-dark)`
+  - `rgba(10, 8, 6, 0.9)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.1)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.12)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.18)` → `var(--theme-accent)`
+  - `rgba(139, 69, 19, 0.25)` → `var(--theme-accent)`
+  - `rgba(15, 12, 9, 0.92)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.06)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.08)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.1)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.15)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.22)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.32)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.45)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.5)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.55)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.6)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.75)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, .10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, .12)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.035)` → `var(--theme-bg-secondary)`
   - `rgba(255, 255, 255, 0.06)` → `var(--theme-bg-secondary)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.09)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.12)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.2)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.3)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.6)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.75)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.8)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.85)` → `var(--theme-text-primary)`
-  - `rgba(27, 27, 27, 0.12)` → `var(--theme-border)`
-- `css/madhubani-theme.css` — 49 distinct hardcoded color literals replaced
-  - `#0C1624` → `var(--theme-border)`
-  - `#0D1E36` → `var(--theme-bg-secondary)`
-  - `#121820` → `var(--theme-border)`
-  - `#142D52` → `var(--theme-bg-dark)`
-  - `#1C2430` → `var(--theme-border)`
-  - `#1C3F72` → `var(--theme-link)`
-  - `#2F241F` → `var(--theme-text-primary)`
-  - `#44505F` → `var(--theme-border)`
-  - `#6C5A50` → `var(--theme-text-secondary)`
-  - `#7D1A2D` → `var(--theme-accent)`
-  - `#8DB7FF` → `var(--theme-border)`
-  - `#A6243B` → `var(--theme-accent)`
-  - `#D46A7E` → `var(--theme-border)`
-  - `#D7BFA8` → `var(--theme-border)`
-  - `#E8A33D` → `var(--theme-accent-2)`
-  - `#E8D8C8` → `var(--theme-border)`
-  - `#F0C56B` → `var(--theme-border)`
-  - `#F3C66D` → `var(--theme-accent-2)`
-  - `#FDF6E3` → `var(--theme-bg-primary)`
-  - `#FFF9EC` → `var(--theme-bg-secondary)`
-  - `#FFFDF7` → `var(--theme-white)`
-  - `#fffdf7` → `var(--theme-white)`
-  - `rgba(0,0,0,.45)` → `var(--theme-border)`
-  - `rgba(0,0,0,.72)` → `var(--theme-border)`
-  - `rgba(166, 36, 59, 0.22)` → `var(--theme-border)`
-  - `rgba(166, 36, 59, 0.46)` → `var(--theme-border)`
-  - `rgba(166,36,59,.045)` → `var(--theme-bg-secondary)`
-  - `rgba(166,36,59,.07)` → `var(--theme-bg-secondary)`
-  - `rgba(166,36,59,.18)` → `var(--theme-bg-secondary)`
-  - `rgba(166,36,59,.22)` → `var(--theme-shadow)`
-  - `rgba(20,45,82,.18)` → `var(--theme-border)`
-  - `rgba(20,45,82,.22)` → `var(--theme-shadow)`
-  - `rgba(20,45,82,.78)` → `var(--theme-border)`
-  - `rgba(20,45,82,.82)` → `var(--theme-bg-secondary)`
-  - `rgba(20,45,82,.94)` → `var(--theme-bg-secondary)`
-  - `rgba(20,45,82,.96)` → `var(--theme-bg-secondary)`
-  - `rgba(232,163,61,.10)` → `var(--theme-bg-secondary)`
-  - `rgba(232,163,61,.14)` → `var(--theme-shadow)`
-  - `rgba(232,163,61,.18)` → `var(--theme-bg-secondary)`
-  - `rgba(232,163,61,.30)` → `var(--theme-border)`
-  - `rgba(232,163,61,.34)` → `var(--theme-border)`
-  - `rgba(232,163,61,.70)` → `var(--theme-border)`
-  - `rgba(253,246,227,.10)` → `var(--theme-bg-secondary)`
-  - `rgba(253,246,227,.12)` → `var(--theme-bg-secondary)`
-  - `rgba(253,246,227,.86)` → `var(--theme-text-primary)`
-  - `rgba(28,63,114,.055)` → `var(--theme-bg-secondary)`
-  - `rgba(28,63,114,.48)` → `var(--theme-bg-secondary)`
-  - `rgba(28,63,114,.97)` → `var(--theme-bg-secondary)`
-  - `rgba(86, 49, 35, 0.14)` → `var(--theme-border)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.09)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.12)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.2)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.3)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.35)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.45)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.5)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.57)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.6)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.62)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.7)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.75)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.8)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.85)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 27, 27, 0.12)` → `var(--theme-text-primary)`
 - `css/about.css` — 53 distinct hardcoded color literals replaced
-  - `#120C08` → `var(--theme-bg-secondary)`
+  - `#120C08` → `var(--theme-bg-dark)`
   - `#1B120C` → `var(--theme-text-primary)`
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#2A1C13` → `var(--theme-bg-secondary)`
-  - `#302016` → `var(--theme-bg-secondary)`
-  - `#422316` → `var(--theme-bg-secondary)`
-  - `#6E3517` → `var(--theme-bg-secondary)`
-  - `#746A63` → `var(--theme-text-primary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#2A1C13` → `var(--theme-text-primary)`
+  - `#302016` → `var(--theme-text-primary)`
+  - `#422316` → `var(--theme-text-primary)`
+  - `#6E3517` → `var(--theme-text-primary)`
+  - `#746A63` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#978B82` → `var(--theme-text-primary)`
-  - `#A46B2C` → `var(--theme-text-primary)`
+  - `#A46B2C` → `var(--theme-text-secondary)`
   - `#D4A017` → `var(--theme-accent-2)`
-  - `#DED3C8` → `var(--theme-border)`
-  - `#E5B32C` → `var(--theme-bg-secondary)`
-  - `#F0C75E` → `var(--theme-text-primary)`
+  - `#DED3C8` → `var(--theme-text-on-dark)`
+  - `#E5B32C` → `var(--theme-accent-2)`
+  - `#F0C75E` → `var(--theme-accent-2)`
   - `#F3E8D1` → `var(--theme-bg-secondary)`
-  - `#F8F5EF` → `var(--theme-bg-primary)`
-  - `#ffffff` → `var(--theme-white)`
+  - `#F8F5EF` → `var(--theme-bg-secondary)`
+  - `#ffffff` → `var(--theme-text-on-dark)`
   - `BLUE` → `var(--theme-border)`
-  - `rgba(0, 0, 0, 0.12)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.25)` → `var(--theme-shadow)`
-  - `rgba(0, 0, 0, 0.50)` → `var(--theme-shadow)`
-  - `rgba(139, 69, 19, 0.08)` → `var(--theme-border)`
-  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.32)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.58)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.75)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.76)` → `var(--theme-bg-secondary)`
-  - `rgba(20, 12, 7, 0.90)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.10)` → `var(--theme-bg-secondary)`
-  - `rgba(212, 160, 23, 0.12)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.18)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.20)` → `var(--theme-border)`
-  - `rgba(212, 160, 23, 0.35)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.08)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.10)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.14)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.25)` → `var(--theme-border)`
-  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-primary)`
-  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-primary)`
-  - `rgba(27, 18, 12, 0.96)` → `var(--theme-bg-secondary)`
-  - `rgba(53, 31, 16, 0.07)` → `var(--theme-shadow)`
-  - `rgba(53, 31, 16, 0.09)` → `var(--theme-shadow)`
-  - `rgba(53, 31, 16, 0.10)` → `var(--theme-shadow)`
+  - `rgba(0, 0, 0, 0.12)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.25)` → `var(--theme-bg-dark)`
+  - `rgba(0, 0, 0, 0.50)` → `var(--theme-bg-dark)`
+  - `rgba(139, 69, 19, 0.08)` → `var(--theme-accent)`
+  - `rgba(20, 12, 7, 0.08)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.28)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.32)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.58)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.62)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.68)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.75)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.76)` → `var(--theme-bg-dark)`
+  - `rgba(20, 12, 7, 0.90)` → `var(--theme-bg-dark)`
+  - `rgba(212, 160, 23, 0.10)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.12)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.18)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.20)` → `var(--theme-accent-2)`
+  - `rgba(212, 160, 23, 0.35)` → `var(--theme-accent-2)`
+  - `rgba(255, 255, 255, 0.08)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.14)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.25)` → `var(--theme-bg-secondary)`
+  - `rgba(255, 255, 255, 0.40)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.55)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.58)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.68)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.70)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.72)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.82)` → `var(--theme-text-on-dark)`
+  - `rgba(255, 255, 255, 0.88)` → `var(--theme-text-on-dark)`
+  - `rgba(27, 18, 12, 0.96)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.07)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.09)` → `var(--theme-text-primary)`
+  - `rgba(53, 31, 16, 0.10)` → `var(--theme-text-primary)`
 - `pages/explore.html` — 27 distinct hardcoded color literals replaced
-  - `#21160F` → `var(--theme-bg-secondary)`
-  - `#211b16` → `var(--theme-bg-secondary)`
+  - `#21160F` → `var(--theme-text-primary)`
+  - `#211b16` → `var(--theme-text-primary)`
   - `#5a351e` → `var(--theme-text-primary)`
   - `#6f360f` → `var(--theme-text-primary)`
-  - `#777` → `var(--theme-text-primary)`
+  - `#777` → `var(--theme-text-secondary)`
   - `#8B4513` → `var(--theme-accent)`
   - `#D4A017` → `var(--theme-accent-2)`
   - `#b9aea1` → `var(--theme-text-primary)`
-  - `#eadbc8` → `var(--theme-text-primary)`
+  - `#eadbc8` → `var(--theme-text-on-dark)`
   - `#f1eadf` → `var(--theme-bg-secondary)`
-  - `#f5d36b` → `var(--theme-text-primary)`
-  - `#fff` → `var(--theme-white)`
-  - `rgba(0,0,0,.18)` → `var(--theme-shadow)`
-  - `rgba(139,69,19,.10)` → `var(--theme-text-primary)`
-  - `rgba(139,69,19,.12)` → `var(--theme-border)`
-  - `rgba(139,69,19,.22)` → `var(--theme-shadow)`
-  - `rgba(139,69,19,.28)` → `var(--theme-shadow)`
-  - `rgba(139,69,19,.48)` → `var(--theme-text-primary)`
-  - `rgba(212,160,23,.10)` → `var(--theme-text-primary)`
-  - `rgba(212,160,23,.12)` → `var(--theme-bg-secondary)`
-  - `rgba(212,160,23,.48)` → `var(--theme-text-primary)`
-  - `rgba(212,160,23,.55)` → `var(--theme-text-primary)`
-  - `rgba(212,160,23,.70)` → `var(--theme-text-primary)`
-  - `rgba(255,255,255,.10)` → `var(--theme-border)`
-  - `rgba(255,255,255,.52)` → `var(--theme-text-primary)`
+  - `#f5d36b` → `var(--theme-accent-2)`
+  - `#fff` → `var(--theme-text-on-dark)`
+  - `rgba(0,0,0,.18)` → `var(--theme-bg-dark)`
+  - `rgba(139,69,19,.10)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.12)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.22)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.28)` → `var(--theme-accent)`
+  - `rgba(139,69,19,.48)` → `var(--theme-accent)`
+  - `rgba(212,160,23,.10)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.12)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.48)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.55)` → `var(--theme-accent-2)`
+  - `rgba(212,160,23,.70)` → `var(--theme-accent-2)`
+  - `rgba(255,255,255,.10)` → `var(--theme-bg-secondary)`
+  - `rgba(255,255,255,.52)` → `var(--theme-text-on-dark)`
   - `rgba(255,255,255,.84)` → `var(--theme-bg-secondary)`
-  - `rgba(27,23,19,.90)` → `var(--theme-bg-secondary)`
+  - `rgba(27,23,19,.90)` → `var(--theme-text-primary)`
 - `pages/hidden-places.html` — 1 distinct hardcoded color literals replaced
   - `Green` → `var(--theme-border)`
 
-## Contrast tokens (WCAG AA target)
-- Light: `--theme-text-primary` / `--theme-bg-primary`, `--theme-text-secondary` / `--theme-bg-primary`, `--theme-link` / `--theme-bg-primary`, and `--theme-accent` / `--theme-bg-primary` are selected above 4.5:1.
-- Dark: `--theme-text-primary` / `--theme-bg-primary`, `--theme-text-secondary` / `--theme-bg-primary`, `--theme-link` / `--theme-bg-primary`, and `--theme-accent` / `--theme-bg-primary` are selected above 4.5:1.
+## WCAG AA token contrast
+- Light primary text/background: 13.98:1
+- Light secondary text/background: 6.05:1
+- Light accent/background: 6.63:1
+- Light link/background: 9.72:1
+- Dark primary text/background: 16.54:1
+- Dark secondary text/background: 12.82:1
+- Dark accent/background: 5.23:1
+- Dark link/background: 8.79:1

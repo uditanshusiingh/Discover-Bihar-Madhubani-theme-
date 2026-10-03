@@ -9,17 +9,17 @@
    ========================================================= */
 
 .festivals-navbar {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-bg-dark);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-accent-2);
 
     z-index: 1000;
 }
 
 .festivals-navbar .navbar-brand {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .festivals-navbar .navbar-brand i {
@@ -27,7 +27,7 @@
 }
 
 .festivals-navbar .nav-link {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .festivals-navbar .nav-link:hover,
@@ -36,22 +36,22 @@
 }
 
 .festivals-navbar .dropdown-menu {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 0;
 
-    box-shadow: 0 15px 40px var(--theme-shadow);
+    box-shadow: 0 15px 40px var(--theme-bg-dark);
 }
 
 .festivals-navbar .dropdown-item {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .festivals-navbar .dropdown-item:hover,
 .festivals-navbar .dropdown-item.active {
     color: var(--theme-accent-2) !important;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
 }
 
 .festivals-navbar .nav-cta {
@@ -66,9 +66,9 @@
     padding: 10px 18px;
 
     background: transparent !important;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
-    border: 1px solid var(--theme-white) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
     border-radius: 50px;
 
     font-size: 0.72rem;
@@ -110,7 +110,7 @@
 
     overflow: hidden;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .festival-hero > img {
@@ -137,9 +137,9 @@
     background:
         linear-gradient(
             90deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 42%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 42%,
+            var(--theme-bg-dark) 100%
         );
 
     z-index: 1;
@@ -155,7 +155,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 38%
         );
 
@@ -194,7 +194,7 @@
 .festival-hero-content h1 {
     margin: 0;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -206,7 +206,7 @@
 
     letter-spacing: -0.04em;
 
-    text-shadow: 0 5px 25px var(--theme-shadow);
+    text-shadow: 0 5px 25px var(--theme-bg-dark);
 }
 
 .festival-hero-content h1 em {
@@ -223,7 +223,7 @@
 
     margin: 30px 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.9rem;
     font-weight: 300;
@@ -238,7 +238,7 @@
 
     gap: 11px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 
@@ -254,7 +254,7 @@
 }
 
 .festival-breadcrumb i {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 }
@@ -273,7 +273,7 @@
 
     gap: 14px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.58rem;
     font-weight: 600;
@@ -348,7 +348,7 @@
 
     margin: 0 0 8px auto;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.86rem;
 
@@ -431,7 +431,7 @@
 
     margin: 0 0 4px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.78rem;
 
@@ -465,9 +465,9 @@
 
     background: var(--theme-bg-secondary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-text-primary);
 
-    box-shadow: 0 15px 45px var(--theme-shadow);
+    box-shadow: 0 15px 45px var(--theme-text-primary);
 
     transition:
         transform 0.45s ease,
@@ -481,14 +481,14 @@
 .festival-highlights-section .festival-feature-card:hover {
     transform: translateY(-7px);
 
-    box-shadow: 0 25px 60px var(--theme-shadow);
+    box-shadow: 0 25px 60px var(--theme-text-primary);
 }
 
 
 /* DARK FEATURE CARDS */
 
 .festival-highlights-section .festival-feature-main {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 
@@ -533,7 +533,7 @@
 
     overflow: hidden;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .festival-highlights-section
@@ -550,7 +550,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 48%
         );
 
@@ -652,7 +652,7 @@
 
 .festival-feature-main
 .festival-feature-content {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 
@@ -668,7 +668,7 @@
 
     z-index: 3;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -751,7 +751,7 @@
 }
 
 .festival-feature-main .festival-feature-content h3 {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .festival-feature-content h3 em {
@@ -769,7 +769,7 @@
 
     margin-bottom: 30px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.78rem;
 
@@ -779,7 +779,7 @@
 }
 
 .festival-feature-main .festival-feature-content > p {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 
@@ -804,7 +804,7 @@
 
     gap: 9px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
 
     font-size: 0.61rem;
 
@@ -812,7 +812,7 @@
 }
 
 .festival-feature-main .festival-meta div {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .festival-meta i {
@@ -839,7 +839,7 @@
 
     width: fit-content;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.63rem;
 
@@ -867,7 +867,7 @@
 }
 
 .festival-feature-main .festival-story-link:hover {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-accent-2) !important;
 }
 
 .festival-story-link i {
@@ -882,7 +882,7 @@
 .festival-stories-section {
     padding: 125px 0;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .festival-stories-heading {
@@ -898,7 +898,7 @@
 .festival-stories-heading h2 {
     margin: 15px 0 18px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -918,7 +918,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.8rem;
 
@@ -941,11 +941,11 @@
 
     margin-bottom: 80px;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
     overflow: hidden;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
 }
 
 .festival-story:last-child {
@@ -978,7 +978,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 50%
         );
 }
@@ -1017,7 +1017,7 @@
     top: 38px;
     right: 45px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -1033,7 +1033,7 @@
 .festival-story-content h3 {
     margin: 14px 0 20px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1065,7 +1065,7 @@
 
     margin-bottom: 15px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.76rem;
 
@@ -1081,9 +1081,9 @@
 
     margin-top: 25px;
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-bg-secondary);
 }
 
 .festival-story-facts div {
@@ -1099,11 +1099,11 @@
 .festival-story-facts div + div {
     padding-left: 14px;
 
-    border-left: 1px solid var(--theme-border);
+    border-left: 1px solid var(--theme-bg-secondary);
 }
 
 .festival-story-facts strong {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.54rem;
 
@@ -1115,7 +1115,7 @@
 }
 
 .festival-story-facts span {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.65rem;
 
@@ -1166,7 +1166,7 @@
 
     background: var(--theme-bg-secondary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-text-primary);
 
     transition:
         transform 0.35s ease,
@@ -1176,7 +1176,7 @@
 .festival-experience-card:hover {
     transform: translateY(-6px);
 
-    box-shadow: 0 18px 45px var(--theme-shadow);
+    box-shadow: 0 18px 45px var(--theme-text-primary);
 }
 
 .festival-experience-card > span {
@@ -1185,7 +1185,7 @@
     top: 27px;
     right: 30px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-accent);
 
     font-family: var(--font-heading);
 
@@ -1227,7 +1227,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.72rem;
 
@@ -1280,7 +1280,7 @@
 .festival-calendar-heading p {
     max-width: 420px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
 
     font-size: 0.78rem;
 
@@ -1290,7 +1290,7 @@
 }
 
 .festival-calendar-list {
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-text-primary);
 }
 
 .festival-calendar-item {
@@ -1306,7 +1306,7 @@
 
     padding: 15px 10px;
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-text-primary);
 
     transition:
         padding 0.3s ease,
@@ -1348,7 +1348,7 @@
 }
 
 .festival-calendar-item small {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
 
     font-size: 0.62rem;
 
@@ -1375,7 +1375,7 @@
 .festival-why-section {
     padding: 120px 0;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .festival-why-heading {
@@ -1391,7 +1391,7 @@
 
     margin: 15px 0 0;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1415,9 +1415,9 @@
 
     padding: 40px;
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
 
     transition:
         transform 0.35s ease,
@@ -1427,7 +1427,7 @@
 .festival-why-card:hover {
     transform: translateY(-6px);
 
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .festival-why-card > span {
@@ -1436,7 +1436,7 @@
     top: 27px;
     right: 30px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -1456,7 +1456,7 @@
 
     color: var(--theme-accent-2);
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
 
     font-size: 1.2rem;
 }
@@ -1464,7 +1464,7 @@
 .festival-why-card h3 {
     margin: 0 0 14px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1478,7 +1478,7 @@
 
     margin: 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.72rem;
 
@@ -1502,10 +1502,10 @@
     background:
         radial-gradient(
             circle at 80% 20%,
-            var(--theme-bg-secondary),
+            var(--theme-accent-2),
             transparent 32%
         ),
-        var(--theme-bg-secondary);
+        var(--theme-text-primary);
 }
 
 .festival-final-cta::before {
@@ -1516,7 +1516,7 @@
     right: -30px;
     bottom: -70px;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-family: var(--font-heading);
 
@@ -1552,7 +1552,7 @@
 .festival-final-content h2 {
     margin: 0 0 25px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1578,7 +1578,7 @@
 
     margin-bottom: 35px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.8rem;
 
@@ -1648,15 +1648,15 @@ section.festival-final-cta a.festival-final-btn,
 
 section.festival-final-cta a.festival-final-btn:hover,
 .festival-final-cta .festival-final-content a.festival-final-btn:hover {
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-accent-2) !important;
 
-    background-color: var(--theme-bg-secondary) !important;
+    background-color: var(--theme-accent-2) !important;
 
     color: var(--theme-text-primary) !important;
 
     transform: translateY(-3px) !important;
 
-    box-shadow: 0 12px 30px var(--theme-shadow) !important;
+    box-shadow: 0 12px 30px var(--theme-bg-dark) !important;
 }
 
 section.festival-final-cta a.festival-final-btn i,
@@ -1683,11 +1683,11 @@ section.festival-final-cta a.festival-final-btn:hover i,
 .site-footer {
     padding: 75px 0 25px;
 
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-bg-dark) !important;
 
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-accent-2);
 }
 
 .site-footer a {
@@ -1703,7 +1703,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 
     padding-bottom: 55px;
 
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-bg-secondary);
 }
 
 .footer-logo {
@@ -1713,7 +1713,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 
     gap: 10px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
 
@@ -1731,7 +1731,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 
     margin: 18px 0 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.7rem;
 
@@ -1768,7 +1768,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 
 .footer-column li a,
 .footer-column p {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.68rem;
 
@@ -1812,7 +1812,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 }
 
 .footer-explore-link:hover {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-accent-2) !important;
 }
 
 .footer-explore-link i {
@@ -1834,7 +1834,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 }
 
 .footer-copyright {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 
     font-size: 0.58rem;
 
@@ -1844,7 +1844,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 }
 
 .footer-copyright span {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .footer-bottom-links {
@@ -1856,7 +1856,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 }
 
 .footer-bottom-links a {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-size: 0.58rem;
 
@@ -1879,7 +1879,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
 
     color: var(--theme-accent-2) !important;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
 
     font-size: 0.75rem;
 
@@ -2055,8 +2055,8 @@ section.festival-final-cta a.festival-final-btn:hover i,
         background:
             linear-gradient(
                 90deg,
-                var(--theme-bg-secondary),
-                var(--theme-bg-secondary)
+                var(--theme-bg-dark),
+                var(--theme-bg-dark)
             );
     }
 
@@ -2255,7 +2255,7 @@ section.festival-final-cta a.festival-final-btn:hover i,
     }
 
     .festival-story-facts div + div {
-        border-top: 1px solid var(--theme-border);
+        border-top: 1px solid var(--theme-bg-secondary);
     }
 
 
@@ -2491,7 +2491,7 @@ html:not(.dark-mode) .festival-why-section,
 html:not(.dark-mode) .festival-highlights-section .festival-feature-card,
 html:not(.dark-mode) .festival-experience-card,
 html:not(.dark-mode) .festival-why-card {
-    background: var(--theme-white) !important;
+    background: var(--theme-bg-secondary) !important;
 }
 
 html.dark-mode .festival-intro-section,
@@ -2499,16 +2499,16 @@ html.dark-mode .festival-highlights-section,
 html.dark-mode .festival-experience-section,
 html.dark-mode .festival-calendar-section,
 html.dark-mode .festival-why-section {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary);
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark);
 }
 
 html.dark-mode .festival-highlights-section .festival-feature-card,
 html.dark-mode .festival-experience-card,
 html.dark-mode .festival-why-card {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary);
-    border-color: var(--theme-border);
+    background: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark);
+    border-color: var(--theme-bg-secondary);
 }
 
 html.dark-mode .festival-intro-section h2,
@@ -2517,7 +2517,7 @@ html.dark-mode .festival-experience-heading h2,
 html.dark-mode .festival-calendar-heading h2,
 html.dark-mode .festival-experience-card h3,
 html.dark-mode .festival-why-card h3 {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .festival-intro-text,

@@ -11,13 +11,13 @@
 :root {
     --hidden-brown: var(--theme-accent);
     --hidden-gold: var(--theme-accent-2);
-    --hidden-cream: var(--theme-bg-primary);
-    --hidden-dark: var(--theme-border);
-    --hidden-dark-soft: var(--theme-border);
-    --hidden-text: var(--theme-border);
-    --hidden-muted: var(--theme-border);
-    --hidden-white: var(--theme-white);
-    --hidden-border: var(--theme-border);
+    --hidden-cream: var(--theme-text-on-dark);
+    --hidden-dark: var(--theme-text-primary);
+    --hidden-dark-soft: var(--theme-text-primary);
+    --hidden-text: var(--theme-text-primary);
+    --hidden-muted: var(--theme-text-secondary);
+    --hidden-white: var(--theme-bg-secondary);
+    --hidden-border: var(--theme-accent);
 }
 
 
@@ -26,14 +26,14 @@
 ========================================================= */
 
 .hidden-navbar {
-    background: var(--theme-bg-secondary);
+    background: var(--theme-bg-dark);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
 
 .hidden-navbar .navbar-brand,
 .hidden-navbar .nav-link {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 .hidden-navbar .nav-link:hover,
@@ -42,8 +42,8 @@
 }
 
 .hidden-navbar .navbar-toggler {
-    color: var(--theme-white);
-    border-color: var(--theme-border);
+    color: var(--theme-text-on-dark);
+    border-color: var(--theme-bg-secondary);
 }
 
 .hidden-navbar .navbar-toggler i {
@@ -51,18 +51,18 @@
 }
 
 .hidden-navbar .dropdown-menu {
-    background: var(--theme-bg-secondary);
-    border: 1px solid var(--theme-border);
+    background: var(--theme-text-primary);
+    border: 1px solid var(--theme-accent-2);
 }
 
 .hidden-navbar .dropdown-item {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 .hidden-navbar .dropdown-item:hover,
 .hidden-navbar .dropdown-item.active {
-    color: var(--theme-white);
-    background: var(--theme-bg-secondary);
+    color: var(--theme-text-on-dark);
+    background: var(--theme-accent-2);
 }
 
 
@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-bg-dark);
     isolation: isolate;
 }
 
@@ -110,14 +110,14 @@
     background:
         linear-gradient(
             90deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 35%,
-            var(--theme-bg-secondary) 72%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 35%,
+            var(--theme-bg-dark) 72%,
+            var(--theme-bg-dark) 100%
         ),
         linear-gradient(
             0deg,
-            var(--theme-bg-secondary) 0%,
+            var(--theme-bg-dark) 0%,
             transparent 40%
         );
 }
@@ -126,7 +126,7 @@
 .hidden-hero-content {
     max-width: 760px;
     padding-top: 80px;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 
@@ -152,18 +152,18 @@
 .hidden-hero-content h1 {
     margin: 0;
     max-width: 760px;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(3.8rem, 8vw, 7.5rem);
     font-weight: 500;
     line-height: 0.94;
     letter-spacing: -0.045em;
-    text-shadow: 0 5px 30px var(--theme-shadow);
+    text-shadow: 0 5px 30px var(--theme-bg-dark);
 }
 
 .hidden-hero-content h1 em {
     display: block;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-weight: 400;
 }
 
@@ -171,7 +171,7 @@
 .hidden-hero-content p {
     max-width: 570px;
     margin: 30px 0 34px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.94rem;
     font-weight: 300;
     line-height: 1.9;
@@ -208,9 +208,9 @@
 
 .hidden-primary-btn:hover {
     color: var(--theme-text-primary);
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px var(--theme-shadow);
+    box-shadow: 0 15px 35px var(--theme-bg-dark);
 }
 
 .hidden-primary-btn:hover i {
@@ -222,7 +222,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -250,7 +250,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.62rem;
     font-weight: 500;
     letter-spacing: 0.18em;
@@ -359,7 +359,7 @@
 
 .hidden-destinations {
     padding: 120px 0 135px;
-    background: var(--theme-white);
+    background: var(--theme-bg-secondary);
 }
 
 
@@ -448,7 +448,7 @@
         linear-gradient(
             180deg,
             transparent 55%,
-            var(--theme-bg-secondary)
+            var(--theme-bg-dark)
         );
     pointer-events: none;
 }
@@ -473,11 +473,11 @@
     top: 25px;
     left: 28px;
     z-index: 2;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 400;
-    text-shadow: 0 2px 8px var(--theme-shadow);
+    text-shadow: 0 2px 8px var(--theme-bg-dark);
 }
 
 
@@ -487,9 +487,9 @@
     bottom: 25px;
     z-index: 2;
     padding: 8px 13px;
-    color: var(--theme-white);
-    background: var(--theme-bg-secondary);
-    border: 1px solid var(--theme-border);
+    color: var(--theme-text-on-dark);
+    background: var(--theme-bg-dark);
+    border: 1px solid var(--theme-bg-secondary);
     backdrop-filter: blur(8px);
     font-size: 0.58rem;
     font-weight: 600;
@@ -561,7 +561,7 @@
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-secondary);
     font-size: 0.63rem;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -584,7 +584,7 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-decoration: none;
-    border-bottom: 1px solid var(--theme-border);
+    border-bottom: 1px solid var(--theme-accent);
     padding-bottom: 7px;
     transition: all 0.3s ease;
 }
@@ -613,7 +613,7 @@
 .hidden-stories-section {
     padding: 140px 0;
     background: var(--hidden-dark);
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 
@@ -630,7 +630,7 @@
 
 .hidden-stories-heading h2 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(3rem, 5.5vw, 5.2rem);
     font-weight: 500;
@@ -649,7 +649,7 @@
 .hidden-stories-heading p {
     max-width: 550px;
     margin: 25px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.8rem;
     line-height: 1.9;
 }
@@ -665,7 +665,7 @@
     align-items: stretch;
     min-height: 540px;
     margin-bottom: 100px;
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 }
 
 
@@ -697,7 +697,7 @@
     background: linear-gradient(
         90deg,
         transparent 55%,
-        var(--theme-bg-secondary)
+        var(--theme-text-primary)
     );
 }
 
@@ -733,7 +733,7 @@
     position: absolute;
     top: 25px;
     left: clamp(45px, 7vw, 100px);
-    color: var(--theme-text-primary);
+    color: var(--theme-accent-2);
     font-family: var(--font-heading);
     font-size: 1.15rem;
 }
@@ -748,7 +748,7 @@
 .hidden-story-content h3 {
     max-width: 500px;
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(2.5rem, 4vw, 4.2rem);
     font-weight: 500;
@@ -767,7 +767,7 @@
 .hidden-story-content p {
     max-width: 500px;
     margin: 24px 0 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.78rem;
     line-height: 1.95;
 }
@@ -780,8 +780,8 @@
     width: fit-content;
     margin-top: 30px;
     padding-bottom: 8px;
-    color: var(--theme-text-primary);
-    border-bottom: 1px solid var(--theme-border);
+    color: var(--theme-text-on-dark);
+    border-bottom: 1px solid var(--theme-accent-2);
     font-size: 0.66rem;
     font-weight: 600;
     letter-spacing: 0.09em;
@@ -857,7 +857,7 @@
     height: 100%;
     padding: 32px 30px;
     color: var(--hidden-text);
-    background: var(--theme-white);
+    background: var(--theme-bg-secondary);
     border: 1px solid var(--hidden-border);
     text-decoration: none;
     overflow: hidden;
@@ -883,10 +883,10 @@
 
 
 .hidden-experience-card:hover {
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     background: var(--hidden-dark);
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px var(--theme-shadow);
+    box-shadow: 0 25px 50px var(--theme-text-primary);
 }
 
 
@@ -899,7 +899,7 @@
     position: absolute;
     top: 23px;
     right: 25px;
-    color: var(--theme-text-primary);
+    color: var(--theme-accent);
     font-family: var(--font-heading);
     font-size: 1rem;
 }
@@ -939,7 +939,7 @@
 
 
 .hidden-experience-card:hover p {
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
 }
 
 
@@ -953,7 +953,7 @@
     width: 35px;
     height: 35px;
     color: var(--hidden-brown);
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent);
     border-radius: 50%;
     transition: all 0.35s ease;
 }
@@ -972,7 +972,7 @@
 
 .hidden-season-section {
     padding: 130px 0;
-    background: var(--theme-white);
+    background: var(--theme-bg-secondary);
 }
 
 
@@ -1114,7 +1114,7 @@
 
 .hidden-why-heading h2 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(3rem, 5.5vw, 5.3rem);
     font-weight: 500;
@@ -1133,8 +1133,8 @@
     position: relative;
     min-height: 330px;
     padding: 40px 35px;
-    border-top: 1px solid var(--theme-border);
-    border-right: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
+    border-right: 1px solid var(--theme-bg-secondary);
     transition: background 0.4s ease;
 }
 
@@ -1150,7 +1150,7 @@
 
 
 .hidden-why-card > span {
-    color: var(--theme-text-primary);
+    color: var(--theme-accent-2);
     font-family: var(--font-heading);
     font-size: 1rem;
 }
@@ -1166,7 +1166,7 @@
 
 .hidden-why-card h3 {
     margin: 0 0 13px;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: 1.75rem;
     font-weight: 500;
@@ -1176,7 +1176,7 @@
 .hidden-why-card p {
     max-width: 270px;
     margin: 0;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.68rem;
     line-height: 1.9;
 }
@@ -1194,7 +1194,7 @@
         linear-gradient(
             135deg,
             var(--theme-accent) 0%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-text-primary) 100%
         );
 }
 
@@ -1206,7 +1206,7 @@
     height: 500px;
     right: -180px;
     top: -220px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     border-radius: 50%;
 }
 
@@ -1218,7 +1218,7 @@
     height: 700px;
     right: -280px;
     top: -320px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     border-radius: 50%;
 }
 
@@ -1233,7 +1233,7 @@
 .hidden-final-content > span {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.64rem;
     font-weight: 600;
     letter-spacing: 0.25em;
@@ -1242,7 +1242,7 @@
 
 .hidden-final-content h2 {
     margin: 0;
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
     font-family: var(--font-heading);
     font-size: clamp(3.5rem, 7vw, 7rem);
     font-weight: 500;
@@ -1260,7 +1260,7 @@
 .hidden-final-content p {
     max-width: 450px;
     margin: 25px 0 35px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.8rem;
     line-height: 1.9;
 }
@@ -1291,7 +1291,7 @@
 
 .hidden-final-btn:hover {
     color: var(--theme-text-primary);
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
     transform: translateY(-3px);
 }
 
@@ -1310,7 +1310,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: var(--theme-text-primary);
+    color: var(--theme-text-on-dark);
     font-size: 0.67rem;
     font-weight: 500;
     letter-spacing: 0.07em;
@@ -1409,12 +1409,12 @@
         background:
             linear-gradient(
                 90deg,
-                var(--theme-bg-secondary),
-                var(--theme-bg-secondary)
+                var(--theme-bg-dark),
+                var(--theme-bg-dark)
             ),
             linear-gradient(
                 0deg,
-                var(--theme-bg-secondary),
+                var(--theme-bg-dark),
                 transparent 50%
             );
     }
@@ -1745,7 +1745,7 @@
         min-height: auto;
         padding: 30px 25px 40px;
         border-right: none;
-        border-bottom: 1px solid var(--theme-border);
+        border-bottom: 1px solid var(--theme-bg-secondary);
     }
 
 
@@ -1940,8 +1940,8 @@
 .site-footer {
     position: relative;
     padding: 80px 0 30px;
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark) !important;
     overflow: hidden;
 }
 
@@ -1961,7 +1961,7 @@
     align-items: center;
     gap: 9px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading);
     font-size: 1.65rem;
@@ -1984,7 +1984,7 @@
     max-width: 390px;
     margin: 22px 0 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body);
     font-size: 0.75rem;
@@ -2000,17 +2000,17 @@ html.dark-mode .hidden-intro-section,
 html.dark-mode .hidden-destinations,
 html.dark-mode .hidden-experience-section,
 html.dark-mode .hidden-season-section {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .hidden-destination,
 html.dark-mode .hidden-experience-card,
 html.dark-mode .hidden-season-note,
 html.dark-mode .hidden-season-card {
-    background: var(--theme-bg-secondary) !important;
-    border-color: var(--theme-border) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-text-primary) !important;
+    border-color: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .hidden-intro-section h2,
@@ -2018,7 +2018,7 @@ html.dark-mode .hidden-section-heading h2,
 html.dark-mode .hidden-experience-heading h2,
 html.dark-mode .hidden-season-section h2,
 html.dark-mode .hidden-experience-card h3 {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .hidden-intro-text,
@@ -2040,8 +2040,8 @@ html.dark-mode .hidden-season-note > i {
 }
 
 .hidden-navbar .btn-heritage {
-    border-color: var(--theme-white) !important;
-    color: var(--theme-white) !important;
+    border-color: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .hidden-navbar .btn-heritage:hover {
@@ -2072,7 +2072,7 @@ html.dark-mode .hidden-season-note > i {
 .site-footer h5 {
     margin: 0 0 22px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading) !important;
     font-size: 1.05rem;
@@ -2112,7 +2112,7 @@ html.dark-mode .hidden-season-note > i {
 .site-footer ul li a {
     display: inline-block;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body);
     font-size: 0.72rem;
@@ -2150,9 +2150,9 @@ html.dark-mode .hidden-season-note > i {
     width: 42px;
     height: 42px;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     border-radius: 50%;
 
     text-decoration: none !important;
@@ -2189,12 +2189,12 @@ html.dark-mode .hidden-season-note > i {
     margin-top: 60px;
     padding-top: 25px;
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 }
 
 
 .site-footer .footer-bottom span {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body);
     font-size: 0.68rem;
@@ -2219,7 +2219,7 @@ html.dark-mode .hidden-season-note > i {
 
 
 .site-footer .footer-bottom a:hover {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 

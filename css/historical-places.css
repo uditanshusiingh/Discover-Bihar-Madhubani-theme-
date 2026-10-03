@@ -8,14 +8,14 @@
 ======================================== */
 
 .historical-navbar {
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-bg-dark) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     transition: all 0.3s ease;
 }
 
 .historical-navbar .navbar-brand {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     text-decoration: none !important;
 }
 
@@ -24,28 +24,28 @@
 }
 
 .historical-navbar .nav-link {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     text-decoration: none !important;
 }
 
 .historical-navbar .nav-link:hover,
 .historical-navbar .nav-link.active {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .historical-navbar .dropdown-menu {
-    background: var(--theme-bg-secondary) !important;
-    border: 1px solid var(--theme-border) !important;
+    background: var(--theme-text-primary) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
 }
 
 .historical-navbar .dropdown-item {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     text-decoration: none !important;
 }
 
 .historical-navbar .dropdown-item:hover,
 .historical-navbar .dropdown-item.active {
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-accent-2) !important;
     color: var(--color-secondary) !important;
 }
 
@@ -86,10 +86,10 @@
     gap: 9px;
     min-width: 150px;
     padding: 10px 18px;
-    border: 1px solid var(--theme-white) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
     border-radius: 50px;
     background: transparent !important;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-body);
     font-size: 0.72rem;
     font-weight: 600;
@@ -120,8 +120,8 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: var(--theme-bg-secondary);
-    color: var(--theme-white);
+    background: var(--theme-bg-dark);
+    color: var(--theme-text-on-dark);
 }
 
 .history-hero > img {
@@ -140,9 +140,9 @@
     background:
         linear-gradient(
             90deg,
-            var(--theme-bg-secondary) 0%,
-            var(--theme-bg-secondary) 40%,
-            var(--theme-bg-secondary) 100%
+            var(--theme-bg-dark) 0%,
+            var(--theme-bg-dark) 40%,
+            var(--theme-bg-dark) 100%
         );
 }
 
@@ -153,7 +153,7 @@
     background:
         linear-gradient(
             to top,
-            var(--theme-bg-secondary),
+            var(--theme-bg-dark),
             transparent 35%
         );
     pointer-events: none;
@@ -180,13 +180,13 @@
 
 .history-hero-content h1 {
     margin: 0;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(4rem, 8vw, 7.5rem);
     font-weight: 400;
     line-height: 0.9;
     letter-spacing: -2px;
-    text-shadow: 0 4px 25px var(--theme-shadow);
+    text-shadow: 0 4px 25px var(--theme-bg-dark);
 }
 
 .history-hero-content h1 em {
@@ -198,7 +198,7 @@
 .history-hero-content p {
     max-width: 570px;
     margin: 32px 0 30px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.88rem;
     line-height: 1.9;
 }
@@ -207,7 +207,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.65rem;
 }
 
@@ -230,7 +230,7 @@
     gap: 12px;
     transform: rotate(-90deg);
     transform-origin: right center;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.55rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -311,7 +311,7 @@
 .history-intro-line div {
     width: 100px;
     height: 1px;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent);
 }
 
 .history-intro-line span:last-child {
@@ -371,7 +371,7 @@
     margin-bottom: 25px;
     background: var(--color-white);
     overflow: hidden;
-    box-shadow: 0 12px 35px var(--theme-shadow);
+    box-shadow: 0 12px 35px var(--theme-bg-dark);
 }
 
 .history-destination:last-child {
@@ -383,7 +383,7 @@
     height: 100%;
     min-height: 460px;
     overflow: hidden;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
 }
 
 .history-destination-image img {
@@ -405,7 +405,7 @@
     inset: 0;
     background: linear-gradient(
         to top,
-        var(--theme-bg-secondary),
+        var(--theme-bg-dark),
         transparent 45%
     );
     pointer-events: none;
@@ -416,7 +416,7 @@
     z-index: 2;
     top: 25px;
     left: 25px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: 1.3rem;
 }
@@ -427,9 +427,9 @@
     right: 25px;
     bottom: 25px;
     padding: 8px 12px;
-    border: 1px solid var(--theme-border);
-    background: var(--theme-bg-secondary);
-    color: var(--theme-white) !important;
+    border: 1px solid var(--theme-bg-secondary);
+    background: var(--theme-bg-dark);
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.55rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -496,7 +496,7 @@
     align-items: center;
     gap: 7px;
     padding: 9px 11px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent);
     color: var(--color-muted) !important;
     font-size: 0.58rem;
 }
@@ -538,7 +538,7 @@
 
 .history-stories-section {
     padding: 130px 0;
-    background: var(--theme-bg-primary);
+    background: var(--theme-bg-secondary);
 }
 
 .history-stories-heading {
@@ -568,17 +568,17 @@
 .history-stories-heading p {
     max-width: 620px;
     margin: 0 auto;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
     font-size: 0.9rem;
     line-height: 1.9;
 }
 
 html.dark-mode .history-stories-section {
-    background: var(--theme-bg-secondary) !important;
+    background: var(--theme-bg-dark) !important;
 }
 
 html.dark-mode .history-stories-heading h2 {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .history-stories-heading p {
@@ -628,7 +628,7 @@ html.dark-mode .history-stories-heading p {
     content: "";
     position: absolute;
     inset: 18px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     pointer-events: none;
     z-index: 2;
 }
@@ -668,7 +668,7 @@ html.dark-mode .history-stories-heading p {
 .history-story-number {
     display: block;
     margin-bottom: 20px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-accent) !important;
     font-family: var(--font-heading);
     font-size: 5rem;
     font-weight: 500;
@@ -703,7 +703,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-story-content > p:not(.history-story-lead) {
     margin-bottom: 18px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-secondary) !important;
     font-size: 0.86rem;
     line-height: 1.9;
 }
@@ -718,15 +718,15 @@ html.dark-mode .history-stories-heading p {
     width: 100%;
     min-width: 0;
     margin: 35px 0 32px;
-    border-top: 1px solid var(--theme-border);
-    border-bottom: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-text-primary);
+    border-bottom: 1px solid var(--theme-text-primary);
 }
 
 .history-story-facts div {
     min-height: 88px;
     min-width: 0;
     padding: 18px 14px 18px 0;
-    border-right: 1px solid var(--theme-border);
+    border-right: 1px solid var(--theme-text-primary);
 }
 
 .history-story-facts div:not(:first-child) {
@@ -796,7 +796,7 @@ html.dark-mode .history-stories-heading p {
     padding: 140px 0;
     overflow: hidden;
     background: var(--theme-text-primary);
-    color: var(--theme-white);
+    color: var(--theme-text-on-dark);
 }
 
 .history-timeline-section::before {
@@ -807,7 +807,7 @@ html.dark-mode .history-stories-heading p {
     top: -250px;
     right: -200px;
     border-radius: 50%;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
     filter: blur(80px);
     pointer-events: none;
 }
@@ -831,7 +831,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-timeline-heading h2 {
     margin: 0 0 24px;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 500;
@@ -847,7 +847,7 @@ html.dark-mode .history-stories-heading p {
 .history-timeline-heading p {
     max-width: 620px;
     margin: 0;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.86rem;
     line-height: 1.9;
 }
@@ -872,8 +872,8 @@ html.dark-mode .history-stories-heading p {
     background: linear-gradient(
         to bottom,
         transparent,
-        var(--theme-bg-secondary) 8%,
-        var(--theme-bg-secondary) 92%,
+        var(--theme-accent-2) 8%,
+        var(--theme-accent-2) 92%,
         transparent
     );
     transform: translateX(-50%);
@@ -908,7 +908,7 @@ html.dark-mode .history-stories-heading p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 50%;
     background: var(--theme-text-primary);
     transform: translate(-50%, -50%);
@@ -926,14 +926,14 @@ html.dark-mode .history-stories-heading p {
     height: 10px;
     border-radius: 50%;
     background: var(--color-secondary);
-    box-shadow: 0 0 0 0 var(--theme-shadow);
+    box-shadow: 0 0 0 0 var(--theme-accent-2);
     transition: box-shadow 0.4s ease;
 }
 
 .history-timeline-marker span {
     position: relative;
     z-index: 2;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.58rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -942,16 +942,16 @@ html.dark-mode .history-stories-heading p {
 .history-timeline-item:hover .history-timeline-marker {
     width: 72px;
     height: 72px;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-text-primary);
     box-shadow:
-        0 0 0 8px var(--theme-shadow),
-        0 0 35px var(--theme-shadow);
+        0 0 0 8px var(--theme-accent-2),
+        0 0 35px var(--theme-accent-2);
 }
 
 .history-timeline-item:hover .history-timeline-marker::before {
     box-shadow:
-        0 0 0 8px var(--theme-shadow),
-        0 0 20px var(--theme-shadow);
+        0 0 0 8px var(--theme-accent-2),
+        0 0 20px var(--theme-accent-2);
 }
 
 .history-timeline-item:hover .history-timeline-marker span {
@@ -970,7 +970,7 @@ html.dark-mode .history-stories-heading p {
 .history-timeline-date span {
     display: block;
     margin-bottom: 8px;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(1.55rem, 2.5vw, 2.35rem);
     font-weight: 500;
@@ -991,7 +991,7 @@ html.dark-mode .history-stories-heading p {
     grid-column: 3;
     position: relative;
     padding: 34px 38px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-bg-secondary);
     background: var(--theme-bg-secondary);
     transition:
         transform 0.45s ease,
@@ -1007,15 +1007,15 @@ html.dark-mode .history-stories-heading p {
     left: -39px;
     width: 38px;
     height: 1px;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent-2);
     transition: width 0.35s ease;
 }
 
 .history-timeline-item:hover .history-timeline-card {
     transform: translateX(8px);
-    border-color: var(--theme-border);
+    border-color: var(--theme-accent-2);
     background: var(--theme-bg-secondary);
-    box-shadow: 0 20px 45px var(--theme-shadow);
+    box-shadow: 0 20px 45px var(--theme-bg-dark);
 }
 
 .history-timeline-item:hover .history-timeline-card::before {
@@ -1069,7 +1069,7 @@ html.dark-mode .history-stories-heading p {
 }
 
 .history-timeline-card-top i {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 1rem;
     transition:
         color 0.3s ease,
@@ -1086,7 +1086,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-timeline-card h3 {
     margin: 0 0 15px;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(1.7rem, 3vw, 2.35rem);
     font-weight: 500;
@@ -1095,7 +1095,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-timeline-card p {
     margin: 0 0 24px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.76rem;
     line-height: 1.85;
 }
@@ -1108,7 +1108,7 @@ html.dark-mode .history-stories-heading p {
     align-items: center;
     gap: 8px;
     padding-top: 17px;
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 }
 
 .history-timeline-location i {
@@ -1117,7 +1117,7 @@ html.dark-mode .history-stories-heading p {
 }
 
 .history-timeline-location span {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.62rem;
     letter-spacing: 0.08em;
 }
@@ -1136,7 +1136,7 @@ html.dark-mode .history-stories-heading p {
     margin: 0 auto;
     background: linear-gradient(
         to bottom,
-        var(--theme-bg-secondary),
+        var(--theme-accent-2),
         transparent
     );
 }
@@ -1169,7 +1169,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-timeline-end-content p {
     margin: 0;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.72rem;
     line-height: 1.8;
 }
@@ -1206,15 +1206,15 @@ html.dark-mode .history-stories-heading p {
     position: relative;
     min-height: 300px;
     padding: 35px;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent);
     background: var(--theme-bg-secondary);
     transition: all 0.35s ease;
 }
 
 .history-why-card:hover {
     transform: translateY(-7px);
-    border-color: var(--theme-border);
-    box-shadow: 0 20px 45px var(--theme-shadow);
+    border-color: var(--theme-accent-2);
+    box-shadow: 0 20px 45px var(--theme-bg-dark);
 }
 
 .history-why-card > span {
@@ -1234,7 +1234,7 @@ html.dark-mode .history-stories-heading p {
     height: 55px;
     margin-bottom: 30px;
     border-radius: 50%;
-    background: var(--theme-bg-secondary);
+    background: var(--theme-accent);
     color: var(--color-primary) !important;
     font-size: 1.2rem;
 }
@@ -1266,10 +1266,10 @@ html.dark-mode .history-stories-heading p {
     background:
         linear-gradient(
             135deg,
-            var(--theme-bg-secondary),
-            var(--theme-bg-secondary)
+            var(--theme-text-primary),
+            var(--theme-text-primary)
         );
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     text-align: center;
     overflow: hidden;
 }
@@ -1281,7 +1281,7 @@ html.dark-mode .history-stories-heading p {
     height: 600px;
     top: 50%;
     left: 50%;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1293,7 +1293,7 @@ html.dark-mode .history-stories-heading p {
     height: 430px;
     top: 50%;
     left: 50%;
-    border: 1px solid var(--theme-border);
+    border: 1px solid var(--theme-accent-2);
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
@@ -1314,7 +1314,7 @@ html.dark-mode .history-stories-heading p {
 
 .history-final-content h2 {
     margin: 0;
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
     font-family: var(--font-heading);
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 400;
@@ -1330,7 +1330,7 @@ html.dark-mode .history-stories-heading p {
 .history-final-content p {
     max-width: 500px;
     margin: 25px auto 30px;
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
     font-size: 0.75rem;
     line-height: 1.8;
 }
@@ -1386,12 +1386,12 @@ html.dark-mode .history-stories-heading p {
 
 .history-final-cta .history-final-btn:hover {
     color: var(--theme-text-primary) !important;
-    background: var(--theme-bg-secondary) !important;
-    border-color: var(--theme-border) !important;
+    background: var(--theme-accent-2) !important;
+    border-color: var(--theme-accent-2) !important;
 
     transform: translateY(-3px);
 
-    box-shadow: 0 12px 30px var(--theme-shadow);
+    box-shadow: 0 12px 30px var(--theme-bg-dark);
 }
 
 .history-final-cta .history-final-btn:hover i {
@@ -1409,8 +1409,8 @@ html.dark-mode .history-stories-heading p {
 
     padding: 80px 0 30px;
 
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark) !important;
 
     overflow: hidden;
 }
@@ -1431,7 +1431,7 @@ html.dark-mode .history-stories-heading p {
     align-items: center;
     gap: 9px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading) !important;
     font-size: 1.6rem;
@@ -1441,7 +1441,7 @@ html.dark-mode .history-stories-heading p {
 }
 
 .site-footer .footer-brand:hover {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 .site-footer .footer-brand i {
@@ -1457,7 +1457,7 @@ html.dark-mode .history-stories-heading p {
 
     margin: 20px 0 0;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body) !important;
     font-size: 0.74rem;
@@ -1472,7 +1472,7 @@ html.dark-mode .history-stories-heading p {
 .site-footer h5 {
     margin: 0 0 22px;
 
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-heading) !important;
     font-size: 1.05rem;
@@ -1516,7 +1516,7 @@ html.dark-mode .history-stories-heading p {
     margin: 0 !important;
     padding: 0 !important;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body) !important;
     font-size: 0.72rem;
@@ -1556,11 +1556,11 @@ html.dark-mode .history-stories-heading p {
     margin: 0 !important;
     padding: 0 !important;
 
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     background: transparent !important;
 
-    border: 1px solid var(--theme-border) !important;
+    border: 1px solid var(--theme-bg-secondary) !important;
     border-radius: 50% !important;
 
     text-decoration: none !important;
@@ -1598,12 +1598,12 @@ html.dark-mode .history-stories-heading p {
     margin-top: 60px;
     padding-top: 25px;
 
-    border-top: 1px solid var(--theme-border);
+    border-top: 1px solid var(--theme-bg-secondary);
 }
 
 
 .site-footer .footer-bottom span {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 
     font-family: var(--font-body) !important;
     font-size: 0.68rem;
@@ -1629,7 +1629,7 @@ html.dark-mode .history-stories-heading p {
 
 
 .site-footer .footer-bottom a:hover {
-    color: var(--theme-white) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 
@@ -1960,7 +1960,7 @@ html.dark-mode .history-stories-heading p {
         min-height: auto;
         padding: 15px 0;
         border-right: none;
-        border-bottom: 1px solid var(--theme-border);
+        border-bottom: 1px solid var(--theme-text-primary);
     }
 
     .history-story-facts div:last-child {
@@ -1998,9 +1998,9 @@ html.dark-mode .history-stories-heading p {
         background:
             linear-gradient(
                 to top,
-                var(--theme-bg-secondary) 0%,
-                var(--theme-bg-secondary) 65%,
-                var(--theme-bg-secondary) 100%
+                var(--theme-bg-dark) 0%,
+                var(--theme-bg-dark) 65%,
+                var(--theme-bg-dark) 100%
             );
     }
 
@@ -2293,14 +2293,14 @@ section.history-final-cta a.history-final-btn,
 section.history-final-cta a.history-final-btn:hover,
 .history-final-cta .history-final-content a.history-final-btn:hover {
 
-    background: var(--theme-bg-secondary) !important;
-    background-color: var(--theme-bg-secondary) !important;
+    background: var(--theme-accent-2) !important;
+    background-color: var(--theme-accent-2) !important;
 
     color: var(--theme-text-primary) !important;
 
     transform: translateY(-3px) !important;
 
-    box-shadow: 0 12px 30px var(--theme-shadow) !important;
+    box-shadow: 0 12px 30px var(--theme-bg-dark) !important;
 }
 
 
@@ -2353,15 +2353,15 @@ html.dark-mode .history-intro-section,
 html.dark-mode .historical-destinations,
 html.dark-mode .history-stories-section,
 html.dark-mode .history-why-section {
-    background: var(--theme-bg-secondary) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-bg-dark) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .history-destination,
 html.dark-mode .history-why-card {
-    background: var(--theme-bg-secondary) !important;
-    border-color: var(--theme-border) !important;
-    color: var(--theme-text-primary) !important;
+    background: var(--theme-text-primary) !important;
+    border-color: var(--theme-bg-secondary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .history-intro-section h2,
@@ -2369,7 +2369,7 @@ html.dark-mode .historical-section-heading h2,
 html.dark-mode .history-stories-heading h2,
 html.dark-mode .history-why-heading h2,
 html.dark-mode .history-story-content h3 {
-    color: var(--theme-text-primary) !important;
+    color: var(--theme-text-on-dark) !important;
 }
 
 html.dark-mode .history-intro-text,
@@ -2391,11 +2391,11 @@ html.dark-mode .history-story-link {
 }
 
 html.dark-mode .history-story-facts {
-    border-color: var(--theme-border);
+    border-color: var(--theme-bg-secondary);
 }
 
 html.dark-mode .history-story-facts div {
-    border-right-color: var(--theme-border);
+    border-right-color: var(--theme-bg-secondary);
 }
 
 html.dark-mode .history-story-facts span {
