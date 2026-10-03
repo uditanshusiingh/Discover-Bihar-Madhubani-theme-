@@ -41,7 +41,6 @@
    DISCOVER BIHAR — MITHILA / MADHUBANI THEME + VISIBILITY TOKENS
    Central color system used by every page/component.
    ========================================================= */
-
 :root {
   --theme-text-primary: #2F241F;
   --theme-text-secondary: #6C5A50;
@@ -59,7 +58,6 @@
   --theme-overlay: rgba(20,45,82,.78);
   --theme-white: #FFFDF7;
   --theme-black: #2F241F;
-
   --mb-maroon: var(--theme-accent);
   --mb-maroon-dark: #7D1A2D;
   --mb-mustard: var(--theme-accent-2);
@@ -73,16 +71,10 @@
   --mb-line: color-mix(in srgb, var(--theme-accent) 22%, transparent);
   --mb-line-strong: color-mix(in srgb, var(--theme-accent) 46%, transparent);
   --mb-shadow: 0 18px 45px var(--theme-shadow);
-
   --font-heading: "Eczar", "Yatra One", "Playfair Display", Georgia, serif;
   --font-body: "Poppins", "Inter", Arial, sans-serif;
 }
-
-[data-theme="dark"],
-[data-bs-theme="dark"],
-.dark-mode,
-.dark,
-body.dark {
+[data-theme="dark"], [data-bs-theme="dark"], .dark-mode, .dark, body.dark {
   --theme-text-primary: #FDF6E3;
   --theme-text-secondary: #E8D8C8;
   --theme-text-on-dark: #FFF9EC;
@@ -102,7 +94,6 @@ body.dark {
   --mb-maroon-dark: #F08A9A;
   --mb-mustard-soft: #F0C56B;
 }
-
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --theme-text-primary: #FDF6E3;
@@ -125,84 +116,37 @@ body.dark {
     --mb-mustard-soft: #F0C56B;
   }
 }
-
 html, body { background: var(--theme-bg-primary) !important; color: var(--theme-text-primary) !important; }
 body { font-family: var(--font-body); }
 h1,h2,h3,h4,h5,h6,.section-title,.hero-title,.navbar-brand { font-family: var(--font-heading); }
-
-/* High-risk visibility surfaces */
-input,textarea,select,.form-control,.form-select,button {
-  color: var(--theme-text-primary) !important;
-  background-color: var(--theme-bg-secondary) !important;
-  border-color: var(--theme-border) !important;
-}
+input,textarea,select,.form-control,.form-select,button { color: var(--theme-text-primary) !important; background-color: var(--theme-bg-secondary) !important; border-color: var(--theme-border) !important; }
 input::placeholder,textarea::placeholder { color: var(--theme-text-secondary) !important; opacity: 1 !important; }
-input:disabled,textarea:disabled,select:disabled,button:disabled {
-  color: var(--theme-text-secondary) !important;
-  background-color: var(--theme-bg-secondary) !important;
-  border-color: var(--theme-border) !important;
-}
+input:disabled,textarea:disabled,select:disabled,button:disabled { color: var(--theme-text-secondary) !important; background-color: var(--theme-bg-secondary) !important; border-color: var(--theme-border) !important; }
 a { color: var(--theme-link); }
 code,pre,kbd,samp { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); border-color: var(--theme-border); }
 table,thead,tbody,tr,th,td { border-color: var(--theme-border); }
 th { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); }
 td { color: var(--theme-text-primary); background-color: var(--theme-bg-primary); }
-[role="tooltip"],.tooltip,.popover,.modal-content,.dropdown-menu {
-  color: var(--theme-text-primary) !important;
-  background-color: var(--theme-bg-secondary) !important;
-  border-color: var(--theme-border) !important;
-}
-
-/* Shared Madhubani framing */
-.card,[class*="-card"],[class*="panel"],[class*="highlight"] {
-  border-color: var(--mb-line) !important;
-  box-shadow: var(--mb-shadow);
-}
-.card::after,[class*="-card"]::after {
-  content:""; position:absolute; inset:6px;
-  border:1px solid color-mix(in srgb, var(--theme-accent-2) 34%, transparent);
-  border-radius:inherit; pointer-events:none;
-}
+[role="tooltip"],.tooltip,.popover,.modal-content,.dropdown-menu { color: var(--theme-text-primary) !important; background-color: var(--theme-bg-secondary) !important; border-color: var(--theme-border) !important; }
+.card,[class*="-card"],[class*="panel"],[class*="highlight"] { border-color: var(--mb-line) !important; box-shadow: var(--mb-shadow); }
+.card::after,[class*="-card"]::after { content:""; position:absolute; inset:6px; border:1px solid color-mix(in srgb, var(--theme-accent-2) 34%, transparent); border-radius:inherit; pointer-events:none; }
 section:not(.hero-section) { position:relative; }
-section:not(.hero-section)::before {
-  content:""; position:absolute; top:0; left:0; right:0; height:12px; pointer-events:none; opacity:.72;
-  background:
-    linear-gradient(135deg,transparent 38%,var(--mb-maroon) 39% 47%,transparent 48%) 0 0/18px 12px repeat-x,
-    linear-gradient(45deg,transparent 38%,var(--mb-mustard) 39% 47%,transparent 48%) 9px 0/18px 12px repeat-x;
-}
-section:nth-of-type(even):not(.hero-section) {
-  background-color:var(--mb-paper) !important;
-  background-image:
-    radial-gradient(circle at 18px 18px,color-mix(in srgb,var(--theme-link) 7%,transparent) 0 1px,transparent 1.4px),
-    radial-gradient(circle at 9px 9px,color-mix(in srgb,var(--theme-accent) 6%,transparent) 0 1px,transparent 1.4px);
-  background-size:36px 36px;
-}
-
-/* Navbar */
-.navbar {
-  background:linear-gradient(180deg,color-mix(in srgb,var(--theme-bg-dark) 97%,transparent),color-mix(in srgb,var(--theme-bg-dark) 94%,transparent)) !important;
-  border-bottom:3px solid var(--mb-mustard);
-  box-shadow:0 10px 28px var(--theme-shadow);
-}
+section:not(.hero-section)::before { content:""; position:absolute; top:0; left:0; right:0; height:12px; pointer-events:none; opacity:.72; background: linear-gradient(135deg,transparent 38%,var(--mb-maroon) 39% 47%,transparent 48%) 0 0/18px 12px repeat-x, linear-gradient(45deg,transparent 38%,var(--mb-mustard) 39% 47%,transparent 48%) 9px 0/18px 12px repeat-x; }
+section:nth-of-type(even):not(.hero-section) { background-color:var(--mb-paper) !important; background-image: radial-gradient(circle at 18px 18px,color-mix(in srgb,var(--theme-link) 7%,transparent) 0 1px,transparent 1.4px), radial-gradient(circle at 9px 9px,color-mix(in srgb,var(--theme-accent) 6%,transparent) 0 1px,transparent 1.4px); background-size:36px 36px; }
+.navbar { background:linear-gradient(180deg,color-mix(in srgb,var(--theme-bg-dark) 97%,transparent),color-mix(in srgb,var(--theme-bg-dark) 94%,transparent)) !important; border-bottom:3px solid var(--mb-mustard); box-shadow:0 10px 28px var(--theme-shadow); }
 .navbar-brand,.navbar .nav-link { color:var(--theme-text-on-dark) !important; }
 .navbar-brand i,.navbar .nav-link:hover,.navbar .nav-link.active,.navbar .navbar-brand:hover { color:var(--mb-mustard-soft) !important; }
 .navbar .nav-link.active::after { background:var(--mb-mustard) !important; }
 .navbar .dropdown-menu { background:var(--mb-paper) !important; border:2px solid var(--mb-maroon) !important; box-shadow:var(--mb-shadow); }
 .navbar .dropdown-item { color:var(--mb-ink) !important; }
 .navbar .dropdown-item:hover,.navbar .dropdown-item:focus { background:color-mix(in srgb,var(--theme-accent-2) 18%,transparent) !important; color:var(--mb-maroon) !important; }
-
-/* Hero */
 .hero-overlay { background:linear-gradient(90deg,color-mix(in srgb,var(--theme-bg-dark) 82%,transparent),color-mix(in srgb,var(--theme-link) 48%,transparent) 52%,color-mix(in srgb,var(--theme-accent) 18%,transparent)) !important; }
 .hero-location { background:color-mix(in srgb,var(--theme-bg-primary) 12%,transparent) !important; border-color:color-mix(in srgb,var(--theme-accent-2) 70%,transparent) !important; color:var(--theme-text-on-dark) !important; }
 .hero-title,.hero-description { color:var(--theme-text-on-dark) !important; }
 .hero-title span { color:var(--mb-mustard-soft) !important; }
-
-/* Buttons */
 .btn-heritage,.btn-hero-primary,.travel-cta-btn,.about-project-btn { background:var(--mb-maroon) !important; border-color:var(--mb-maroon) !important; color:var(--theme-text-on-dark) !important; }
 .btn-heritage:hover,.btn-hero-primary:hover,.travel-cta-btn:hover,.about-project-btn:hover { background:var(--mb-maroon-dark) !important; border-color:var(--mb-maroon-dark) !important; }
 .btn-hero-secondary { background:color-mix(in srgb,var(--theme-bg-primary) 10%,transparent) !important; border-color:var(--mb-mustard) !important; color:var(--theme-text-on-dark) !important; }
-
-/* Footer / floating UI */
 .site-footer { background:linear-gradient(180deg,var(--mb-indigo-dark),var(--theme-bg-dark)) !important; color:var(--theme-text-on-dark) !important; border-top:5px solid var(--mb-maroon); }
 .footer-column a,.footer-brand p,.footer-connect p,.footer-copyright,.footer-bottom-links a { color:var(--theme-text-secondary) !important; }
 .footer-logo,.footer-column h4,.footer-explore-link,.footer-column a:hover,.footer-socials a:hover { color:var(--mb-mustard-soft) !important; }
@@ -211,26 +155,13 @@ section:nth-of-type(even):not(.hero-section) {
 .ask-bihar-window,.ask-bihar-input-area,.ask-bihar-quick { background:var(--mb-paper) !important; }
 .ask-bihar-message.user .ask-bihar-bubble { background:var(--mb-maroon) !important; color:var(--theme-text-on-dark) !important; }
 .ask-bihar-message.ai .ask-bihar-bubble { background:var(--theme-bg-secondary) !important; color:var(--theme-text-primary) !important; border-color:var(--theme-border) !important; }
-
-/* Text/image overlays and icon colors */
 .section-label,.section-eyebrow { color:var(--mb-maroon) !important; }
 .section-title,.about-title,.about-project-content h2,.journey-heading h3,.site-search-box h2 { color:var(--mb-indigo-dark) !important; }
 .section-title::after,.about-title::after,.about-project-content h2::after,.journey-heading h3::after,.site-search-box h2::after { content:"✦"; display:block; margin-top:8px; color:var(--mb-mustard); }
 .stat-icon,.about-highlight-icon,.travel-info-icon { color:var(--theme-icon) !important; }
-
-@media (max-width:991.98px) {
-  .navbar-collapse { background:var(--theme-bg-dark) !important; border:1px solid var(--theme-border) !important; }
-}
-@media (max-width:575.98px) {
-  section:not(.hero-section)::before { height:8px; background-size:14px 8px,14px 8px; }
-}
-@media (prefers-reduced-motion:reduce) {
-  *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; }
-}
-
-/* =========================================================
-   THEME SAFETY — high-risk contrast surfaces
-   ========================================================= */
+@media (max-width:991.98px) { .navbar-collapse { background:var(--theme-bg-dark) !important; border:1px solid var(--theme-border) !important; } }
+@media (max-width:575.98px) { section:not(.hero-section)::before { height:8px; background-size:14px 8px,14px 8px; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
 html, body { background-color:var(--theme-bg-primary); color:var(--theme-text-primary); }
 input,textarea,select,button { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
 input::placeholder,textarea::placeholder { color:var(--theme-text-secondary); opacity:1; }
@@ -242,3 +173,29 @@ th { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary)
 td { color:var(--theme-text-primary); background-color:var(--theme-bg-primary); }
 [role="tooltip"],.tooltip,.popover,.modal-content,.dropdown-menu { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
 
+/* =========================================================
+   VISIBILITY HOTFIX — content must remain readable in both themes
+   ========================================================= */
+:root { --theme-heading:#1C3F72; --theme-body-readable:#4F4037; --theme-surface-readable:#2F241F; --theme-on-accent:#FFF9EC; }
+[data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark { --theme-heading:#F0C56B; --theme-body-readable:#E8D8C8; --theme-surface-readable:#FDF6E3; --theme-on-accent:#121820; }
+@media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --theme-heading:#F0C56B; --theme-body-readable:#E8D8C8; --theme-surface-readable:#FDF6E3; --theme-on-accent:#121820; } }
+.about-bihar-content,.about-bihar-content * { opacity:1 !important; }
+.about-bihar-content .section-label,.about-bihar-content .section-eyebrow { color:var(--theme-accent-2) !important; }
+.about-bihar-content .about-title { color:var(--theme-heading) !important; opacity:1 !important; }
+.about-bihar-content .about-title span { color:var(--theme-accent-2) !important; }
+.about-bihar-content .about-lead,.about-bihar-content .about-text,.about-bihar-content p { color:var(--theme-body-readable) !important; opacity:1 !important; }
+.about-bihar-content .about-stat,.about-bihar-content .stat-number,.about-bihar-content .stat-label,.about-bihar-content .about-highlight,.about-bihar-content .about-highlight p,.about-bihar-content .about-highlight span { color:var(--theme-body-readable) !important; opacity:1 !important; }
+.about-bihar-content .stat-number { color:var(--theme-heading) !important; font-weight:700; }
+.about-bihar-content .stat-label { color:var(--theme-text-secondary) !important; }
+.about-bihar-content .stat-icon,.about-bihar-content .about-highlight-icon { color:var(--theme-icon) !important; }
+.about-bihar-content .about-project-btn,.about-bihar-content .btn-heritage { color:var(--theme-on-accent) !important; opacity:1 !important; }
+.section-subtitle,.card p,.card .card-text,.card .text-muted,[class*="-card"] p,[class*="-card"] .card-text,[class*="-card"] .text-muted,.about-text,.about-lead,.journey-day p,.travel-info-card p { color:var(--theme-text-secondary) !important; }
+.section-title,.card h1,.card h2,.card h3,.card h4,.card h5,.card h6,[class*="-card"] h1,[class*="-card"] h2,[class*="-card"] h3,[class*="-card"] h4,[class*="-card"] h5,[class*="-card"] h6 { color:var(--theme-heading) !important; }
+.hero-title,.hero-description,.hero-scroll,.hero-location,.image-overlay,.gallery-overlay,.gallery-caption,.card-overlay,[class*="overlay"] .title,[class*="overlay"] p { color:var(--theme-text-on-dark) !important; }
+.hero-title span,.hero-location i,.hero-scroll i { color:var(--theme-accent-2) !important; }
+.text-muted { color:var(--theme-text-secondary) !important; }
+.form-label,label { color:var(--theme-text-primary) !important; }
+input::placeholder,textarea::placeholder { color:var(--theme-text-secondary) !important; opacity:1 !important; }
+button:disabled,.btn:disabled,.form-control:disabled,.form-select:disabled { color:var(--theme-text-secondary) !important; }
+body:not(.dark) .section-title,body:not(.dark) .about-title,body:not(.dark) .about-project-content h2,body:not(.dark) .journey-heading h3 { color:var(--theme-heading) !important; }
+[data-theme="dark"] .section-title,[data-theme="dark"] .about-title,[data-theme="dark"] .about-project-content h2,[data-theme="dark"] .journey-heading h3,[data-bs-theme="dark"] .section-title,[data-bs-theme="dark"] .about-title,[data-bs-theme="dark"] .about-project-content h2,[data-bs-theme="dark"] .journey-heading h3,.dark-mode .section-title,.dark-mode .about-title,.dark-mode .about-project-content h2,.dark-mode .journey-heading h3,.dark .section-title,.dark .about-title,.dark .about-project-content h2,.dark .journey-heading h3 { color:var(--theme-heading) !important; }
