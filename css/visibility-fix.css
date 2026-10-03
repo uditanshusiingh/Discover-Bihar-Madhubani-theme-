@@ -1,0 +1,205 @@
+/* =========================================================
+   DISCOVER BIHAR — LIGHT/DARK VISIBILITY HOTFIX
+   Loaded after all existing CSS so theme tokens win globally.
+   Layout/spacing/structure are intentionally untouched.
+   ========================================================= */
+
+:root {
+  --theme-heading: #1C3F72;
+  --theme-body-readable: #4F4037;
+  --theme-surface-readable: #2F241F;
+  --theme-on-accent: #FFF9EC;
+}
+
+[data-theme="dark"],
+[data-bs-theme="dark"],
+.dark-mode,
+.dark,
+body.dark {
+  --theme-heading: #F0C56B;
+  --theme-body-readable: #E8D8C8;
+  --theme-surface-readable: #FDF6E3;
+  --theme-on-accent: #121820;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --theme-heading: #F0C56B;
+    --theme-body-readable: #E8D8C8;
+    --theme-surface-readable: #FDF6E3;
+    --theme-on-accent: #121820;
+  }
+}
+
+/* Home/about introduction: the screenshot showed this entire content
+   rendered at near-background opacity in light mode. Force readable
+   theme colors without changing its layout. */
+.about-bihar-content,
+.about-bihar-content * {
+  opacity: 1 !important;
+}
+
+.about-bihar-content .section-label,
+.about-bihar-content .section-eyebrow {
+  color: var(--theme-accent-2) !important;
+}
+
+.about-bihar-content .about-title {
+  color: var(--theme-heading) !important;
+  opacity: 1 !important;
+}
+
+.about-bihar-content .about-title span {
+  color: var(--theme-accent-2) !important;
+}
+
+.about-bihar-content .about-lead,
+.about-bihar-content .about-text,
+.about-bihar-content p {
+  color: var(--theme-body-readable) !important;
+  opacity: 1 !important;
+}
+
+.about-bihar-content .about-stat,
+.about-bihar-content .stat-number,
+.about-bihar-content .stat-label,
+.about-bihar-content .about-highlight,
+.about-bihar-content .about-highlight p,
+.about-bihar-content .about-highlight span {
+  color: var(--theme-body-readable) !important;
+  opacity: 1 !important;
+}
+
+.about-bihar-content .stat-number {
+  color: var(--theme-heading) !important;
+  font-weight: 700;
+}
+
+.about-bihar-content .stat-label {
+  color: var(--theme-text-secondary) !important;
+}
+
+.about-bihar-content .stat-icon,
+.about-bihar-content .about-highlight-icon {
+  color: var(--theme-icon) !important;
+}
+
+.about-bihar-content .about-project-btn,
+.about-bihar-content .btn-heritage {
+  color: var(--theme-on-accent) !important;
+  opacity: 1 !important;
+}
+
+/* Generic content surfaces frequently affected by inherited opacity or
+   fixed white/black text in the original page styles. */
+.section-subtitle,
+.card p,
+.card .card-text,
+.card .text-muted,
+[class*="-card"] p,
+[class*="-card"] .card-text,
+[class*="-card"] .text-muted,
+.about-text,
+.about-lead,
+.journey-day p,
+.travel-info-card p {
+  color: var(--theme-text-secondary) !important;
+}
+
+.section-title,
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+[class*="-card"] h1, [class*="-card"] h2, [class*="-card"] h3,
+[class*="-card"] h4, [class*="-card"] h5, [class*="-card"] h6 {
+  color: var(--theme-heading) !important;
+}
+
+/* Keep text placed over imagery readable in both modes. */
+.hero-title,
+.hero-description,
+.hero-scroll,
+.hero-location,
+.image-overlay,
+.gallery-overlay,
+.gallery-caption,
+.card-overlay,
+[class*="overlay"] .title,
+[class*="overlay"] p {
+  color: var(--theme-text-on-dark) !important;
+}
+
+.hero-title span,
+.hero-location i,
+.hero-scroll i {
+  color: var(--theme-accent-2) !important;
+}
+
+/* Badges / labels */
+.badge,
+.section-label,
+.section-eyebrow,
+[class*="badge"] {
+  --badge-fg: var(--theme-on-accent);
+}
+
+/* Do not allow generic Bootstrap muted utilities to become invisible. */
+.text-muted {
+  color: var(--theme-text-secondary) !important;
+}
+
+/* Inline SVG/icon visibility */
+svg[fill="white"],
+svg[fill="#fff"],
+svg[fill="#ffffff"],
+svg[stroke="white"],
+svg[stroke="#fff"],
+svg[stroke="#ffffff"] {
+  fill: var(--theme-text-on-dark);
+  stroke: var(--theme-text-on-dark);
+}
+
+/* Form visibility */
+.form-label,
+label {
+  color: var(--theme-text-primary) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--theme-text-secondary) !important;
+  opacity: 1 !important;
+}
+
+/* Avoid disabled controls disappearing completely. */
+button:disabled,
+.btn:disabled,
+.form-control:disabled,
+.form-select:disabled {
+  color: var(--theme-text-secondary) !important;
+}
+
+/* Theme-safe heading color for all ordinary page sections. */
+body:not(.dark) .section-title,
+body:not(.dark) .about-title,
+body:not(.dark) .about-project-content h2,
+body:not(.dark) .journey-heading h3 {
+  color: var(--theme-heading) !important;
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .about-title,
+[data-theme="dark"] .about-project-content h2,
+[data-theme="dark"] .journey-heading h3,
+[data-bs-theme="dark"] .section-title,
+[data-bs-theme="dark"] .about-title,
+[data-bs-theme="dark"] .about-project-content h2,
+[data-bs-theme="dark"] .journey-heading h3,
+.dark-mode .section-title,
+.dark-mode .about-title,
+.dark-mode .about-project-content h2,
+.dark-mode .journey-heading h3,
+.dark .section-title,
+.dark .about-title,
+.dark .about-project-content h2,
+.dark .journey-heading h3 {
+  color: var(--theme-heading) !important;
+}
