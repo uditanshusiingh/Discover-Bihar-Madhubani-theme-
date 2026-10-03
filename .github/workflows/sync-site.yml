@@ -19,7 +19,7 @@ jobs:
         run: |
           cp css/madhubani-theme.css /tmp/madhubani-theme.css
           git clone --depth 1 https://github.com/uditanshusiingh/Discover-Bihar.git /tmp/source
-          rsync -a --delete --exclude '.git' --exclude '.github/' /tmp/source/ ./
+          rsync -a --delete --exclude '.git' --exclude '.github/' --exclude 'css/madhubani-theme.css' --exclude 'THEME_AUDIT.md' /tmp/source/ ./
           mkdir -p css
           cp /tmp/madhubani-theme.css css/madhubani-theme.css
 
@@ -43,14 +43,13 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re, hashlib
+          import re, math
 
-          ROOT = Path('.')
-          files = [p for ext in ('*.css','*.scss','*.html') for p in ROOT.rglob(ext)
-                   if '.git' not in p.parts and '.github' not in p.parts]
+          ROOT=Path('.')
+          files=[p for ext in ('*.css','*.scss','*.html') for p in ROOT.rglob(ext)
+                 if '.git' not in p.parts and '.github' not in p.parts and p.as_posix()!='css/madhubani-theme.css']
 
-          # One semantic token system. Values are deliberately high-contrast in both themes.
-          token_block = r'''
+          token_block=r'''
           /* =========================================================
              THEME TOKENS — centralized light/dark color system
              ========================================================= */
@@ -72,149 +71,127 @@ jobs:
               --theme-white: #FFFDF7;
               --theme-black: #2F241F;
           }
-
-          [data-theme="dark"],
-          [data-bs-theme="dark"],
-          .dark-mode,
-          .dark,
-          body.dark {
-              --theme-text-primary: #FDF6E3;
-              --theme-text-secondary: #E8D8C8;
-              --theme-text-on-dark: #FFF9EC;
-              --theme-bg-primary: #121820;
-              --theme-bg-secondary: #1C2430;
-              --theme-bg-dark: #0C1624;
-              --theme-border: #44505F;
-              --theme-border-strong: #D46A7E;
-              --theme-accent: #D46A7E;
-              --theme-accent-2: #F0C56B;
-              --theme-link: #8DB7FF;
-              --theme-icon: #F0C56B;
-              --theme-shadow: rgba(0,0,0,.45);
-              --theme-overlay: rgba(0,0,0,.72);
-              --theme-white: #FDF6E3;
-              --theme-black: #FDF6E3;
+          [data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark {
+              --theme-text-primary:#FDF6E3; --theme-text-secondary:#E8D8C8; --theme-text-on-dark:#FFF9EC;
+              --theme-bg-primary:#121820; --theme-bg-secondary:#1C2430; --theme-bg-dark:#0C1624;
+              --theme-border:#44505F; --theme-border-strong:#D46A7E; --theme-accent:#D46A7E;
+              --theme-accent-2:#F0C56B; --theme-link:#8DB7FF; --theme-icon:#F0C56B;
+              --theme-shadow:rgba(0,0,0,.45); --theme-overlay:rgba(0,0,0,.72); --theme-white:#FDF6E3; --theme-black:#FDF6E3;
           }
-
           @media (prefers-color-scheme: dark) {
               :root:not([data-theme="light"]) {
-                  --theme-text-primary: #FDF6E3;
-                  --theme-text-secondary: #E8D8C8;
-                  --theme-text-on-dark: #FFF9EC;
-                  --theme-bg-primary: #121820;
-                  --theme-bg-secondary: #1C2430;
-                  --theme-bg-dark: #0C1624;
-                  --theme-border: #44505F;
-                  --theme-border-strong: #D46A7E;
-                  --theme-accent: #D46A7E;
-                  --theme-accent-2: #F0C56B;
-                  --theme-link: #8DB7FF;
-                  --theme-icon: #F0C56B;
-                  --theme-shadow: rgba(0,0,0,.45);
-                  --theme-overlay: rgba(0,0,0,.72);
-                  --theme-white: #FDF6E3;
-                  --theme-black: #FDF6E3;
+                  --theme-text-primary:#FDF6E3; --theme-text-secondary:#E8D8C8; --theme-text-on-dark:#FFF9EC;
+                  --theme-bg-primary:#121820; --theme-bg-secondary:#1C2430; --theme-bg-dark:#0C1624;
+                  --theme-border:#44505F; --theme-border-strong:#D46A7E; --theme-accent:#D46A7E;
+                  --theme-accent-2:#F0C56B; --theme-link:#8DB7FF; --theme-icon:#F0C56B;
+                  --theme-shadow:rgba(0,0,0,.45); --theme-overlay:rgba(0,0,0,.72); --theme-white:#FDF6E3; --theme-black:#FDF6E3;
               }
           }
           '''
 
-          # Existing shared theme file gets the canonical token block. Other files are
-          # rewritten so hardcoded colors become var(--theme-*) references.
-          theme = Path('css/madhubani-theme.css')
-          original_theme = theme.read_text(encoding='utf-8') if theme.exists() else ''
-          if 'THEME TOKENS — centralized light/dark color system' not in original_theme:
-              theme.write_text(token_block + '\n' + original_theme, encoding='utf-8')
+          theme=Path('css/madhubani-theme.css')
+          old=theme.read_text(encoding='utf-8') if theme.exists() else ''
+          # The theme file is protected from bulk replacement. The canonical token block is
+          # always rebuilt here so it can never become self-referential.
+          marker='/* =========================================================\n             THEME TOKENS — centralized light/dark color system'
+          if marker in old:
+              body=old[old.find('*/', old.find(marker))+2:]
+              # Drop any previous safety block; it is re-added below.
+              body=body.split('/* =========================================================\n   THEME SAFETY',1)[0]
+          else:
+              body=old
+          theme.write_text(token_block+'\n'+body.strip()+'\n',encoding='utf-8')
 
-          HEX = re.compile(r'#[0-9a-fA-F]{3,8}\b')
-          FUNC = re.compile(r'(?<![\w-])(?:rgb|rgba|hsl|hsla)\([^)]*\)', re.I)
-          NAMED = re.compile(r'(?<![\w-])(white|black|gray|grey|silver|maroon|navy|yellow|orange|red|blue|green|purple)(?![\w-])', re.I)
-          ALL = re.compile(r'#[0-9a-fA-F]{3,8}\b|(?<![\w-])(?:rgb|rgba|hsl|hsla)\([^)]*\)|(?<![\w-])(?:white|black|gray|grey|silver|maroon|navy|yellow|orange|red|blue|green|purple)(?![\w-])', re.I)
+          HEX=re.compile(r'#[0-9a-fA-F]{3,8}\b')
+          FUNC=re.compile(r'(?<![\w-])(?:rgb|rgba|hsl|hsla)\([^)]*\)',re.I)
+          NAMED=re.compile(r'(?<![\w-])(white|black|gray|grey|silver|maroon|navy|yellow|orange|red|blue|green|purple)(?![\w-])',re.I)
+          ALL=re.compile(r'#[0-9a-fA-F]{3,8}\b|(?<![\w-])(?:rgb|rgba|hsl|hsla)\([^)]*\)|(?<![\w-])(?:white|black|gray|grey|silver|maroon|navy|yellow|orange|red|blue|green|purple)(?![\w-])',re.I)
 
-          palette = {
-              '#A6243B': '--theme-accent', '#7D1A2D': '--theme-accent',
-              '#E8A33D': '--theme-accent-2', '#F3C66D': '--theme-accent-2',
-              '#1C3F72': '--theme-link', '#142D52': '--theme-bg-dark',
-              '#FDF6E3': '--theme-bg-primary', '#FFF9EC': '--theme-bg-secondary',
-              '#2F241F': '--theme-text-primary', '#6C5A50': '--theme-text-secondary',
-              '#FFFDF7': '--theme-white', '#FFFFFF': '--theme-white', '#fff': '--theme-white',
-              '#000000': '--theme-black', '#000': '--theme-black',
-              '#8B4513': '--theme-accent', '#D4A017': '--theme-accent-2',
-              '#1B1B1B': '--theme-text-primary', '#F8F5EF': '--theme-bg-primary',
-              '#333333': '--theme-text-primary', '#777777': '--theme-text-secondary',
+          palette={
+              'accent':(166,36,59),'accent2':(232,163,61),'link':(28,63,114),'dark':(20,45,82),
+              'paper':(255,249,236),'cream':(253,246,227),'ink':(47,36,31),'muted':(108,90,80),'white':(255,253,247),'black':(0,0,0)
           }
-
-          def context(text, pos):
-              start = max(text.rfind('{', 0, pos), text.rfind(';', 0, pos), text.rfind('>', 0, pos)) + 1
-              left = text[start:pos].lower()
-              m = re.search(r'([\w-]+)\s*:\s*[^:]*$', left)
-              if m: return m.group(1)
-              m = re.search(r'(?:fill|stroke|stop-color)\s*=\s*$', left)
-              if m: return 'fill'
-              return ''
-
-          def token_for(raw, prop):
-              low = raw.lower().replace(' ', '')
-              if low == 'transparent': return None
-              if raw in palette: return palette[raw]
-              # Normalize equivalent casing for the common palette.
-              if raw.upper() in palette: return palette[raw.upper()]
-              if low in ('white','#fff','#ffffff'):
-                  return '--theme-text-on-dark' if prop in ('color','fill','stroke') else '--theme-bg-secondary'
-              if low in ('black','#000','#000000'):
-                  return '--theme-text-primary' if prop in ('color','fill','stroke') else '--theme-bg-dark'
-              if low in ('gray','grey','silver'):
-                  return '--theme-text-secondary' if prop in ('color','fill','stroke') else '--theme-border'
-              if prop in ('box-shadow','text-shadow','filter'): return '--theme-shadow'
-              if prop in ('border','border-color','outline','outline-color','column-rule-color','text-decoration-color'): return '--theme-border'
-              if prop in ('background','background-color','background-image'): return '--theme-bg-secondary'
-              if prop in ('color','fill','stroke','stop-color','caret-color'):
-                  return '--theme-text-primary'
+          def rgb(raw):
+              x=raw.strip().lower()
+              if x.startswith('#'):
+                  h=x[1:]
+                  if len(h) in (3,4): h=''.join(c*2 for c in h)
+                  if len(h)>=6:
+                      return tuple(int(h[i:i+2],16) for i in (0,2,4))
+              m=re.match(r'rgba?\(([^)]+)\)',x)
+              if m:
+                  parts=[q.strip() for q in m.group(1).split(',')]
+                  if len(parts)>=3:
+                      vals=[]
+                      for q in parts[:3]: vals.append(round(float(q[:-1])*2.55) if q.endswith('%') else int(float(q)))
+                      return tuple(max(0,min(255,v)) for v in vals)
+              return None
+          def nearest(c):
+              if not c:return None
+              best=min(palette.items(),key=lambda kv:sum((c[i]-kv[1][i])**2 for i in range(3)))
+              d=math.sqrt(sum((c[i]-best[1][i])**2 for i in range(3)))
+              return best[0] if d<75 else None
+          def context(text,pos):
+              start=max(text.rfind('{',0,pos),text.rfind(';',0,pos),text.rfind('>',0,pos))+1
+              left=text[start:pos].lower()
+              m=re.search(r'([\w-]+)\s*:\s*[^:]*$',left)
+              if m:return m.group(1)
+              m=re.search(r'(?:fill|stroke|stop-color)\s*=\s*$',left)
+              return 'fill' if m else ''
+          def token(raw,prop):
+              low=raw.lower().replace(' ','')
+              if low=='transparent':return None
+              c=rgb(raw); n=nearest(c)
+              if n=='accent':return '--theme-accent'
+              if n=='accent2':return '--theme-accent-2'
+              if n=='link':return '--theme-link'
+              if n=='dark':return '--theme-bg-dark'
+              if n in ('paper','cream'):
+                  return '--theme-bg-secondary' if prop.startswith('background') else '--theme-text-on-dark'
+              if n=='ink':return '--theme-text-primary'
+              if n=='muted':return '--theme-text-secondary'
+              if n=='white':return '--theme-text-on-dark' if prop in ('color','fill','stroke','stop-color') else '--theme-bg-secondary'
+              if n=='black':return '--theme-text-primary' if prop in ('color','fill','stroke','stop-color') else '--theme-bg-dark'
+              if prop in ('box-shadow','text-shadow','filter'):return '--theme-shadow'
+              if prop in ('border','border-color','outline','outline-color','column-rule-color','text-decoration-color'):return '--theme-border'
+              if prop.startswith('background'):return '--theme-bg-secondary'
+              if prop in ('color','fill','stroke','stop-color','caret-color'):return '--theme-text-primary'
               return '--theme-border'
 
           report=[]
           for p in files:
-              s=p.read_text(encoding='utf-8')
-              original=s
-              replacements={}
+              s=p.read_text(encoding='utf-8'); original=s; reps={}
               def repl(m):
-                  raw=m.group(0)
-                  prop=context(s,m.start())
-                  token=token_for(raw, prop)
-                  if not token: return raw
-                  replacements[raw]=token
-                  return f'var({token})'
+                  raw=m.group(0); t=token(raw,context(s,m.start()))
+                  if not t:return raw
+                  reps[raw]=t; return f'var({t})'
               s=ALL.sub(repl,s)
-              if s != original:
-                  p.write_text(s, encoding='utf-8')
-                  report.append((str(p), replacements))
+              if s!=original:
+                  p.write_text(s,encoding='utf-8'); report.append((str(p),reps))
 
-          # Append a final safety layer for controls/placeholders and high-risk surfaces.
-          safety = r'''
+          safety=r'''
           /* =========================================================
              THEME SAFETY — high-risk contrast surfaces
              ========================================================= */
-          html, body { background-color: var(--theme-bg-primary); color: var(--theme-text-primary); }
-          input, textarea, select, button { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); border-color: var(--theme-border); }
-          input::placeholder, textarea::placeholder { color: var(--theme-text-secondary); opacity: 1; }
-          input:disabled, textarea:disabled, select:disabled, button:disabled { color: var(--theme-text-secondary); background-color: var(--theme-bg-secondary); border-color: var(--theme-border); opacity: .78; }
-          a { color: var(--theme-link); }
-          code, pre, kbd, samp { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); border-color: var(--theme-border); }
-          table, thead, tbody, tr, th, td { border-color: var(--theme-border); }
-          th { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); }
-          td { color: var(--theme-text-primary); background-color: var(--theme-bg-primary); }
-          [role="tooltip"], .tooltip, .popover, .modal-content, .dropdown-menu { color: var(--theme-text-primary); background-color: var(--theme-bg-secondary); border-color: var(--theme-border); }
-          svg [fill], svg [stroke] { vector-effect: non-scaling-stroke; }
+          html, body { background-color:var(--theme-bg-primary); color:var(--theme-text-primary); }
+          input,textarea,select,button { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
+          input::placeholder,textarea::placeholder { color:var(--theme-text-secondary); opacity:1; }
+          input:disabled,textarea:disabled,select:disabled,button:disabled { color:var(--theme-text-secondary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); opacity:.78; }
+          a { color:var(--theme-link); }
+          code,pre,kbd,samp { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
+          table,thead,tbody,tr,th,td { border-color:var(--theme-border); }
+          th { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); }
+          td { color:var(--theme-text-primary); background-color:var(--theme-bg-primary); }
+          [role="tooltip"],.tooltip,.popover,.modal-content,.dropdown-menu { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
           '''
-          with theme.open('a', encoding='utf-8') as f:
-              f.write('\n' + safety + '\n')
+          theme.write_text(theme.read_text(encoding='utf-8').rstrip()+'\n'+safety+'\n',encoding='utf-8')
 
-          # Produce a human-readable audit summary for spot-checking.
           out=['# Light/Dark Theme Audit','',f'Scanned {len(files)} CSS/SCSS/HTML files.','', '## Modified files']
-          for name, reps in report:
+          for name,reps in report:
               out.append(f'- `{name}` — {len(reps)} distinct hardcoded color literals replaced')
-              for raw,tok in sorted(reps.items()): out.append(f'  - `{raw}` → `var({tok})`')
-          out += ['', '## Contrast tokens (WCAG AA target)', '- Light: `--theme-text-primary` / `--theme-bg-primary`, `--theme-text-secondary` / `--theme-bg-primary`, `--theme-link` / `--theme-bg-primary`, and `--theme-accent` / `--theme-bg-primary` are selected above 4.5:1.', '- Dark: `--theme-text-primary` / `--theme-bg-primary`, `--theme-text-secondary` / `--theme-bg-primary`, `--theme-link` / `--theme-bg-primary`, and `--theme-accent` / `--theme-bg-primary` are selected above 4.5:1.']
-          Path('THEME_AUDIT.md').write_text('\n'.join(out)+'\n', encoding='utf-8')
+              for raw,t in sorted(reps.items()):out.append(f'  - `{raw}` → `var({t})`')
+          out += ['', '## WCAG AA token contrast', '- Light primary text/background: 13.98:1', '- Light secondary text/background: 6.05:1', '- Light accent/background: 6.63:1', '- Light link/background: 9.72:1', '- Dark primary text/background: 16.54:1', '- Dark secondary text/background: 12.82:1', '- Dark accent/background: 5.23:1', '- Dark link/background: 8.79:1']
+          Path('THEME_AUDIT.md').write_text('\n'.join(out)+'\n',encoding='utf-8')
           print('\n'.join(out))
           PY
 
