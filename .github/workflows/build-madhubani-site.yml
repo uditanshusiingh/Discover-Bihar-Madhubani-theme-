@@ -57,6 +57,33 @@ input,textarea,select,.form-control,.form-select{background:#fffdf7!important;co
 .ask-bihar-launcher,.ask-bihar-send{background:var(--mb-maroon)!important}.ask-bihar-header{background:linear-gradient(135deg,var(--mb-indigo-dark),var(--mb-indigo))!important;border-bottom:3px solid var(--mb-mustard)}.ask-bihar-window,.ask-bihar-input-area,.ask-bihar-quick{background-color:var(--mb-paper)!important}.ask-bihar-message.user .ask-bihar-bubble{background:var(--mb-maroon)!important}.ask-bihar-quick button{border-color:var(--mb-line)!important;color:var(--mb-maroon)!important;background:rgba(232,163,61,.1)!important}
 img{border-color:var(--mb-mustard)}
 @media(max-width:991.98px){.navbar-collapse{background:rgba(20,45,82,.96);border:1px solid rgba(232,163,61,.3);border-radius:16px}}@media(max-width:575.98px){section:not(.hero-section)::before{height:8px;background-size:14px 8px,14px 8px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Central light/dark theme tokens and visibility safety */
+:root{--theme-text-primary:#2F241F;--theme-text-secondary:#6C5A50;--theme-text-on-dark:#FFF9EC;--theme-bg-primary:#FDF6E3;--theme-bg-secondary:#FFF9EC;--theme-bg-dark:#142D52;--theme-border:#D7BFA8;--theme-accent:#A6243B;--theme-accent-2:#E8A33D;--theme-link:#1C3F72;--theme-icon:#A6243B}
+[data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark{--theme-text-primary:#FDF6E3;--theme-text-secondary:#E8D8C8;--theme-text-on-dark:#FFF9EC;--theme-bg-primary:#121820;--theme-bg-secondary:#1C2430;--theme-bg-dark:#0C1624;--theme-border:#44505F;--theme-accent:#D46A7E;--theme-accent-2:#F0C56B;--theme-link:#8DB7FF;--theme-icon:#F0C56B}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--theme-text-primary:#FDF6E3;--theme-text-secondary:#E8D8C8;--theme-text-on-dark:#FFF9EC;--theme-bg-primary:#121820;--theme-bg-secondary:#1C2430;--theme-bg-dark:#0C1624;--theme-border:#44505F;--theme-accent:#D46A7E;--theme-accent-2:#F0C56B;--theme-link:#8DB7FF;--theme-icon:#F0C56B}}
+html,body{background:var(--theme-bg-primary)!important;color:var(--theme-text-primary)!important}
+input,textarea,select,.form-control,.form-select{background:var(--theme-bg-secondary)!important;color:var(--theme-text-primary)!important;border-color:var(--theme-border)!important}input::placeholder,textarea::placeholder{color:var(--theme-text-secondary)!important;opacity:1!important}
+a{color:var(--theme-link)}
+.section-subtitle,.card p,.card .card-text,.card .text-muted,[class*="-card"] p,[class*="-card"] .card-text,[class*="-card"] .text-muted,.about-text,.about-lead,.journey-day p,.travel-info-card p,.text-muted{color:var(--theme-text-secondary)!important}
+.section-title,.card h1,.card h2,.card h3,.card h4,.card h5,.card h6,[class*="-card"] h1,[class*="-card"] h2,[class*="-card"] h3,[class*="-card"] h4,[class*="-card"] h5,[class*="-card"] h6{color:var(--theme-text-primary)!important}
+.hero-title,.hero-description,.hero-scroll,.hero-location,.image-overlay,.gallery-overlay,.gallery-caption,.card-overlay,[class*="overlay"] .title,[class*="overlay"] p{color:var(--theme-text-on-dark)!important}
+.hero-title span,.hero-location i,.hero-scroll i{color:var(--theme-accent-2)!important}
+
+/* Home — A Land of Timeless Stories: explicit contrast in both modes */
+.about-bihar-section{background-color:var(--theme-bg-primary)!important;color:var(--theme-text-primary)!important}
+.about-bihar-content,.about-bihar-content *{opacity:1!important}
+.about-bihar-content .section-label{color:var(--theme-accent-2)!important}
+.about-bihar-content .about-title{color:var(--theme-text-primary)!important;opacity:1!important}
+.about-bihar-content .about-title span{color:var(--theme-accent-2)!important}
+.about-bihar-content .about-lead,.about-bihar-content .about-text,.about-bihar-content p{color:var(--theme-text-secondary)!important;opacity:1!important}
+.about-bihar-content .about-stat h3{color:var(--theme-text-primary)!important}
+.about-bihar-content .about-stat p{color:var(--theme-text-secondary)!important}
+.about-bihar-content .stat-icon{color:var(--theme-icon)!important}
+.about-bihar-content .about-button{background:var(--theme-accent)!important;border-color:var(--theme-accent)!important;color:var(--theme-text-on-dark)!important}
+[data-theme="dark"] .about-bihar-section,[data-bs-theme="dark"] .about-bihar-section,.dark-mode .about-bihar-section,.dark .about-bihar-section,body.dark .about-bihar-section{background-color:var(--theme-bg-primary)!important;color:var(--theme-text-primary)!important}
+[data-theme="dark"] .about-bihar-content .about-title,[data-bs-theme="dark"] .about-bihar-content .about-title,.dark-mode .about-bihar-content .about-title,.dark .about-bihar-content .about-title,body.dark .about-bihar-content .about-title{color:var(--theme-text-primary)!important}
+[data-theme="dark"] .about-bihar-content .about-lead,[data-theme="dark"] .about-bihar-content .about-text,[data-bs-theme="dark"] .about-bihar-content .about-lead,[data-bs-theme="dark"] .about-bihar-content .about-text,.dark-mode .about-bihar-content .about-lead,.dark-mode .about-bihar-content .about-text,.dark .about-bihar-content .about-lead,.dark .about-bihar-content .about-text,body.dark .about-bihar-content .about-lead,body.dark .about-bihar-content .about-text{color:var(--theme-text-secondary)!important}
 CSS
 
       - name: Load theme on every page
@@ -69,8 +96,7 @@ CSS
                   continue
               rel='css/madhubani-theme.css' if p.name=='index.html' else '../css/madhubani-theme.css'
               tag=f'\n    <link rel="stylesheet" href="{rel}">\n'
-              marker='</head>'
-              s=s.replace(marker, tag+marker, 1)
+              s=s.replace('</head>',tag+'</head>',1)
               p.write_text(s,encoding='utf-8')
           PY
 
