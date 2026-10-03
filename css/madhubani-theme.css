@@ -38,6 +38,44 @@
 }
 
 /* =========================================================
+   THEME TOKENS — centralized light/dark color system
+   ========================================================= */
+:root {
+    --theme-text-primary: #2F241F;
+    --theme-text-secondary: #6C5A50;
+    --theme-text-on-dark: #FFF9EC;
+    --theme-bg-primary: #FDF6E3;
+    --theme-bg-secondary: #FFF9EC;
+    --theme-bg-dark: #142D52;
+    --theme-border: #D7BFA8;
+    --theme-border-strong: #A6243B;
+    --theme-accent: #A6243B;
+    --theme-accent-2: #E8A33D;
+    --theme-link: #1C3F72;
+    --theme-icon: #A6243B;
+    --theme-shadow: rgba(20,45,82,.18);
+    --theme-overlay: rgba(20,45,82,.78);
+    --theme-white: #FFFDF7;
+    --theme-black: #2F241F;
+}
+[data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark {
+    --theme-text-primary:#FDF6E3; --theme-text-secondary:#E8D8C8; --theme-text-on-dark:#FFF9EC;
+    --theme-bg-primary:#121820; --theme-bg-secondary:#1C2430; --theme-bg-dark:#0C1624;
+    --theme-border:#44505F; --theme-border-strong:#D46A7E; --theme-accent:#D46A7E;
+    --theme-accent-2:#F0C56B; --theme-link:#8DB7FF; --theme-icon:#F0C56B;
+    --theme-shadow:rgba(0,0,0,.45); --theme-overlay:rgba(0,0,0,.72); --theme-white:#FDF6E3; --theme-black:#FDF6E3;
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --theme-text-primary:#FDF6E3; --theme-text-secondary:#E8D8C8; --theme-text-on-dark:#FFF9EC;
+        --theme-bg-primary:#121820; --theme-bg-secondary:#1C2430; --theme-bg-dark:#0C1624;
+        --theme-border:#44505F; --theme-border-strong:#D46A7E; --theme-accent:#D46A7E;
+        --theme-accent-2:#F0C56B; --theme-link:#8DB7FF; --theme-icon:#F0C56B;
+        --theme-shadow:rgba(0,0,0,.45); --theme-overlay:rgba(0,0,0,.72); --theme-white:#FDF6E3; --theme-black:#FDF6E3;
+    }
+}
+
+/* =========================================================
    DISCOVER BIHAR — MITHILA / MADHUBANI THEME + VISIBILITY TOKENS
    Central color system used by every page/component.
    ========================================================= */
@@ -199,3 +237,18 @@ input::placeholder,textarea::placeholder { color:var(--theme-text-secondary) !im
 button:disabled,.btn:disabled,.form-control:disabled,.form-select:disabled { color:var(--theme-text-secondary) !important; }
 body:not(.dark) .section-title,body:not(.dark) .about-title,body:not(.dark) .about-project-content h2,body:not(.dark) .journey-heading h3 { color:var(--theme-heading) !important; }
 [data-theme="dark"] .section-title,[data-theme="dark"] .about-title,[data-theme="dark"] .about-project-content h2,[data-theme="dark"] .journey-heading h3,[data-bs-theme="dark"] .section-title,[data-bs-theme="dark"] .about-title,[data-bs-theme="dark"] .about-project-content h2,[data-bs-theme="dark"] .journey-heading h3,.dark-mode .section-title,.dark-mode .about-title,.dark-mode .about-project-content h2,.dark-mode .journey-heading h3,.dark .section-title,.dark .about-title,.dark .about-project-content h2,.dark .journey-heading h3 { color:var(--theme-heading) !important; }
+
+/* =========================================================
+   THEME SAFETY — high-risk contrast surfaces
+   ========================================================= */
+html, body { background-color:var(--theme-bg-primary); color:var(--theme-text-primary); }
+input,textarea,select,button { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
+input::placeholder,textarea::placeholder { color:var(--theme-text-secondary); opacity:1; }
+input:disabled,textarea:disabled,select:disabled,button:disabled { color:var(--theme-text-secondary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); opacity:.78; }
+a { color:var(--theme-link); }
+code,pre,kbd,samp { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
+table,thead,tbody,tr,th,td { border-color:var(--theme-border); }
+th { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); }
+td { color:var(--theme-text-primary); background-color:var(--theme-bg-primary); }
+[role="tooltip"],.tooltip,.popover,.modal-content,.dropdown-menu { color:var(--theme-text-primary); background-color:var(--theme-bg-secondary); border-color:var(--theme-border); }
+
