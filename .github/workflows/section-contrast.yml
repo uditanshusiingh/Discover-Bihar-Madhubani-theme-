@@ -90,6 +90,8 @@ jobs:
               if 'section-theme.js' not in s:s=s.replace('</body>',f'    <script src="{js}"></script>\n</body>',1)
               s=re.sub(r'<section(?![^>]*\bsection-auto\b)([^>]*)>',r'<section class="section-auto"\1>',s)
               s=re.sub(r'<header(?![^>]*\bsection-auto\b)([^>]*class="[^"]*(?:hero|history-hero)[^"]*"[^>]*)>',r'<header class="section-auto"\1>',s)
+              s=re.sub(r'<section class="section-auto"\s+class="([^"]*)"',r'<section class="section-auto \1"',s)
+              s=re.sub(r'<header class="section-auto"\s+class="([^"]*)"',r'<header class="section-auto \1"',s)
               p.write_text(s,encoding='utf-8')
           PY
 
