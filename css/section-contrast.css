@@ -1,5 +1,6 @@
 :root {
     --section-muted-light-bg: #6B5A47;
+    --section-heading-light-bg: #2F241F;
     --section-accent-light-bg: #7D1A2D;
     --section-muted-dark-bg: #FFF9EC;
     --section-accent-dark-bg: #F0C56B;
@@ -26,7 +27,7 @@
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-text p,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-project-lead { color:var(--section-muted-light-bg)!important; opacity:1!important; }
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3,
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3 em { color:var(--theme-text-primary)!important; opacity:1!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3 em { color:var(--section-heading-light-bg)!important; opacity:1!important; }
 .section-dark .hero-scroll,.section-dark .history-hero-scroll,.section-dark .about-hero-scroll { color:var(--section-muted-dark-bg)!important; }
 .section-dark .hero-scroll i,.section-dark .history-hero-scroll i,.section-dark .about-hero-scroll i { color:var(--section-accent-dark-bg)!important; }
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .hero-scroll,
