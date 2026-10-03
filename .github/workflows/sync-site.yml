@@ -1,0 +1,48 @@
+name: Sync Discover Bihar + Madhubani Theme
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preserve theme and sync source
+        run: |
+          cp css/madhubani-theme.css /tmp/madhubani-theme.css
+          git clone --depth 1 https://github.com/uditanshusiingh/Discover-Bihar.git /tmp/source
+          rsync -a --delete --exclude '.git' --exclude '.github/' /tmp/source/ ./
+          mkdir -p css
+          cp /tmp/madhubani-theme.css css/madhubani-theme.css
+
+      - name: Inject theme into every HTML page
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          pages=[Path('index.html'), *Path('pages').glob('*.html')]
+          for p in pages:
+              s=p.read_text(encoding='utf-8')
+              rel='css/madhubani-theme.css' if p.name=='index.html' else '../css/madhubani-theme.css'
+              if 'madhubani-theme.css' not in s:
+                  s=s.replace('</head>', f'    <link rel="stylesheet" href="{rel}">\n</head>', 1)
+              if 'family=Eczar' not in s:
+                  fonts='    <link rel="preconnect" href="https://fonts.googleapis.com">\n    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">\n'
+                  s=s.replace('</head>', fonts+'</head>', 1)
+              p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit full themed site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: apply Madhubani theme to entire Discover Bihar site [skip ci]" || exit 0
+          git push
