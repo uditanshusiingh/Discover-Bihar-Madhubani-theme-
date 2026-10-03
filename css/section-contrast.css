@@ -3,14 +3,35 @@
     --section-accent-light-bg: #7D1A2D;
     --section-muted-dark-bg: #FFF9EC;
     --section-accent-dark-bg: #F0C56B;
+
+    /* Two-tone heading tokens are based on the section background, not the UI theme. */
+    --heading-muted-on-light: #6B5A47;
+    --heading-accent-on-light: #A6243B;
+    --heading-muted-on-dark: #FFF9EC;
+    --heading-accent-on-dark: #F0C56B;
 }
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light { color:var(--section-muted-light-bg)!important; }
+
+/* Cream/light sections remain readable in both light and dark UI themes. */
+.section-light {
+    --section-text-on-light: #6B5A47;
+}
+
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light {
+    color: var(--section-text-on-light) !important;
+}
+
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h1,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h2,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h3,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h4,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h5,
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h6 { color:var(--section-muted-light-bg)!important; opacity:1!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h6 {
+    color: var(--heading-muted-on-light) !important;
+    opacity: 1 !important;
+    -webkit-text-stroke: 0 transparent !important;
+    text-shadow: none !important;
+}
+
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h1 span,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h2 span,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light h1 em,
@@ -18,17 +39,150 @@
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .section-label,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .section-eyebrow,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light [class*="view-link"],
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .view-all-link { color:var(--section-accent-light-bg)!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .view-all-link {
+    color: var(--heading-accent-on-light) !important;
+    opacity: 1 !important;
+}
+
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light p,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .text-muted,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .section-subtitle,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-text,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-text p,
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-project-lead { color:var(--section-muted-light-bg)!important; opacity:1!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-project-lead,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-lead,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-text {
+    color: var(--section-text-on-light) !important;
+    opacity: 1 !important;
+}
+
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3,
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3 em { color:var(--theme-text-primary)!important; opacity:1!important; }
-.section-dark .hero-scroll,.section-dark .history-hero-scroll,.section-dark .about-hero-scroll { color:var(--section-muted-dark-bg)!important; }
-.section-dark .hero-scroll i,.section-dark .history-hero-scroll i,.section-dark .about-hero-scroll i { color:var(--section-accent-dark-bg)!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3 em,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-title {
+    color: var(--heading-muted-on-light) !important;
+    opacity: 1 !important;
+}
+
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .philosophy-content h3 em,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-title span {
+    color: var(--heading-accent-on-light) !important;
+}
+
+/* Known on-dark utility consumers that can appear in a cream section. */
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .hero-scroll,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .hero-scroll span,
 :is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .history-hero-scroll,
-:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-hero-scroll { color:var(--section-accent-light-bg)!important; }
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .history-hero-scroll span,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-hero-scroll,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-hero-scroll span,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .section-link,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .section-cta,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .corner-cta {
+    color: var(--section-text-on-light) !important;
+    opacity: 1 !important;
+}
+
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .hero-scroll i,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .history-hero-scroll i,
+:is([data-theme="dark"],[data-bs-theme="dark"],.dark-mode,.dark,body.dark) .section-light .about-hero-scroll i {
+    color: var(--heading-accent-on-light) !important;
+}
+
+/* Explicitly dark sections keep the light lead-in and bright accent treatment. */
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark h6 {
+    color: var(--heading-muted-on-dark) !important;
+    opacity: 1 !important;
+    -webkit-text-stroke: 0 transparent !important;
+    text-shadow: none !important;
+}
+
+.section-dark h1 span,
+.section-dark h2 span,
+.section-dark h3 span,
+.section-dark h4 span,
+.section-dark h5 span,
+.section-dark h6 span,
+.section-dark h1 em,
+.section-dark h2 em,
+.section-dark h3 em,
+.section-dark h4 em,
+.section-dark h5 em,
+.section-dark h6 em {
+    color: var(--heading-accent-on-dark) !important;
+    opacity: 1 !important;
+    -webkit-text-stroke: 0 transparent !important;
+}
+
+.section-dark .hero-scroll,
+.section-dark .hero-scroll span,
+.section-dark .history-hero-scroll,
+.section-dark .history-hero-scroll span,
+.section-dark .about-hero-scroll,
+.section-dark .about-hero-scroll span,
+.section-dark .philosophy-text,
+.section-dark .section-label,
+.section-dark .section-eyebrow,
+.section-dark [class*="view-link"],
+.section-dark .view-all-link,
+.section-dark .section-link,
+.section-dark .section-cta,
+.section-dark .corner-cta {
+    color: var(--heading-muted-on-dark) !important;
+    opacity: 1 !important;
+}
+
+.section-dark .hero-scroll i,
+.section-dark .history-hero-scroll i,
+.section-dark .about-hero-scroll i {
+    color: var(--heading-accent-on-dark) !important;
+}
+
+/* The reusable two-tone pattern: no faint opacity and no low-contrast outline text. */
+.section-light :is(h1,h2,h3,h4,h5,h6) span,
+.section-light :is(h1,h2,h3,h4,h5,h6) em,
+.section-dark :is(h1,h2,h3,h4,h5,h6) span,
+.section-dark :is(h1,h2,h3,h4,h5,h6) em {
+    opacity: 1 !important;
+    -webkit-text-stroke: 0 transparent !important;
+    text-shadow: none !important;
+}
+
+/* Card headings inherit the actual section context instead of a global light-only token. */
+.section-light article h1,
+.section-light article h2,
+.section-light article h3,
+.section-light article h4,
+.section-light article h5,
+.section-light article h6,
+.section-dark article h1,
+.section-dark article h2,
+.section-dark article h3,
+.section-dark article h4,
+.section-dark article h5,
+.section-dark article h6 {
+    opacity: 1 !important;
+}
+
+/* Dark sections retain the original on-dark token for non-heading utility text. */
+.section-dark .hero-scroll,
+.section-dark .history-hero-scroll,
+.section-dark .about-hero-scroll,
+.section-dark .section-label,
+.section-dark .section-eyebrow,
+.section-dark .philosophy-text,
+.section-dark .section-link,
+.section-dark .section-cta,
+.section-dark .corner-cta {
+    color: var(--theme-text-on-dark) !important;
+}
+
+.section-dark .hero-scroll i,
+.section-dark .history-hero-scroll i,
+.section-dark .about-hero-scroll i {
+    color: var(--section-accent-dark-bg) !important;
+}
